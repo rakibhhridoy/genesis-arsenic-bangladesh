@@ -57,7 +57,15 @@ def load_clean_pairs():
     bd = pd.DataFrame(bd)
     bd["source"] = "bangladesh"; bd["country"] = "Bangladesh"
     return pd.concat([g, bd], ignore_index=True)
-WHO = {"As": 10.0, "NO3": 50.0, "F": 1.5, "U": 30.0}
+# WHO health-based drinking-water thresholds...
+HEALTH = {"As": 10.0, "NO3": 50.0, "F": 1.5, "U": 30.0}
+# ...plus the reducing-aquifer redox-indicator suite (Fe/Mn WHO operational,
+# PO4 no WHO limit) — measured in Bangladesh and mechanistically coupled to As
+# (reductive dissolution releases As, Fe, Mn, PO4 together). These give the
+# Bangladesh transfer evaluation more than a single target.
+REDOX = {"Fe": 0.3, "Mn": 0.4, "PO4": 0.5}
+WHO = {**HEALTH, **REDOX}
+CATEGORY = {**{k: "health" for k in HEALTH}, **{k: "redox-indicator" for k in REDOX}}
 MIN_POS, MIN_NEG, MIN_TRAIN = 10, 10, 200  # viability gates for a held-out region
 
 
@@ -144,7 +152,7 @@ def main():
             auc_m, lo, hi = boot_auc(yte, p)
             ed = energy_distance(P4[te], P4[tr])
             results.append({
-                "target": target, "held_out_region": R,
+                "target": target, "category": CATEGORY[target], "held_out_region": R,
                 "n_test": int(te.sum()), "n_pos": int(yte.sum()),
                 "n_train": int(tr.sum()),
                 "transfer_auc_mean": auc_m, "auc_ci95": [lo, hi],

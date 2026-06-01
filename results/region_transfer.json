@@ -3,6 +3,7 @@
   "results": [
     {
       "target": "As",
+      "category": "health",
       "held_out_region": "France",
       "n_test": 23226,
       "n_pos": 695,
@@ -16,6 +17,7 @@
     },
     {
       "target": "As",
+      "category": "health",
       "held_out_region": "USA",
       "n_test": 6290,
       "n_pos": 782,
@@ -29,6 +31,7 @@
     },
     {
       "target": "As",
+      "category": "health",
       "held_out_region": "EEA_WISE",
       "n_test": 3969,
       "n_pos": 106,
@@ -42,6 +45,7 @@
     },
     {
       "target": "As",
+      "category": "health",
       "held_out_region": "GEMStat:Mexico",
       "n_test": 3509,
       "n_pos": 532,
@@ -55,6 +59,7 @@
     },
     {
       "target": "As",
+      "category": "health",
       "held_out_region": "GEMStat:Italy",
       "n_test": 1314,
       "n_pos": 46,
@@ -68,6 +73,7 @@
     },
     {
       "target": "As",
+      "category": "health",
       "held_out_region": "GEMStat:Poland",
       "n_test": 123,
       "n_pos": 14,
@@ -81,6 +87,7 @@
     },
     {
       "target": "As",
+      "category": "health",
       "held_out_region": "Bangladesh",
       "n_test": 224,
       "n_pos": 70,
@@ -94,6 +101,7 @@
     },
     {
       "target": "NO3",
+      "category": "health",
       "held_out_region": "France",
       "n_test": 27372,
       "n_pos": 1433,
@@ -107,6 +115,7 @@
     },
     {
       "target": "NO3",
+      "category": "health",
       "held_out_region": "USA",
       "n_test": 5180,
       "n_pos": 18,
@@ -120,6 +129,7 @@
     },
     {
       "target": "NO3",
+      "category": "health",
       "held_out_region": "EEA_WISE",
       "n_test": 6342,
       "n_pos": 145,
@@ -133,6 +143,7 @@
     },
     {
       "target": "NO3",
+      "category": "health",
       "held_out_region": "GEMStat:Mexico",
       "n_test": 4035,
       "n_pos": 12,
@@ -146,6 +157,7 @@
     },
     {
       "target": "NO3",
+      "category": "health",
       "held_out_region": "GEMStat:Greece",
       "n_test": 598,
       "n_pos": 75,
@@ -159,6 +171,7 @@
     },
     {
       "target": "F",
+      "category": "health",
       "held_out_region": "France",
       "n_test": 2563,
       "n_pos": 60,
@@ -172,6 +185,7 @@
     },
     {
       "target": "F",
+      "category": "health",
       "held_out_region": "USA",
       "n_test": 8085,
       "n_pos": 544,
@@ -185,6 +199,7 @@
     },
     {
       "target": "F",
+      "category": "health",
       "held_out_region": "EEA_WISE",
       "n_test": 1630,
       "n_pos": 18,
@@ -198,6 +213,7 @@
     },
     {
       "target": "F",
+      "category": "health",
       "held_out_region": "GEMStat:Mexico",
       "n_test": 998,
       "n_pos": 204,
@@ -211,6 +227,7 @@
     },
     {
       "target": "U",
+      "category": "health",
       "held_out_region": "France",
       "n_test": 1691,
       "n_pos": 14,
@@ -224,6 +241,7 @@
     },
     {
       "target": "U",
+      "category": "health",
       "held_out_region": "USA",
       "n_test": 3792,
       "n_pos": 171,
@@ -237,6 +255,7 @@
     },
     {
       "target": "U",
+      "category": "health",
       "held_out_region": "GEMStat:France",
       "n_test": 351,
       "n_pos": 34,
@@ -250,6 +269,7 @@
     },
     {
       "target": "U",
+      "category": "health",
       "held_out_region": "GEMStat:Canada",
       "n_test": 209,
       "n_pos": 138,
@@ -260,6 +280,384 @@
         0.6158253277633671
       ],
       "energy_distance_4d": 1.281245144666176
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "France",
+      "n_test": 25570,
+      "n_pos": 1708,
+      "n_train": 11153,
+      "transfer_auc_mean": 0.7602011008281134,
+      "auc_ci95": [
+        0.7475244102739299,
+        0.7734061618951383
+      ],
+      "energy_distance_4d": 0.19728338838599502
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "USA",
+      "n_test": 5038,
+      "n_pos": 1657,
+      "n_train": 31685,
+      "transfer_auc_mean": 0.8257916029599461,
+      "auc_ci95": [
+        0.8141117927904905,
+        0.8394283165528224
+      ],
+      "energy_distance_4d": 0.28084559594087644
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "EEA_WISE",
+      "n_test": 2451,
+      "n_pos": 554,
+      "n_train": 34272,
+      "transfer_auc_mean": 0.8314652000111019,
+      "auc_ci95": [
+        0.8099722293193451,
+        0.8528114757264728
+      ],
+      "energy_distance_4d": 0.20561724517959323
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 1159,
+      "n_pos": 83,
+      "n_train": 35564,
+      "transfer_auc_mean": 0.49780908004310814,
+      "auc_ci95": [
+        0.4137712851202581,
+        0.5844626527406511
+      ],
+      "energy_distance_4d": 0.7483859511109641
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Italy",
+      "n_test": 457,
+      "n_pos": 14,
+      "n_train": 36266,
+      "transfer_auc_mean": 0.7277481626966394,
+      "auc_ci95": [
+        0.5538650653830389,
+        0.8682962427375803
+      ],
+      "energy_distance_4d": 0.08741791775020058
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:France",
+      "n_test": 468,
+      "n_pos": 65,
+      "n_train": 36255,
+      "transfer_auc_mean": 0.6361279410538943,
+      "auc_ci95": [
+        0.5686031764084457,
+        0.7024604464144396
+      ],
+      "energy_distance_4d": 0.053876468876990824
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Ireland",
+      "n_test": 121,
+      "n_pos": 25,
+      "n_train": 36602,
+      "transfer_auc_mean": 0.729681667365129,
+      "auc_ci95": [
+        0.6072529856078391,
+        0.8272718192540174
+      ],
+      "energy_distance_4d": 0.9230981674462664
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:India",
+      "n_test": 148,
+      "n_pos": 52,
+      "n_train": 36575,
+      "transfer_auc_mean": 0.4285904340942389,
+      "auc_ci95": [
+        0.33180003287652265,
+        0.52663738757099
+      ],
+      "energy_distance_4d": 0.20686168970403163
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Sweden",
+      "n_test": 219,
+      "n_pos": 110,
+      "n_train": 36504,
+      "transfer_auc_mean": 0.9023189071430275,
+      "auc_ci95": [
+        0.8597889005257602,
+        0.9415502495315486
+      ],
+      "energy_distance_4d": 0.30562767574535266
+    },
+    {
+      "target": "Fe",
+      "category": "redox-indicator",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 212,
+      "n_train": 36499,
+      "transfer_auc_mean": 0.7233612744589238,
+      "auc_ci95": [
+        0.6000357540123947,
+        0.8377665011682242
+      ],
+      "energy_distance_4d": 2.8209299077873506
+    },
+    {
+      "target": "Mn",
+      "category": "redox-indicator",
+      "held_out_region": "France",
+      "n_test": 25456,
+      "n_pos": 574,
+      "n_train": 12430,
+      "transfer_auc_mean": 0.8202773667616146,
+      "auc_ci95": [
+        0.799443169937339,
+        0.8421622714404337
+      ],
+      "energy_distance_4d": 0.1736111205621924
+    },
+    {
+      "target": "Mn",
+      "category": "redox-indicator",
+      "held_out_region": "USA",
+      "n_test": 6381,
+      "n_pos": 756,
+      "n_train": 31505,
+      "transfer_auc_mean": 0.9037687028025969,
+      "auc_ci95": [
+        0.8894291309630356,
+        0.9188673804846428
+      ],
+      "energy_distance_4d": 0.3180031175597897
+    },
+    {
+      "target": "Mn",
+      "category": "redox-indicator",
+      "held_out_region": "EEA_WISE",
+      "n_test": 2516,
+      "n_pos": 30,
+      "n_train": 35370,
+      "transfer_auc_mean": 0.6364679149268583,
+      "auc_ci95": [
+        0.5070965342914576,
+        0.7415822927118193
+      ],
+      "energy_distance_4d": 0.22411419352870054
+    },
+    {
+      "target": "Mn",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 1257,
+      "n_pos": 38,
+      "n_train": 36629,
+      "transfer_auc_mean": 0.8254615540422918,
+      "auc_ci95": [
+        0.7544367917096363,
+        0.8963707261579656
+      ],
+      "energy_distance_4d": 0.6018920329277873
+    },
+    {
+      "target": "Mn",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "n_test": 106,
+      "n_pos": 16,
+      "n_train": 37780,
+      "transfer_auc_mean": 0.6238649961737844,
+      "auc_ci95": [
+        0.4578302804021598,
+        0.7780174796101282
+      ],
+      "energy_distance_4d": 0.2216978397127185
+    },
+    {
+      "target": "Mn",
+      "category": "redox-indicator",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 96,
+      "n_train": 37662,
+      "transfer_auc_mean": 0.5585698922955507,
+      "auc_ci95": [
+        0.4875919020845829,
+        0.6193690931253562
+      ],
+      "energy_distance_4d": 2.8583078709947265
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "France",
+      "n_test": 7011,
+      "n_pos": 187,
+      "n_train": 23140,
+      "transfer_auc_mean": 0.6494758037337559,
+      "auc_ci95": [
+        0.6028358273492574,
+        0.6924874960969304
+      ],
+      "energy_distance_4d": 0.26020979121823595
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "USA",
+      "n_test": 5596,
+      "n_pos": 93,
+      "n_train": 24555,
+      "transfer_auc_mean": 0.78610910191717,
+      "auc_ci95": [
+        0.7259364471208976,
+        0.8489324474988662
+      ],
+      "energy_distance_4d": 0.29217704612773443
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "EEA_WISE",
+      "n_test": 6385,
+      "n_pos": 1389,
+      "n_train": 23766,
+      "transfer_auc_mean": 0.7182379584133665,
+      "auc_ci95": [
+        0.7029450313200816,
+        0.7314645274274206
+      ],
+      "energy_distance_4d": 0.11503888159538667
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 4009,
+      "n_pos": 948,
+      "n_train": 26142,
+      "transfer_auc_mean": 0.836336502298617,
+      "auc_ci95": [
+        0.821652359084948,
+        0.8552330770050287
+      ],
+      "energy_distance_4d": 0.5038918945706599
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Italy",
+      "n_test": 1377,
+      "n_pos": 69,
+      "n_train": 28774,
+      "transfer_auc_mean": 0.5754815766177647,
+      "auc_ci95": [
+        0.49315644563935557,
+        0.6497124934265175
+      ],
+      "energy_distance_4d": 0.08385094189296405
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Poland",
+      "n_test": 1182,
+      "n_pos": 47,
+      "n_train": 28969,
+      "transfer_auc_mean": 0.5758161235321496,
+      "auc_ci95": [
+        0.48610954226298914,
+        0.6729986318772598
+      ],
+      "energy_distance_4d": 0.3480111103951924
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Greece",
+      "n_test": 112,
+      "n_pos": 16,
+      "n_train": 30039,
+      "transfer_auc_mean": 0.8965062506713692,
+      "auc_ci95": [
+        0.8108075980392156,
+        0.9658617131062952
+      ],
+      "energy_distance_4d": 0.3496006120715851
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:India",
+      "n_test": 327,
+      "n_pos": 38,
+      "n_train": 29824,
+      "transfer_auc_mean": 0.438111411683161,
+      "auc_ci95": [
+        0.30431283201823184,
+        0.5666319657450021
+      ],
+      "energy_distance_4d": 0.3256362546630436
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Lithuania",
+      "n_test": 339,
+      "n_pos": 30,
+      "n_train": 29812,
+      "transfer_auc_mean": 0.6473132983299528,
+      "auc_ci95": [
+        0.5296373249875118,
+        0.7550373390404164
+      ],
+      "energy_distance_4d": 0.42443647370863036
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "n_test": 313,
+      "n_pos": 20,
+      "n_train": 29838,
+      "transfer_auc_mean": 0.9591771500366366,
+      "auc_ci95": [
+        0.9262371314784025,
+        0.9850694444444444
+      ],
+      "energy_distance_4d": 0.07458793085090698
+    },
+    {
+      "target": "PO4",
+      "category": "redox-indicator",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 185,
+      "n_train": 29927,
+      "transfer_auc_mean": 0.6299543601197151,
+      "auc_ci95": [
+        0.5372719940410908,
+        0.7278582135475592
+      ],
+      "energy_distance_4d": 2.7185096776611073
     }
   ]
 }
