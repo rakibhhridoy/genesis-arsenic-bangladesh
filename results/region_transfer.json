@@ -1,0 +1,265 @@
+{
+  "min_pos": 10,
+  "results": [
+    {
+      "target": "As",
+      "held_out_region": "France",
+      "n_test": 23226,
+      "n_pos": 695,
+      "n_train": 16825,
+      "transfer_auc_mean": 0.8067261690087559,
+      "auc_ci95": [
+        0.789362780841977,
+        0.8258923839071569
+      ],
+      "energy_distance_4d": 0.22983072880374023
+    },
+    {
+      "target": "As",
+      "held_out_region": "USA",
+      "n_test": 6290,
+      "n_pos": 782,
+      "n_train": 33761,
+      "transfer_auc_mean": 0.8013726084072696,
+      "auc_ci95": [
+        0.7856728429711045,
+        0.8163729456771796
+      ],
+      "energy_distance_4d": 0.3577784671938897
+    },
+    {
+      "target": "As",
+      "held_out_region": "EEA_WISE",
+      "n_test": 3969,
+      "n_pos": 106,
+      "n_train": 36082,
+      "transfer_auc_mean": 0.6497152719171356,
+      "auc_ci95": [
+        0.5978920069489878,
+        0.7062593083502379
+      ],
+      "energy_distance_4d": 0.19953228084083574
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 3509,
+      "n_pos": 532,
+      "n_train": 36542,
+      "transfer_auc_mean": 0.7031457768906918,
+      "auc_ci95": [
+        0.6808617339809958,
+        0.7236391400250097
+      ],
+      "energy_distance_4d": 0.509570769648136
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Italy",
+      "n_test": 1314,
+      "n_pos": 46,
+      "n_train": 38737,
+      "transfer_auc_mean": 0.6563672110121357,
+      "auc_ci95": [
+        0.5667160385058848,
+        0.7493627396318767
+      ],
+      "energy_distance_4d": 0.12679718663121298
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Poland",
+      "n_test": 123,
+      "n_pos": 14,
+      "n_train": 39928,
+      "transfer_auc_mean": 0.4789616019547758,
+      "auc_ci95": [
+        0.3196102292203209,
+        0.6325315518664143
+      ],
+      "energy_distance_4d": 0.5301078963942127
+    },
+    {
+      "target": "As",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 70,
+      "n_train": 39827,
+      "transfer_auc_mean": 0.5647717363141651,
+      "auc_ci95": [
+        0.4747919803497085,
+        0.6418789828880943
+      ],
+      "energy_distance_4d": 2.6963858645111385
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "France",
+      "n_test": 27372,
+      "n_pos": 1433,
+      "n_train": 23448,
+      "transfer_auc_mean": 0.9121811608056721,
+      "auc_ci95": [
+        0.903636740485941,
+        0.9199861444990252
+      ],
+      "energy_distance_4d": 0.24460094217376538
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "USA",
+      "n_test": 5180,
+      "n_pos": 18,
+      "n_train": 45640,
+      "transfer_auc_mean": 0.9753960183392852,
+      "auc_ci95": [
+        0.9529938704127787,
+        0.9921843788319402
+      ],
+      "energy_distance_4d": 0.1853127566844437
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "EEA_WISE",
+      "n_test": 6342,
+      "n_pos": 145,
+      "n_train": 44478,
+      "transfer_auc_mean": 0.9265205170579237,
+      "auc_ci95": [
+        0.8912615568437025,
+        0.9591629544967593
+      ],
+      "energy_distance_4d": 0.17060693679759265
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 4035,
+      "n_pos": 12,
+      "n_train": 46785,
+      "transfer_auc_mean": 0.8652941900204467,
+      "auc_ci95": [
+        0.6667128120216057,
+        0.9897042641395457
+      ],
+      "energy_distance_4d": 0.6490613707398714
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Greece",
+      "n_test": 598,
+      "n_pos": 75,
+      "n_train": 50222,
+      "transfer_auc_mean": 0.7831410558153084,
+      "auc_ci95": [
+        0.7169245205541741,
+        0.8490501702402111
+      ],
+      "energy_distance_4d": 0.09121837976272595
+    },
+    {
+      "target": "F",
+      "held_out_region": "France",
+      "n_test": 2563,
+      "n_pos": 60,
+      "n_train": 12178,
+      "transfer_auc_mean": 0.873187310796173,
+      "auc_ci95": [
+        0.8198248697263812,
+        0.9267016578850377
+      ],
+      "energy_distance_4d": 0.2628127652282273
+    },
+    {
+      "target": "F",
+      "held_out_region": "USA",
+      "n_test": 8085,
+      "n_pos": 544,
+      "n_train": 6656,
+      "transfer_auc_mean": 0.9251890027197355,
+      "auc_ci95": [
+        0.90575823058885,
+        0.940650186567242
+      ],
+      "energy_distance_4d": 0.15938938985873707
+    },
+    {
+      "target": "F",
+      "held_out_region": "EEA_WISE",
+      "n_test": 1630,
+      "n_pos": 18,
+      "n_train": 13111,
+      "transfer_auc_mean": 0.5141381277429009,
+      "auc_ci95": [
+        0.33488857320429727,
+        0.6801117288869865
+      ],
+      "energy_distance_4d": 0.17933832959120766
+    },
+    {
+      "target": "F",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 998,
+      "n_pos": 204,
+      "n_train": 13743,
+      "transfer_auc_mean": 0.7999721891308006,
+      "auc_ci95": [
+        0.7633511867371037,
+        0.8390190226846658
+      ],
+      "energy_distance_4d": 0.36902103151397636
+    },
+    {
+      "target": "U",
+      "held_out_region": "France",
+      "n_test": 1691,
+      "n_pos": 14,
+      "n_train": 4977,
+      "transfer_auc_mean": 0.9570055090516973,
+      "auc_ci95": [
+        0.8563719659151697,
+        0.9978685831627633
+      ],
+      "energy_distance_4d": 0.25845029068005854
+    },
+    {
+      "target": "U",
+      "held_out_region": "USA",
+      "n_test": 3792,
+      "n_pos": 171,
+      "n_train": 2876,
+      "transfer_auc_mean": 0.3401821815676682,
+      "auc_ci95": [
+        0.2887815383436756,
+        0.38870876287401235
+      ],
+      "energy_distance_4d": 0.22044615151183677
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:France",
+      "n_test": 351,
+      "n_pos": 34,
+      "n_train": 6317,
+      "transfer_auc_mean": 0.3701906602121454,
+      "auc_ci95": [
+        0.2988969567671046,
+        0.4353401449378496
+      ],
+      "energy_distance_4d": 0.14237276512364705
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:Canada",
+      "n_test": 209,
+      "n_pos": 138,
+      "n_train": 6459,
+      "transfer_auc_mean": 0.5485246896876935,
+      "auc_ci95": [
+        0.47433352950161617,
+        0.6158253277633671
+      ],
+      "energy_distance_4d": 1.281245144666176
+    }
+  ]
+}
