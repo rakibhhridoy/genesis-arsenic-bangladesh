@@ -1,0 +1,401 @@
+{
+  "target_param": "F",
+  "threshold": 1.5,
+  "tag": "small_mlp_unfrozen",
+  "encoder_size": "small",
+  "encoder_ckpt": "runpod_backup/checkpoints/small_stage2/best.pt",
+  "no_pretrain": false,
+  "unfreeze_encoder": true,
+  "linear_probe": false,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate_global_test": {
+    "n_seeds_used": 3,
+    "auc_mean_std": [
+      0.8914168255446357,
+      0.06858084018175217
+    ],
+    "ap_mean_std": [
+      0.7220084168266917,
+      0.10878121663664783
+    ],
+    "f1_best_mean_std": [
+      0.7275030942609603,
+      0.12429558219255608
+    ]
+  },
+  "aggregate_bangladesh": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "best_val_auc": 0.9102564102564102,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 34,
+        "positive_rate": 0.1818181872367859,
+        "auc": 0.9523260284505959,
+        "ap": 0.8327381285839756,
+        "brier": 0.08252519369125366,
+        "f1_at_0.5": 0.7407407407407407,
+        "f1_best": 0.8529411764705882,
+        "f1_best_threshold": 0.82,
+        "confusion_at_best": {
+          "tn": 148,
+          "fp": 5,
+          "fn": 5,
+          "tp": 29
+        },
+        "auc_ci95": [
+          0.9085784313725491,
+          0.9855968858131489
+        ],
+        "ap_ci95": [
+          0.7190131651790067,
+          0.9542191755396001
+        ],
+        "f1_best_ci95": [
+          0.7499067164179104,
+          0.9254272117672507
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9791350620133537,
+          "val_auc": 0.8802729528535981,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.6986876385552543,
+          "val_auc": 0.9102564102564102,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.6466642639466694,
+          "val_auc": 0.9036393713813069,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.5338674698557172,
+          "val_auc": 0.902605459057072,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.5889007598161697,
+          "val_auc": 0.9071546732837055,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.5474444340382304,
+          "val_auc": 0.9042597187758479,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.40743150455611093,
+          "val_auc": 0.9077750206782464,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.42804734302418573,
+          "val_auc": 0.8968155500413565,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.5530442765780857,
+          "val_auc": 0.8935070306038048,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.3683724658829825,
+          "val_auc": 0.9050868486352357,
+          "bd_auc": NaN
+        }
+      ],
+      "elapsed_sec": 39.473459005355835,
+      "n_train_params": 1481365,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": false
+    },
+    {
+      "seed": 43,
+      "best_val_auc": 0.9557862360630527,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 28,
+        "positive_rate": 0.14973261952400208,
+        "auc": 0.7955974842767296,
+        "ap": 0.5741544921883548,
+        "brier": 0.1690496802330017,
+        "f1_at_0.5": 0.475,
+        "f1_best": 0.5581395348837209,
+        "f1_best_threshold": 0.95,
+        "confusion_at_best": {
+          "tn": 156,
+          "fp": 3,
+          "fn": 16,
+          "tp": 12
+        },
+        "auc_ci95": [
+          0.6949853998203055,
+          0.884136343216532
+        ],
+        "ap_ci95": [
+          0.43005859722840306,
+          0.7282961315456253
+        ],
+        "f1_best_ci95": [
+          0.4469934640522876,
+          0.7171417101565636
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.874702764408929,
+          "val_auc": 0.9319492502883506,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.6913874447345734,
+          "val_auc": 0.9294502114571319,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.6573769748210907,
+          "val_auc": 0.9557862360630527,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.6173516426767621,
+          "val_auc": 0.9371395617070357,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.5304040461778641,
+          "val_auc": 0.9488658208381391,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.5520627285752978,
+          "val_auc": 0.9536716647443291,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.48759344645908903,
+          "val_auc": 0.9282968089196463,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.4476184163774763,
+          "val_auc": 0.9265667051134179,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.447268830878394,
+          "val_auc": 0.9413687043444829,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.40794824063777924,
+          "val_auc": 0.9286812764321415,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.3756260403564998,
+          "val_auc": 0.9048442906574394,
+          "bd_auc": NaN
+        }
+      ],
+      "elapsed_sec": 40.40300917625427,
+      "n_train_params": 1481365,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": false
+    },
+    {
+      "seed": 44,
+      "best_val_auc": 0.8709169618260527,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 30,
+        "positive_rate": 0.16042780876159668,
+        "auc": 0.9263269639065818,
+        "ap": 0.7591326297077446,
+        "brier": 0.10237295180559158,
+        "f1_at_0.5": 0.7012987012987013,
+        "f1_best": 0.7714285714285715,
+        "f1_best_threshold": 0.6399999999999999,
+        "confusion_at_best": {
+          "tn": 144,
+          "fp": 13,
+          "fn": 3,
+          "tp": 27
+        },
+        "auc_ci95": [
+          0.867791932059448,
+          0.9696390658174097
+        ],
+        "ap_ci95": [
+          0.6143920629326344,
+          0.90929113911234
+        ],
+        "f1_best_ci95": [
+          0.6872139084507042,
+          0.8710685483870968
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9205449776990073,
+          "val_auc": 0.8215269578905943,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7148447121892657,
+          "val_auc": 0.841401023219205,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.6114333974463599,
+          "val_auc": 0.8362849271940181,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.5332354434898922,
+          "val_auc": 0.8435655253837071,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.49073413014411926,
+          "val_auc": 0.8496654860291224,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.44296214303800036,
+          "val_auc": 0.8630460448642268,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.41622220086199896,
+          "val_auc": 0.8709169618260527,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.41537060482161386,
+          "val_auc": 0.8408107044470681,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.3989560731819698,
+          "val_auc": 0.8475009838646202,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.3349602073431015,
+          "val_auc": 0.863439590712318,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.27495244464703966,
+          "val_auc": 0.8541912632821723,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.3598917456609862,
+          "val_auc": 0.8536009445100354,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.35634266691548483,
+          "val_auc": 0.8274301456119637,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.32728236062186106,
+          "val_auc": 0.8524203069657615,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.2607994760785784,
+          "val_auc": 0.8563557654466746,
+          "bd_auc": NaN
+        }
+      ],
+      "elapsed_sec": 51.550416231155396,
+      "n_train_params": 1481365,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": false
+    }
+  ]
+}

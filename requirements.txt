@@ -1,0 +1,15 @@
+# Pinned to the environment used for the analysis/figures layer (Apple M1, Python 3.11.15).
+# GPU pretraining (Stages 1-2) ran on RunPod's "PyTorch 2.x" image; torch is pinned
+# to the locally verified version but any torch>=2.5 with matching CUDA should work.
+# NOTE: encoder training uses fp16 AMP on CUDA and is NOT bitwise deterministic;
+# reported results reproduce from the released checkpoints, not from a fresh re-train.
+torch==2.5.1
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.8.0     # >=1.6 required: 13_logreg_analysis.py uses SimpleImputer(keep_empty_features=True)
+scipy==1.14.1
+xgboost==2.1.3
+pyarrow==23.0.1
+matplotlib==3.10.9
+duckdb==1.5.1
+earthengine-api==1.5.12  # only needed to regenerate auxiliary GEE features (05_extract_aux_features_gee.py)

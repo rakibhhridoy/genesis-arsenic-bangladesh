@@ -1,0 +1,185 @@
+{
+  "target_param": "F",
+  "threshold": 1.5,
+  "tag": "logreg",
+  "model": "logreg",
+  "use_aux": true,
+  "feature_names": [
+    "As",
+    "Fe",
+    "Mn",
+    "PO4",
+    "F",
+    "U",
+    "NO3",
+    "pH",
+    "Eh",
+    "EC",
+    "TDS",
+    "Ca",
+    "Mg",
+    "Na",
+    "K",
+    "Cl",
+    "HCO3",
+    "SO4",
+    "SiO2",
+    "DOC",
+    "lat",
+    "lon"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate_global_test": {
+    "n_seeds_used": 3,
+    "auc_mean_std": [
+      0.8951526926187863,
+      0.024600036486750028
+    ],
+    "ap_mean_std": [
+      0.6630111102216817,
+      0.0871372246948197
+    ],
+    "f1_best_mean_std": [
+      0.6702015939990624,
+      0.06423108396721898
+    ]
+  },
+  "aggregate_bangladesh": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 27,
+        "positive_rate": 0.14438502490520477,
+        "auc": 0.8666666666666667,
+        "ap": 0.6259700960493697,
+        "brier": 0.14827966735750342,
+        "f1_at_0.5": 0.547945205479452,
+        "f1_best": 0.64,
+        "f1_best_threshold": 0.7899999999999999,
+        "confusion_at_best": {
+          "tn": 153,
+          "fp": 7,
+          "fn": 11,
+          "tp": 16
+        },
+        "auc_ci95": [
+          0.784230324074074,
+          0.9282928240740741
+        ],
+        "ap_ci95": [
+          0.4554035575489166,
+          0.7907961036460485
+        ],
+        "f1_best_ci95": [
+          0.5452510176390774,
+          0.7755668934240363
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.012326240539550781
+    },
+    {
+      "seed": 43,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 35,
+        "positive_rate": 0.1871657818555832,
+        "auc": 0.9266917293233082,
+        "ap": 0.7833172564868898,
+        "brier": 0.13550844023086092,
+        "f1_at_0.5": 0.66,
+        "f1_best": 0.759493670886076,
+        "f1_best_threshold": 0.63,
+        "confusion_at_best": {
+          "tn": 138,
+          "fp": 14,
+          "fn": 5,
+          "tp": 30
+        },
+        "auc_ci95": [
+          0.8664943609022556,
+          0.9709304511278195
+        ],
+        "ap_ci95": [
+          0.6536931967084377,
+          0.9078434023086278
+        ],
+        "f1_best_ci95": [
+          0.681708211143695,
+          0.8572332730560578
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.012553691864013672
+    },
+    {
+      "seed": 44,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 23,
+        "positive_rate": 0.12299465388059616,
+        "auc": 0.8920996818663839,
+        "ap": 0.5797459781287856,
+        "brier": 0.13872968390479534,
+        "f1_at_0.5": 0.5633802816901409,
+        "f1_best": 0.6111111111111112,
+        "f1_best_threshold": 0.8899999999999999,
+        "confusion_at_best": {
+          "tn": 162,
+          "fp": 2,
+          "fn": 12,
+          "tp": 11
+        },
+        "auc_ci95": [
+          0.8127584835630964,
+          0.9578605514316013
+        ],
+        "ap_ci95": [
+          0.430563577048793,
+          0.7907431368379962
+        ],
+        "f1_best_ci95": [
+          0.5204754230459306,
+          0.7894736842105263
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.009197711944580078
+    }
+  ]
+}

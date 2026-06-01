@@ -1,0 +1,12 @@
+{
+  "model_size": "small",
+  "n_samples": 128,
+  "n_layers": 4,
+  "n_heads": 4,
+  "attention_mean_offdiag": 0.06596908952239242,
+  "attention_median_offdiag": 0.05892771099597832,
+  "attention_std_offdiag": 0.04705286198749316,
+  "n_known_recovered": 0,
+  "n_known_total": 13,
+  "top_coupling": "TDS-DOC"
+}

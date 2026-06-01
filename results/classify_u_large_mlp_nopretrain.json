@@ -1,0 +1,107 @@
+{
+  "target_param": "U",
+  "threshold": 30.0,
+  "tag": "large_mlp_nopretrain",
+  "encoder_size": "large",
+  "encoder_ckpt": null,
+  "no_pretrain": true,
+  "unfreeze_encoder": false,
+  "linear_probe": false,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate_global_test": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "aggregate_bangladesh": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "best_val_auc": NaN,
+      "global_test": {
+        "note": "degenerate split \u2014 skipped",
+        "n_samples": 50,
+        "n_positive": 0
+      },
+      "bangladesh_transfer": {
+        "note": "skipped due to global split",
+        "n_samples": 0,
+        "n_positive": 0
+      },
+      "history": [],
+      "elapsed_sec": 0.0,
+      "n_train_params": 0,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": true
+    },
+    {
+      "seed": 43,
+      "best_val_auc": NaN,
+      "global_test": {
+        "note": "degenerate split \u2014 skipped",
+        "n_samples": 50,
+        "n_positive": 0
+      },
+      "bangladesh_transfer": {
+        "note": "skipped due to global split",
+        "n_samples": 0,
+        "n_positive": 0
+      },
+      "history": [],
+      "elapsed_sec": 0.0,
+      "n_train_params": 0,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": true
+    },
+    {
+      "seed": 44,
+      "best_val_auc": NaN,
+      "global_test": {
+        "note": "degenerate split \u2014 skipped",
+        "n_samples": 50,
+        "n_positive": 0
+      },
+      "bangladesh_transfer": {
+        "note": "skipped due to global split",
+        "n_samples": 0,
+        "n_positive": 0
+      },
+      "history": [],
+      "elapsed_sec": 0.0,
+      "n_train_params": 0,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": true
+    }
+  ]
+}

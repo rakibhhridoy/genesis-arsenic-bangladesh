@@ -1,0 +1,255 @@
+================================================================================
+PAPER 5: SCOPE & PLAN
+================================================================================
+
+TARGET JOURNAL: Science / Nature
+
+WORKING TITLE:
+"A geochemical foundation model for predicting water contamination
+ evolution across global surface and subsurface systems"
+
+================================================================================
+CORE NOVELTY
+================================================================================
+
+1. First foundation model for water geochemistry — surface AND subsurface (Gap 5)
+2. Self-supervised pretraining on multi-source global geochemical data
+   — GEMStat (26M entries, surface+groundwater), NWIS, ADES, EEA WISE-6 (Gap 4)
+3. Latent diffusion for probabilistic future-state generation of
+   water quality across all water body types (Gap 4)
+4. Few-shot fine-tuning on temporal data; zero-shot transfer to
+   unseen basins and water systems (Gap 1)
+5. Transferable across geographies, contaminants, water body types, and aquifer types
+
+================================================================================
+WHY THIS COULD BE Science/Nature
+================================================================================
+
+- Foundation models are THE frontier in earth science (Nature 2025 editorial)
+- No one has built one for water geochemistry (surface or groundwater)
+- Water contamination (surface + groundwater) affects billions globally;
+  groundwater arsenic alone affects 200M+ people
+- A model that predicts contamination evolution across any water system
+  from minimal local data = transformative for global water security
+- Broader scope than Podgorski & Berg (2020) Science paper: covers ALL
+  water types + adds temporal prediction + generative capability
+
+================================================================================
+DATA PIPELINE  (updated 2026-04-13)
+================================================================================
+
+STAGE 1: PRETRAINING CORPUS (global, multi-source)
+
+Source 1: USGS NWIS (USA)                                            ✅ COMPLETE
+  - 162,873 vectors, 57,723 sites, 51 states (1990-2023)
+  - 20/20 GENESIS params, 9,810 temporal pairs
+  - Script: src/01c_curate_usgs_nwis.py
+
+Source 2: GEMStat / GEMS Water Archive v2                            ✅ COMPLETE
+  - 943,540 vectors, 3,527 temporal pairs, 100+ countries
+  - Access: gemstat.org, zenodo.org/records/14230628
+
+Source 3: BRGM ADES / Hub'Eau (France)                               🔄 DOWNLOADING
+  - ~10.6M raw measurements, 82k stations
+  - Hub'Eau REST API, checkpointed per (dept × param)
+  - Script: src/02_download_global_sources.py --only ades
+
+Source 4: EEA Waterbase WISE-6 (EU-27)                               🔄 DOWNLOADING
+  - ~50 GB bulk ZIP, EU-27 1900-2024, surface water + groundwater
+  - Full dataset retained — GENESIS trains on ALL water body types
+  - Streaming download to external SSD
+  - Script: src/03_download_auxiliary_sources.py --only eea
+
+Source 5: GROW Dataset (Zenodo 15149480)                              🔄 DOWNLOADING
+  - 200k well locations, 36 pre-computed auxiliary attributes
+  - NOT chemistry — used as auxiliary feature source for tokens
+  - Script: src/03_download_auxiliary_sources.py --only grow
+
+ESTIMATED PRETRAINING CORPUS: ~1.5-2.5M vectors after harmonization
+
+STAGE 2: HELD-OUT VALIDATION — PRIMARY BANGLADESH DATA
+
+Source 6: Primary Field Data 2012-2013
+  - 981 samples (harmonized), 19 districts
+  - 18/20 GENESIS params (missing: U, DOC)
+  - File: Paper3/analysis/output/tables/old_harmonized.csv
+
+Source 7: Primary Field Data 2020-2021
+  - 1,807 samples (harmonized), 64 districts
+  - 16/20 GENESIS params (missing: F, U, SiO2, DOC)
+  - File: Paper3/analysis/output/tables/new_harmonized.csv
+
+Source 8: Matched Temporal Pairs
+  - 705 well-depth units revisited across ~9 years (Paper3 matching)
+  - 224 PAIRS with chemistry measured in BOTH periods (GENESIS-usable)
+  - 16/20 shared GENESIS params, QA-controlled by lead author
+  - File: Paper3/analysis/output/tables/matched_wells.csv
+  - NOTE: 705 = all matched (ID_norm, Depth_bin) combos; 224 = subset
+    with ≥1 GENESIS chemistry parameter non-null in both t0 and t1
+
+CRITICAL STRATEGY: Bangladesh data is HELD OUT from pretraining.
+  All 2,788 Bangladesh vectors + 224 chemistry-complete temporal pairs
+  serve as zero-shot validation of spatial AND temporal transfer.
+
+STAGE 3: ZERO-SHOT TRANSFER EVALUATION
+
+Primary (author's own data):
+  - Bangladesh 2021: 1,807 samples → spatial transfer test
+  - Bangladesh 2012→2021: 224 chemistry-complete pairs → temporal transfer test
+
+Secondary (GEMStat held-out countries):
+  - Split GEMStat by country for geographic leave-one-out evaluation
+  - Priority countries: Vietnam, India, Argentina, West Africa
+
+Published temporal studies (if available):
+  - Red River Delta, Vietnam (Postma et al.)
+  - Gangetic Plains, India (Mukherjee et al.)
+  - Argentinian Pampas (Bundschuh/Smedley)
+
+================================================================================
+NARRATIVE FOR SCIENCE
+================================================================================
+
+"A foundation model trained on global water geochemistry — surface and
+ groundwater from the data-rich world — predicts arsenic contamination
+ and decadal geochemical change in Bangladesh, validated against the
+ lead author's own 9-year field measurements."
+
+This is unassailable because:
+  1. No data leakage — Bangladesh never seen during training
+  2. Ground truth is author-collected with known QA/QC
+  3. 224 chemistry-complete temporal pairs = strongest temporal validation in the field
+  4. Directly addresses global water security (SDG 6)
+  5. Surface + groundwater training = universal geochemical relationships,
+     not domain-limited — stronger generalization claim for Science
+
+================================================================================
+METHODS STACK
+================================================================================
+
+1. DATA CURATION & HARMONIZATION
+   - Standardize units, parameter names across GEMStat/Podgorski/primary
+   - Quality filtering (CBE, detection limits, outlier removal)
+   - Geochemical vector representation: each sample = vector of
+     [As, Fe, Mn, PO4, pH, Eh, EC, TDS, Ca, Mg, Na, K, Cl, HCO3, SO4, NO3]
+   - Missing value handling via masked tokens (BERT-style)
+
+2. SELF-SUPERVISED PRETRAINING
+   Option A: Masked Geochemical Modeling (MGM)
+   - Randomly mask 15-30% of parameters in each sample
+   - Train encoder-decoder to reconstruct masked values
+   - Learns latent geochemical relationships globally
+   - Similar to BERT but for geochemical vectors
+
+   Option B: Contrastive Geochemical Learning
+   - Positive pairs: samples from same well/station at different times
+   - Negative pairs: samples from different hydrogeological settings
+   - Learns representation that captures geochemical similarity
+
+   Option C: Both (two-stage pretraining)
+
+3. LATENT DIFFUSION MODEL FOR FUTURE-STATE GENERATION
+   - Encode geochemical state into latent space (pretrained encoder)
+   - Condition on: current geochemistry, depth, geology, land use,
+     time horizon, climate variables
+   - Diffusion process generates distribution of future geochemical states
+   - Output: probabilistic prediction with full uncertainty
+   - Inspired by Zhan et al. (2025 GRL) but for geochemistry, not flow
+
+4. FEW-SHOT FINE-TUNING
+   - Freeze pretrained encoder
+   - Fine-tune prediction head on Bangladesh temporal pairs (224 chemistry-complete wells)
+   - Evaluate: how many local samples needed for useful prediction?
+   - Target: <50 samples for meaningful temporal prediction
+
+5. ZERO-SHOT TRANSFER
+   - Apply pretrained model to Red River Delta, Mekong, etc.
+   - No local training data required
+   - Evaluate: does the model capture known contamination patterns?
+
+6. PHYSICAL CONSISTENCY CHECKS
+   - Charge balance of generated geochemical states
+   - Thermodynamic feasibility (SI checks via PHREEQC)
+   - Redox consistency (Eh-Fe-Mn relationships)
+
+================================================================================
+EXPECTED OUTPUTS
+================================================================================
+
+1. GENESIS: Open-source pretrained foundation model for water geochemistry (surface + groundwater)
+2. Global water contamination evolution risk maps (probabilistic, all water types)
+3. Few-shot prediction capability (minimal local data needed)
+4. Zero-shot transfer demonstrated across 3-5 basins
+5. Uncertainty-aware projections of future contamination states
+6. Model weights + training pipeline on GitHub/HuggingFace
+
+================================================================================
+PAPER STRUCTURE (Science/Nature format)
+================================================================================
+
+- Abstract (~125 words)
+- Main text (~2500-3500 words)
+  - One-paragraph introduction
+  - Results (3-4 subsections)
+    - Pretraining and learned geochemical representations
+    - Temporal prediction on Bangladesh data
+    - Zero-shot transfer to global basins
+    - Probabilistic contamination evolution projections
+  - Discussion (1-2 paragraphs)
+- Methods (~1500 words, end of paper)
+- Figures: 4-5 main, extended data figures
+- Supplementary Information (detailed methods, ablations)
+
+================================================================================
+KEY RISKS & MITIGATIONS
+================================================================================
+
+Risk: GEMStat data quality is heterogeneous
+Mitigation: Aggressive quality filtering; pretraining is robust to
+noise (BERT-style models handle noisy data well); ablation on
+data quality thresholds
+
+Risk: Geochemical data is NOT images/text — foundation model
+paradigm may not transfer
+Mitigation: Geochemical vectors have strong internal structure
+(charge balance, redox coupling) that self-supervised learning
+can exploit; start with masked autoencoder (simplest approach)
+
+Risk: Zero-shot transfer may fail across very different geologies
+Mitigation: Report honestly; show where it works and where it
+doesn't; even partial transferability is novel
+
+Risk: Reviewers question "foundation model" framing for tabular data
+Mitigation: Emphasize: (a) scale of pretraining data (26M+),
+(b) emergent cross-geography generalization, (c) few-shot capability
+— these are the hallmarks of foundation models regardless of modality
+
+Risk: Compute requirements for pretraining
+Mitigation: Geochemical vectors are small (16-20 features) compared
+to images/text; pretraining on 26M tabular rows is feasible on
+a single GPU in days
+
+================================================================================
+DEPENDENCIES
+================================================================================
+
+- Paper 4 (T-GAT): Provides architecture insights, trained on
+  Bangladesh data first — Paper 5 scales this globally
+- Paper 3 (Springer): Provides mechanistic ground truth for
+  evaluating whether foundation model learns correct geochemistry
+- GEMStat data access: CRITICAL — must download and curate early
+
+================================================================================
+TIMELINE (TENTATIVE)
+================================================================================
+
+Phase 1: GEMStat download, curation, harmonization (LONGEST PHASE)
+Phase 2: Pretraining architecture design & training
+Phase 3: Fine-tuning on Bangladesh temporal data
+Phase 4: Zero-shot transfer experiments
+Phase 5: Latent diffusion for future-state generation
+Phase 6: Writing & figures
+
+NOTE: Paper 4 should be completed or near-complete before Paper 5,
+as Paper 4 validates the temporal modeling approach at local scale
+before Paper 5 scales it globally.

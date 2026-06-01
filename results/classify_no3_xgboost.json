@@ -1,0 +1,185 @@
+{
+  "target_param": "NO3",
+  "threshold": 50.0,
+  "tag": "xgboost",
+  "model": "xgboost",
+  "use_aux": true,
+  "feature_names": [
+    "As",
+    "Fe",
+    "Mn",
+    "PO4",
+    "F",
+    "U",
+    "NO3",
+    "pH",
+    "Eh",
+    "EC",
+    "TDS",
+    "Ca",
+    "Mg",
+    "Na",
+    "K",
+    "Cl",
+    "HCO3",
+    "SO4",
+    "SiO2",
+    "DOC",
+    "lat",
+    "lon"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate_global_test": {
+    "n_seeds_used": 3,
+    "auc_mean_std": [
+      0.9278595188703279,
+      0.027957490113525735
+    ],
+    "ap_mean_std": [
+      0.4609751131043141,
+      0.11932954582827353
+    ],
+    "f1_best_mean_std": [
+      0.5431235431235432,
+      0.0990241689162916
+    ]
+  },
+  "aggregate_bangladesh": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "global_test": {
+        "n_samples": 440,
+        "n_positive": 15,
+        "positive_rate": 0.034090910106897354,
+        "auc": 0.8973333333333333,
+        "ap": 0.509650940039956,
+        "brier": 0.07130920141935349,
+        "f1_at_0.5": 0.4583333333333333,
+        "f1_best": 0.5384615384615384,
+        "f1_best_threshold": 0.6599999999999999,
+        "confusion_at_best": {
+          "tn": 421,
+          "fp": 4,
+          "fn": 8,
+          "tp": 7
+        },
+        "auc_ci95": [
+          0.7806901960784314,
+          0.9818117647058823
+        ],
+        "ap_ci95": [
+          0.32760938215531477,
+          0.7608773365590242
+        ],
+        "f1_best_ci95": [
+          0.3926510989010989,
+          0.7696428571428573
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 224,
+        "n_positive": 0,
+        "positive_rate": 0.0,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.2089066505432129
+    },
+    {
+      "seed": 43,
+      "global_test": {
+        "n_samples": 440,
+        "n_positive": 14,
+        "positive_rate": 0.03181818127632141,
+        "auc": 0.921361502347418,
+        "ap": 0.5765740020348316,
+        "brier": 0.21173827350139618,
+        "f1_at_0.5": 0.35714285714285715,
+        "f1_best": 0.6666666666666666,
+        "f1_best_threshold": 0.5399999999999999,
+        "confusion_at_best": {
+          "tn": 420,
+          "fp": 6,
+          "fn": 4,
+          "tp": 10
+        },
+        "auc_ci95": [
+          0.8298792756539235,
+          0.9868691314553991
+        ],
+        "ap_ci95": [
+          0.36044185793655165,
+          0.8177398627211048
+        ],
+        "f1_best_ci95": [
+          0.46153846153846156,
+          0.8125578703703704
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 224,
+        "n_positive": 0,
+        "positive_rate": 0.0,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.053246259689331055
+    },
+    {
+      "seed": 44,
+      "global_test": {
+        "n_samples": 440,
+        "n_positive": 10,
+        "positive_rate": 0.022727273404598236,
+        "auc": 0.9648837209302324,
+        "ap": 0.29670039723815467,
+        "brier": 0.03690706938505173,
+        "f1_at_0.5": 0.3888888888888889,
+        "f1_best": 0.42424242424242425,
+        "f1_best_threshold": 0.5599999999999999,
+        "confusion_at_best": {
+          "tn": 414,
+          "fp": 16,
+          "fn": 3,
+          "tp": 7
+        },
+        "auc_ci95": [
+          0.9429883720930232,
+          0.9837441860465116
+        ],
+        "ap_ci95": [
+          0.19167190002267026,
+          0.5677792541699077
+        ],
+        "f1_best_ci95": [
+          0.3396066517428845,
+          0.6316985645933014
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 224,
+        "n_positive": 0,
+        "positive_rate": 0.0,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.11720037460327148
+    }
+  ]
+}

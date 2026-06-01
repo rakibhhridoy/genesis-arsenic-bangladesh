@@ -1,0 +1,22 @@
+{
+  "total_stations": 50,
+  "As": {
+    "NO_DATA": 50
+  },
+  "F": {
+    "NO_DATA": 50
+  },
+  "NO3": {
+    "STABLE_SAFE": 49,
+    "UNCERTAIN": 1
+  },
+  "Fe": {
+    "NO_DATA": 50
+  },
+  "Mn": {
+    "NO_DATA": 50
+  },
+  "U": {
+    "NO_DATA": 50
+  }
+}

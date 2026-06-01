@@ -1,0 +1,23 @@
+{
+  "total_stations": 4405,
+  "delta_t_years": 10.0,
+  "n_samples": 3,
+  "As_flip_to_unsafe": 7,
+  "As_stable_safe": 3202,
+  "As_stable_unsafe": 0,
+  "F_flip_to_unsafe": 0,
+  "F_stable_safe": 2491,
+  "F_stable_unsafe": 0,
+  "NO3_flip_to_unsafe": 0,
+  "NO3_stable_safe": 4229,
+  "NO3_stable_unsafe": 0,
+  "Fe_flip_to_unsafe": 2421,
+  "Fe_stable_safe": 723,
+  "Fe_stable_unsafe": 231,
+  "Mn_flip_to_unsafe": 2499,
+  "Mn_stable_safe": 847,
+  "Mn_stable_unsafe": 99,
+  "U_flip_to_unsafe": 0,
+  "U_stable_safe": 253,
+  "U_stable_unsafe": 0
+}

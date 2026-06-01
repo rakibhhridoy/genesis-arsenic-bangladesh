@@ -1,0 +1,170 @@
+{
+  "target": "As",
+  "threshold": 10.0,
+  "feature_names": [
+    "As",
+    "Fe",
+    "Mn",
+    "PO4",
+    "F",
+    "U",
+    "NO3",
+    "pH",
+    "Eh",
+    "EC",
+    "TDS",
+    "Ca",
+    "Mg",
+    "Na",
+    "K",
+    "Cl",
+    "HCO3",
+    "SO4",
+    "SiO2",
+    "DOC",
+    "lat",
+    "lon"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "coefficients_sorted_by_abs": [
+    {
+      "feature": "lon",
+      "coef_mean": 3.3612320070081587,
+      "coef_std": 0.06237645608959563,
+      "abs_coef_mean": 3.3612320070081587
+    },
+    {
+      "feature": "lat",
+      "coef_mean": -2.143121226092898,
+      "coef_std": 0.02787850544435541,
+      "abs_coef_mean": 2.143121226092898
+    },
+    {
+      "feature": "Cl",
+      "coef_mean": -0.976877795839374,
+      "coef_std": 0.21402124175202258,
+      "abs_coef_mean": 0.976877795839374
+    },
+    {
+      "feature": "SO4",
+      "coef_mean": -0.9583589530358368,
+      "coef_std": 0.14891898594839417,
+      "abs_coef_mean": 0.9583589530358368
+    },
+    {
+      "feature": "EC",
+      "coef_mean": 0.811899001911887,
+      "coef_std": 0.22289127514978258,
+      "abs_coef_mean": 0.811899001911887
+    },
+    {
+      "feature": "K",
+      "coef_mean": -0.5881784314674016,
+      "coef_std": 0.2368065240025607,
+      "abs_coef_mean": 0.5881784314674016
+    },
+    {
+      "feature": "HCO3",
+      "coef_mean": 0.42932460997391386,
+      "coef_std": 0.04516464743113201,
+      "abs_coef_mean": 0.42932460997391386
+    },
+    {
+      "feature": "Mn",
+      "coef_mean": -0.35468329283371536,
+      "coef_std": 0.08672211771340034,
+      "abs_coef_mean": 0.35468329283371536
+    },
+    {
+      "feature": "pH",
+      "coef_mean": 0.2724138560949618,
+      "coef_std": 0.1356029007119158,
+      "abs_coef_mean": 0.2724138560949618
+    },
+    {
+      "feature": "NO3",
+      "coef_mean": 0.27092828660714613,
+      "coef_std": 0.04270265789426914,
+      "abs_coef_mean": 0.27092828660714613
+    },
+    {
+      "feature": "Na",
+      "coef_mean": -0.2503114754621303,
+      "coef_std": 0.08700348127551584,
+      "abs_coef_mean": 0.2503114754621303
+    },
+    {
+      "feature": "As",
+      "coef_mean": 0.2439402446872493,
+      "coef_std": 0.026245348133888957,
+      "abs_coef_mean": 0.2439402446872493
+    },
+    {
+      "feature": "Mg",
+      "coef_mean": 0.22290841139032339,
+      "coef_std": 0.15246020718045367,
+      "abs_coef_mean": 0.22290841139032339
+    },
+    {
+      "feature": "TDS",
+      "coef_mean": 0.19414598494816213,
+      "coef_std": 0.1480842662240102,
+      "abs_coef_mean": 0.19414598494816213
+    },
+    {
+      "feature": "Ca",
+      "coef_mean": 0.1693581154894779,
+      "coef_std": 0.07775683320063852,
+      "abs_coef_mean": 0.1693581154894779
+    },
+    {
+      "feature": "F",
+      "coef_mean": -0.12813107983043703,
+      "coef_std": 0.018039304815539975,
+      "abs_coef_mean": 0.12813107983043703
+    },
+    {
+      "feature": "PO4",
+      "coef_mean": -0.11948512434491149,
+      "coef_std": 0.03560029504539152,
+      "abs_coef_mean": 0.11948512434491149
+    },
+    {
+      "feature": "SiO2",
+      "coef_mean": 0.08051453935089666,
+      "coef_std": 0.03534778929961361,
+      "abs_coef_mean": 0.08051453935089666
+    },
+    {
+      "feature": "Eh",
+      "coef_mean": 0.06546423983770105,
+      "coef_std": 0.0628558335603269,
+      "abs_coef_mean": 0.06546423983770105
+    },
+    {
+      "feature": "DOC",
+      "coef_mean": -0.04575139146441257,
+      "coef_std": 0.015143327280299483,
+      "abs_coef_mean": 0.04575139146441257
+    },
+    {
+      "feature": "Fe",
+      "coef_mean": -0.045374464584815456,
+      "coef_std": 0.04358635964815016,
+      "abs_coef_mean": 0.045374464584815456
+    },
+    {
+      "feature": "U",
+      "coef_mean": -0.0022108816193733036,
+      "coef_std": 0.0031266587709191163,
+      "abs_coef_mean": 0.0022108816193733036
+    }
+  ],
+  "intercept_mean": -5.4966816983393985,
+  "intercept_std": 0.08819396282879559,
+  "note": "Coefficients are on standardized features (median-imputed, StandardScaler). class_weight=balanced. Positive coef = higher feature value increases P(exceedance)."
+}

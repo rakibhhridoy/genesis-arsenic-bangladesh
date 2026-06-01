@@ -1,0 +1,259 @@
+================================================================================
+PAPER 5 v3 — OUTLINE (post-pivot, 2026-05-01)
+================================================================================
+
+OLD framing (v1, v2):
+  "GENESIS: a foundation model for groundwater chemistry"
+  Pitch: scaling-law for transformer pretraining on geochemistry.
+  Status: REJECTED by results — regression R² < 0 across both Small and
+  Base, on every parameter, both in-distribution and BD-transfer. Encoder
+  hurts transfer for As classification. Large never trained.
+
+NEW framing (v3 — the paper the data actually supports):
+  "When foundation models fail: pretraining a 9 M-parameter transformer
+   on 2 M global geochemistry samples does not improve Bangladesh
+   arsenic-risk classification over logistic regression"
+
+TARGET: Environmental Science & Technology (ES&T), Water Research,
+        or Nature Water. Negative-result-with-paired-baselines fit.
+        Backup: Communications Earth & Environment (Nature open-access,
+        explicitly welcomes well-controlled negative findings).
+
+================================================================================
+ONE-PARAGRAPH ABSTRACT (DRAFT)
+================================================================================
+Foundation-model methodology — large self-supervised pretraining followed
+by lightweight downstream adaptation — has driven recent progress in NLP,
+vision, and protein structure prediction, and has begun to be applied to
+environmental data. We test this paradigm on the policy-relevant problem
+of arsenic-risk classification in Bangladesh groundwater. We pretrain
+GENESIS, a Transformer encoder, on 2.09 million harmonized global
+groundwater chemistry vectors using Masked Geochemical Modeling, at two
+sizes (Small: 1.47 M parameters; Base: 9.00 M parameters). We then
+benchmark the encoder against XGBoost and L2-regularized logistic
+regression on the WHO 10 µg/L exceedance task, using a 224-pair
+held-out Bangladesh test set drawn from BWDB monitoring stations
+unseen during pretraining. Across every encoder configuration tested
+— frozen, end-to-end fine-tuned, randomly-initialized control, and
+linear probe — the pretrained Transformer fails to outperform
+logistic regression on BD-transfer AUC (LogReg: 0.720 ± 0.012;
+best Transformer condition: 0.704 ± 0.028; pretrained-encoder-frozen
+configurations: 0.559 ± 0.019, significantly worse with non-overlapping
+95 % confidence intervals). The Small encoder transfers better than
+the Base encoder, suggesting that pretraining-induced distributional
+bias compounds with capacity. We argue that the foundation-model
+paradigm, as currently practiced, is mismatched to the data scales,
+target structure, and severe regional distribution shift that
+characterize environmental-monitoring problems of public-health
+interest, and we offer paired-baseline guidelines for future
+neural-pretraining work in this space.
+
+================================================================================
+SECTION-BY-SECTION OUTLINE
+================================================================================
+
+1. INTRODUCTION
+   1.1 Bangladesh arsenic crisis: scale, history, monitoring gaps
+   1.2 The foundation-model promise (GPT, ESM, V-JEPA, climate FMs)
+   1.3 The implicit assumption: scale + transfer ≫ small-data ML
+   1.4 Our test: does it hold for groundwater contamination?
+   1.5 Contributions:
+       - First foundation-model evaluation on hydrogeochemistry transfer
+       - Negative result with airtight baselines (XGBoost, LogReg,
+         no-pretrain ablation, 2 encoder sizes, 2 transferable targets)
+       - Anti-scaling-on-transfer signal: smaller pretrained encoder
+         transfers better than larger
+       - Cautionary guidance for environmental-ML methodology
+
+2. RELATED WORK
+   2.1 Foundation models in scientific domains (ESM-2, AlphaFold, ClimaX,
+       Aurora, Pangu-Weather, Prithvi)
+   2.2 Groundwater modeling: process-based vs. ML
+   2.3 Arsenic prediction in Bangladesh (Podgorski 2020 BD MAR;
+       Mukherjee 2020; van Geen 2003)
+   2.4 What's missing: a controlled test of pretraining benefit on
+       small environmental transfer datasets
+
+3. DATA
+   3.1 Pretraining corpus (2.09 M vectors)
+       - GEMStat: global stations, ~50 yr coverage
+       - USGS NWIS: continental US
+       - ADES (France), EEA (Europe)
+       - Harmonization pipeline (curation_report.txt)
+   3.2 BD held-out (224 temporal pairs from BWDB stations,
+       Shamsuddha et al. 2022, never seen during pretraining)
+   3.3 Parameter coverage (Table 1)
+       - 20 chemistry parameters; 18 auxiliary features (GEE-extracted)
+       - BD held-out has As, Fe, Mn, PO4, NO3, pH, Eh, EC, TDS, Ca,
+         Mg, Na, K, Cl, HCO3, SO4 — but NO F, U, SiO2, DOC
+       - This is a real constraint on BD-transfer benchmarks
+   3.4 Temporal-pair construction (final_temporal_pairs.parquet)
+       - 3,527 global pairs with shared site, gap = 2-15 yr
+       - Wide format, NaN-tolerant
+       - Filter to non-NaN target at t1 → As: 1,874 pairs (4.3 % positive)
+
+4. METHODS
+   4.1 GENESIS encoder architecture
+       - Token sequence: [CLS] + chem + aux + metadata + WBT
+       - Variable-length, mask-aware
+       - Small: 4 layers, d=128, 4 heads (1.47 M params)
+       - Base:  8 layers, d=256, 8 heads (9.00 M params)
+   4.2 Masked Geochemical Modeling (MGM)
+       - 20 % chem-token masking, no aux/meta masking
+       - Per-parameter L2 regression head
+       - Stage 1: 100 ep on 2 M vectors
+       - Stage 2: 50 ep at higher mask ratio (0.25)
+   4.3 Downstream classification setup
+       - Binary label: y(t+1) > WHO threshold (As: 10 µg/L; F: 1.5 mg/L;
+         NO3: 50 mg/L; U: 30 µg/L)
+       - 70/15/15 train/val/test split on global pairs
+       - BD held-out: zero-shot transfer eval
+   4.4 Conditions (× 4 targets)
+       (i)   XGBoost, raw chem + lat/lon (22 features)
+       (ii)  L2 logistic regression, median-imputed + standardized
+       (iii) GENESIS frozen + 2-layer MLP head (16 K trainable)
+       (iv)  GENESIS unfrozen end-to-end (full param count)
+       (v)   Random-init "no-pretrain" control + MLP
+       (vi)  GENESIS frozen + linear probe (single Linear, 257 trainable)
+   4.5 Evaluation
+       - 3 seeds per (encoder size × condition × target) cell
+       - 200-iteration stratified bootstrap 95 % CIs on AUC, AP, F1_best
+       - "Significantly different" = non-overlapping 95 % CIs
+       - Cells with single-class train/test splits: skipped, reported as
+         data-availability constraint, not as failure of the model
+
+5. RESULTS
+   5.1 Headline: BD As-exceedance AUC (Table 2 / Figure 2)
+       Methods ranked best-to-worst by BD AUC:
+         LogReg               0.720 ± 0.012  (winner)
+         Base no-pretrain     0.704 ± 0.028
+         XGBoost              0.701 ± 0.033
+         Base unfrozen        0.690 ± 0.014
+         Base frozen LinProbe 0.571 ± 0.026  (LOSES to LogReg)
+         Base frozen MLP      0.559 ± 0.019  (LOSES to LogReg)
+   5.2 Anti-scaling on transfer (Figure 3)
+       Small frozen BD AUC > Base frozen BD AUC (with non-overlapping CIs
+       — confirm after Small sweep finishes)
+   5.3 In-distribution global test (Table 3)
+       All methods 0.87–0.97 AUC across all 4 targets — encoder isn't
+       broken, just doesn't transfer
+   5.4 NO3 secondary confirmation (Table 4)
+       Same pattern as As: LogReg ties or beats every neural condition
+   5.5 F and U: data-availability constraint
+       BWDB doesn't measure F or U, so transfer eval undefined.
+       Discuss as monitoring-infrastructure caveat
+   5.6 Calibration & deployability (Figure 4)
+       At F1_best threshold (~0.30), LogReg recalls 93 % of unsafe BD
+       wells with 42 % precision — a deployable risk-screening tool
+       achievable from raw chemistry without any neural pretraining
+
+6. WHY DID PRETRAINING HURT?
+   6.1 Distribution shift quantification (PCA / OT distance between
+       pretrain corpus and BD held-out)
+   6.2 Pretraining-induced specialization: encoder learns to reconstruct
+       global-chemistry distribution, locking in priors that hurt regional
+       transfer
+   6.3 Linear-additive structure of the As exceedance signal: examined
+       via LogReg coefficients (Fe, pH/Eh, HCO3 dominate — all in Smith &
+       Polizzotto's 2017 "predictable" subset)
+   6.4 Capacity / data-ratio: 9 M params, 1.3 K labeled training samples
+       → 7,000 params per labeled positive, severe over-parameterization
+   6.5 Why fine-tuning partly rescues but doesn't win (recover 0.56 → 0.69
+       BD AUC, never beats 0.72 LogReg): unfrozen optimizer can flatten
+       the harmful priors but not erase the inductive bias from MGM
+
+7. WHAT WOULD HAVE TO CHANGE FOR FOUNDATION MODELS TO HELP HERE?
+   7.1 Larger labeled BD set (currently n=224 transfer; would need ~10 K)
+   7.2 Region-aware pretraining (overweight S/SE Asia in MGM corpus)
+   7.3 Different self-supervision objective (causal time-series; not
+       static masking)
+   7.4 Targets where non-linear interactions matter more (As is dominated
+       by linear redox + carbonate proxies)
+
+8. CONCLUSION
+   8.1 We pretrained a 9 M-parameter transformer at the data scale most
+       environmental labs can afford (2 M vectors), and it was worse than
+       logistic regression on the policy-relevant task.
+   8.2 Smaller pretrained encoder transferred better — capacity hurt.
+   8.3 The cure is not "scale up." It's:
+       a) be honest about your transfer baseline;
+       b) use the simplest model that fits your data scale;
+       c) report negative results.
+   8.4 We release code, checkpoints, and the harmonization pipeline so
+       others can audit, reproduce, and refute.
+
+================================================================================
+FIGURES (PRIORITIZED)
+================================================================================
+
+Fig 1 — Pipeline diagram: pretrain corpus → encoder → classification
+        head, with paired baselines side-by-side
+Fig 2 — Headline: BD As AUC ± 95 % CI for all conditions, both encoder
+        sizes (forest plot)
+Fig 3 — Anti-scaling: BD AUC vs encoder param count (Small vs Base)
+Fig 4 — Calibration & confusion matrix at F1_best for the deployable
+        winner (LogReg)
+Fig 5 — Per-parameter regression failures (R² heatmap, all-negative)
+        — included as evidence that the regression task itself was
+        ill-posed, motivating the pivot to classification
+Fig 6 (supp) — Distribution shift: PCA of pretrain corpus vs BD held-out
+Fig 7 (supp) — Loss curves: in-distribution val_AUC climbs while BD AUC
+        declines (overfit-to-source signature) for frozen encoder runs
+
+================================================================================
+TABLES (PRIORITIZED)
+================================================================================
+
+Table 1 — Dataset summary (n samples per source, parameter coverage)
+Table 2 — Full per-target × per-condition results matrix (BD held-out)
+          mean ± std across 3 seeds, 95 % CIs from 200-iter bootstrap
+Table 3 — Same matrix, in-distribution global test
+Table 4 — Per-condition trainable parameters (puts the 16 K vs 9 M
+          contrast front-and-center)
+Table 5 (supp) — Per-seed JSON dumps, fully reproducible
+
+================================================================================
+TODO BEFORE SUBMISSION
+================================================================================
+
+[done] Pretrain Small + Base
+[done] Diffusion regression eval (Base) — established R² < 0 universally
+[done] Classification sweep, Base — 19/24 cells (skipping U-degenerate)
+[run]  Classification sweep, Small — running on M1 MPS, ~3 h
+[todo] Distribution-shift quantification (Fig 6)
+[todo] LogReg coefficient analysis (Sec 6.3)
+[todo] Calibration & confusion matrices (Fig 4)
+[todo] Methods writeup with reproducibility appendix
+[todo] Code release: GitHub + Zenodo DOI
+[todo] Author response anticipation: simulate the obvious reviewer
+       objections
+       - "Did you tune hyperparameters?" — show LR / mask-ratio /
+         epoch sweeps in supp
+       - "Did you try a larger model?" — yes, Base; smaller Small
+         transfers BETTER, so scaling up is contra-indicated
+       - "Did you try domain adaptation?" — out of scope; flag as
+         future work in Sec 7
+       - "Why these 4 targets?" — they're the WHO health-based
+         priorities; explain F/U coverage limitation (BWDB)
+
+================================================================================
+RISK REGISTER
+================================================================================
+
+R1. Reviewers may say "you didn't try [X technique] / [Y dataset]"
+    → Mitigation: show that LogReg already wins; the burden is on
+      foundation-model proponents to demonstrate gains, not us to
+      exhaust the ablation space
+R2. The Small sweep may not show the anti-scaling pattern cleanly
+    when full 3-seed numbers come in
+    → Mitigation: report what the data shows; if Small ≈ Base on
+      transfer, the "no-improvement-from-pretraining" story stands
+      alone; remove anti-scaling claim
+R3. ES&T may reject as "too computer-science"; CS venues may reject
+    as "too domain-specific"
+    → Target Comm Earth & Env or Nature Water — explicitly
+      cross-disciplinary; reviewer pool is balanced
+
+================================================================================
+END
+================================================================================

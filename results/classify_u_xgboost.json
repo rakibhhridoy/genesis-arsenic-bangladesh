@@ -1,0 +1,116 @@
+{
+  "target_param": "U",
+  "threshold": 30.0,
+  "tag": "xgboost",
+  "model": "xgboost",
+  "use_aux": true,
+  "feature_names": [
+    "As",
+    "Fe",
+    "Mn",
+    "PO4",
+    "F",
+    "U",
+    "NO3",
+    "pH",
+    "Eh",
+    "EC",
+    "TDS",
+    "Ca",
+    "Mg",
+    "Na",
+    "K",
+    "Cl",
+    "HCO3",
+    "SO4",
+    "SiO2",
+    "DOC",
+    "lat",
+    "lon"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate_global_test": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "aggregate_bangladesh": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "global_test": {
+        "n_samples": 50,
+        "n_positive": 0,
+        "positive_rate": 0.0,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.242110013961792
+    },
+    {
+      "seed": 43,
+      "global_test": {
+        "n_samples": 50,
+        "n_positive": 0,
+        "positive_rate": 0.0,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.007035255432128906
+    },
+    {
+      "seed": 44,
+      "global_test": {
+        "n_samples": 50,
+        "n_positive": 0,
+        "positive_rate": 0.0,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.0067615509033203125
+    }
+  ]
+}

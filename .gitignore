@@ -1,0 +1,37 @@
+# macOS junk
+.DS_Store
+._*
+**/.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Large data / model artifacts — released separately (see DATA.md), NOT in git
+data/
+checkpoints/
+runpod_backup/
+runpod_upload/
+*.pt
+*.duckdb
+*.tar.gz
+*.parquet
+*.csv
+
+# Logs
+logs/
+*.log
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+manuscript/*.pdf

@@ -1,0 +1,185 @@
+{
+  "target_param": "F",
+  "threshold": 1.5,
+  "tag": "xgboost",
+  "model": "xgboost",
+  "use_aux": true,
+  "feature_names": [
+    "As",
+    "Fe",
+    "Mn",
+    "PO4",
+    "F",
+    "U",
+    "NO3",
+    "pH",
+    "Eh",
+    "EC",
+    "TDS",
+    "Ca",
+    "Mg",
+    "Na",
+    "K",
+    "Cl",
+    "HCO3",
+    "SO4",
+    "SiO2",
+    "DOC",
+    "lat",
+    "lon"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate_global_test": {
+    "n_seeds_used": 3,
+    "auc_mean_std": [
+      0.9284515070914394,
+      0.014372437432651425
+    ],
+    "ap_mean_std": [
+      0.7727112638027687,
+      0.08509482060866953
+    ],
+    "f1_best_mean_std": [
+      0.7659846547314578,
+      0.062967908446867
+    ]
+  },
+  "aggregate_bangladesh": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 27,
+        "positive_rate": 0.14438502490520477,
+        "auc": 0.9259259259259259,
+        "ap": 0.7035910942620841,
+        "brier": 0.1451438069343567,
+        "f1_at_0.5": 0.6545454545454545,
+        "f1_best": 0.7058823529411765,
+        "f1_best_threshold": 0.5299999999999999,
+        "confusion_at_best": {
+          "tn": 154,
+          "fp": 6,
+          "fn": 9,
+          "tp": 18
+        },
+        "auc_ci95": [
+          0.8855150462962962,
+          0.9620630787037037
+        ],
+        "ap_ci95": [
+          0.5830089366619567,
+          0.8389777703712431
+        ],
+        "f1_best_ci95": [
+          0.5995833333333334,
+          0.8276512687052701
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.3781120777130127
+    },
+    {
+      "seed": 43,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 35,
+        "positive_rate": 0.1871657818555832,
+        "auc": 0.9471804511278196,
+        "ap": 0.8925854409824705,
+        "brier": 0.06903248280286789,
+        "f1_at_0.5": 0.7792207792207793,
+        "f1_best": 0.8529411764705882,
+        "f1_best_threshold": 0.69,
+        "confusion_at_best": {
+          "tn": 148,
+          "fp": 4,
+          "fn": 6,
+          "tp": 29
+        },
+        "auc_ci95": [
+          0.8834539473684211,
+          0.9906062030075188
+        ],
+        "ap_ci95": [
+          0.8056317023896817,
+          0.963353380028264
+        ],
+        "f1_best_ci95": [
+          0.7741369552914544,
+          0.9393939393939394
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.11344528198242188
+    },
+    {
+      "seed": 44,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 23,
+        "positive_rate": 0.12299465388059616,
+        "auc": 0.9122481442205727,
+        "ap": 0.7219572561637514,
+        "brier": 0.11029457300901413,
+        "f1_at_0.5": 0.6415094339622641,
+        "f1_best": 0.7391304347826086,
+        "f1_best_threshold": 0.59,
+        "confusion_at_best": {
+          "tn": 158,
+          "fp": 6,
+          "fn": 6,
+          "tp": 17
+        },
+        "auc_ci95": [
+          0.8391569459172852,
+          0.9730381760339342
+        ],
+        "ap_ci95": [
+          0.5479054764204997,
+          0.9000835297696764
+        ],
+        "f1_best_ci95": [
+          0.6184650455927052,
+          0.880093023255814
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "elapsed_sec": 0.07268452644348145
+    }
+  ]
+}

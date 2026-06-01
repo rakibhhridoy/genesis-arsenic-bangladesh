@@ -1,0 +1,118 @@
+{
+  "bangladesh_transfer": {
+    "As": {
+      "mae": 17.301620483398438,
+      "rmse": 34.71841812133789,
+      "coverage_90": null,
+      "n_samples": 218,
+      "n_train": 1221
+    },
+    "Fe": {
+      "mae": 3.277529716491699,
+      "rmse": 6.289053916931152,
+      "coverage_90": null,
+      "n_samples": 222,
+      "n_train": 1432
+    },
+    "Mn": {
+      "mae": 0.6660122275352478,
+      "rmse": 1.1939855813980103,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 1425
+    },
+    "PO4": {
+      "mae": 1.5802043676376343,
+      "rmse": 3.3002142906188965,
+      "coverage_90": null,
+      "n_samples": 222,
+      "n_train": 1508
+    },
+    "NO3": {
+      "mae": 7.825016498565674,
+      "rmse": 15.670547485351562,
+      "coverage_90": null,
+      "n_samples": 220,
+      "n_train": 2641
+    },
+    "pH": {
+      "mae": 0.4285733699798584,
+      "rmse": 0.538692831993103,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 2108
+    },
+    "EC": {
+      "mae": 3079.130615234375,
+      "rmse": 5167.42626953125,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 2396
+    },
+    "TDS": {
+      "mae": 1888.58251953125,
+      "rmse": 3612.46630859375,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 1066
+    },
+    "Ca": {
+      "mae": 102.0736083984375,
+      "rmse": 151.33538818359375,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 1477
+    },
+    "Mg": {
+      "mae": 41.65684127807617,
+      "rmse": 68.16524505615234,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 1474
+    },
+    "Na": {
+      "mae": 755.0975341796875,
+      "rmse": 1196.9793701171875,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 1186
+    },
+    "K": {
+      "mae": 14.174558639526367,
+      "rmse": 28.412702560424805,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 1305
+    },
+    "Cl": {
+      "mae": 1182.373291015625,
+      "rmse": 2135.412353515625,
+      "coverage_90": null,
+      "n_samples": 223,
+      "n_train": 2270
+    },
+    "HCO3": {
+      "mae": 133.23155212402344,
+      "rmse": 176.8948211669922,
+      "coverage_90": null,
+      "n_samples": 222,
+      "n_train": 1361
+    },
+    "SO4": {
+      "mae": 307.800048828125,
+      "rmse": 523.0020141601562,
+      "coverage_90": null,
+      "n_samples": 222,
+      "n_train": 938
+    }
+  },
+  "in_distribution": {},
+  "config": {
+    "model": "XGBoost per-param",
+    "features": "chem_t0 + gap + aux(nearest) + kNN chem mean/median/std (log1p)",
+    "k": 30,
+    "xgb_rounds": 200,
+    "n_train_rows": 2822,
+    "n_bd_rows": 224
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "logreg_chemonly_bd_auc_mean": 0.693661100803958,
+  "logreg_chemonly_bd_auc_std": 0.008620046645774844,
+  "configs": [
+    {
+      "config": "baseline",
+      "description": "mask 0.20, lr 1e-4",
+      "bd_auc_mean": 0.6669758812615956,
+      "bd_auc_std": 0.020633489322253333,
+      "global_auc_mean": 0.9606502756502757,
+      "global_auc_std": 0.006883730883955052,
+      "beats_logreg": false,
+      "overlaps_logreg": true
+    },
+    {
+      "config": "low_mask",
+      "description": "mask 0.10",
+      "bd_auc_mean": 0.6869511440940013,
+      "bd_auc_std": 0.004398462131379975,
+      "global_auc_mean": 0.9627135283017637,
+      "global_auc_std": 0.01323747951125834,
+      "beats_logreg": false,
+      "overlaps_logreg": true
+    },
+    {
+      "config": "high_mask",
+      "description": "mask 0.30",
+      "bd_auc_mean": 0.6742424242424243,
+      "bd_auc_std": 0.008077902098023053,
+      "global_auc_mean": 0.9608491726138785,
+      "global_auc_std": 0.005609870537850912,
+      "beats_logreg": false,
+      "overlaps_logreg": false
+    },
+    {
+      "config": "high_lr",
+      "description": "lr 5e-4",
+      "bd_auc_mean": 0.7319727891156463,
+      "bd_auc_std": 0.011767149120245336,
+      "global_auc_mean": 0.9636654195477724,
+      "global_auc_std": 0.008106861975914292,
+      "beats_logreg": true,
+      "overlaps_logreg": false
+    }
+  ]
+}

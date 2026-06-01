@@ -1,0 +1,479 @@
+{
+  "target_param": "F",
+  "threshold": 1.5,
+  "tag": "large_mlp_nopretrain",
+  "encoder_size": "large",
+  "encoder_ckpt": null,
+  "no_pretrain": true,
+  "unfreeze_encoder": false,
+  "linear_probe": false,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate_global_test": {
+    "n_seeds_used": 3,
+    "auc_mean_std": [
+      0.850512057015031,
+      0.047183102492956625
+    ],
+    "ap_mean_std": [
+      0.6315428555583181,
+      0.0631864387890975
+    ],
+    "f1_best_mean_std": [
+      0.6661057543989545,
+      0.07015482549717617
+    ]
+  },
+  "aggregate_bangladesh": {
+    "n_seeds_used": 0,
+    "auc_mean_std": [
+      NaN,
+      NaN
+    ],
+    "ap_mean_std": [
+      NaN,
+      NaN
+    ],
+    "f1_best_mean_std": [
+      NaN,
+      NaN
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "best_val_auc": 0.8734491315136477,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 34,
+        "positive_rate": 0.1818181872367859,
+        "auc": 0.9127258746635909,
+        "ap": 0.704414526812642,
+        "brier": 0.18160992860794067,
+        "f1_at_0.5": 0.7352941176470589,
+        "f1_best": 0.7605633802816901,
+        "f1_best_threshold": 0.41999999999999993,
+        "confusion_at_best": {
+          "tn": 143,
+          "fp": 10,
+          "fn": 7,
+          "tp": 27
+        },
+        "auc_ci95": [
+          0.8462754709727027,
+          0.9615820838139176
+        ],
+        "ap_ci95": [
+          0.5891847758127824,
+          0.8848425419445837
+        ],
+        "f1_best_ci95": [
+          0.65852053915276,
+          0.8530462184873949
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.3202332513672965,
+          "val_auc": 0.7973531844499586,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.1505552338702338,
+          "val_auc": 0.7977667493796526,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.1215951719454356,
+          "val_auc": 0.8455334987593053,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.9579487411039216,
+          "val_auc": 0.8538047973531845,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 5,
+          "train_loss": 1.017877527645656,
+          "val_auc": 0.8728287841191067,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 6,
+          "train_loss": 1.0019087003810065,
+          "val_auc": 0.8734491315136477,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 7,
+          "train_loss": 1.0138849020004272,
+          "val_auc": 0.8494623655913979,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 8,
+          "train_loss": 1.0332670978137426,
+          "val_auc": 0.521505376344086,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 9,
+          "train_loss": 1.1717241959912437,
+          "val_auc": 0.6046319272125723,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 10,
+          "train_loss": 1.1587742694786616,
+          "val_auc": 0.6672870140612077,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 11,
+          "train_loss": 1.1655544489622116,
+          "val_auc": 0.7001654259718776,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 12,
+          "train_loss": 1.161142743059567,
+          "val_auc": 0.7152605459057072,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 13,
+          "train_loss": 1.162336426121848,
+          "val_auc": 0.7328370554177005,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 14,
+          "train_loss": 1.1624390823500497,
+          "val_auc": 0.7260132340777502,
+          "bd_auc": NaN
+        }
+      ],
+      "elapsed_sec": 60.48676109313965,
+      "n_train_params": 48445589,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": true
+    },
+    {
+      "seed": 43,
+      "best_val_auc": 0.9183006535947712,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 28,
+        "positive_rate": 0.14973261952400208,
+        "auc": 0.8402964959568733,
+        "ap": 0.6398962900382237,
+        "brier": 0.1244015321135521,
+        "f1_at_0.5": 0.5753424657534246,
+        "f1_best": 0.6451612903225806,
+        "f1_best_threshold": 0.59,
+        "confusion_at_best": {
+          "tn": 145,
+          "fp": 14,
+          "fn": 8,
+          "tp": 20
+        },
+        "auc_ci95": [
+          0.730901841868823,
+          0.908922955974843
+        ],
+        "ap_ci95": [
+          0.48274790943211565,
+          0.7754914162308447
+        ],
+        "f1_best_ci95": [
+          0.5168103448275863,
+          0.7586206896551724
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.2255662339074271,
+          "val_auc": 0.8350634371395617,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.109162620135716,
+          "val_auc": 0.8638985005767013,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.0362957396677561,
+          "val_auc": 0.8246828143021915,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 4,
+          "train_loss": 1.0232784386192049,
+          "val_auc": 0.8642829680891964,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8884743005037308,
+          "val_auc": 0.9108035371011148,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.9668873910393033,
+          "val_auc": 0.9183006535947712,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.863518991640636,
+          "val_auc": 0.9061899269511725,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8566377652542931,
+          "val_auc": 0.917916186082276,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8787865159767014,
+          "val_auc": 0.9092656670511341,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.856233496751104,
+          "val_auc": 0.8919646289888504,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.9086860439607075,
+          "val_auc": 0.8523644752018454,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.8415631875395775,
+          "val_auc": 0.8740868896578239,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.823016708450658,
+          "val_auc": 0.89119569396386,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.7806447701794761,
+          "val_auc": 0.904075355632449,
+          "bd_auc": NaN
+        }
+      ],
+      "elapsed_sec": 59.58892512321472,
+      "n_train_params": 48445589,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": true
+    },
+    {
+      "seed": 44,
+      "best_val_auc": 0.8207398661944116,
+      "global_test": {
+        "n_samples": 187,
+        "n_positive": 30,
+        "positive_rate": 0.16042780876159668,
+        "auc": 0.7985138004246285,
+        "ap": 0.5503177498240887,
+        "brier": 0.169229656457901,
+        "f1_at_0.5": 0.5818181818181818,
+        "f1_best": 0.5925925925925926,
+        "f1_best_threshold": 0.63,
+        "confusion_at_best": {
+          "tn": 149,
+          "fp": 8,
+          "fn": 14,
+          "tp": 16
+        },
+        "auc_ci95": [
+          0.6901910828025477,
+          0.8944851380042462
+        ],
+        "ap_ci95": [
+          0.3931785518402018,
+          0.7056931366194488
+        ],
+        "f1_best_ci95": [
+          0.44397163120567373,
+          0.7216997411561692
+        ]
+      },
+      "bangladesh_transfer": {
+        "n_samples": 0,
+        "n_positive": 0,
+        "positive_rate": NaN,
+        "note": "single-class split \u2014 AUC undefined"
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.25063676067761,
+          "val_auc": 0.6721763085399448,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.155722792659487,
+          "val_auc": 0.7558048012593467,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.1597462509359633,
+          "val_auc": 0.7651515151515151,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 4,
+          "train_loss": 1.1589867174625397,
+          "val_auc": 0.7751869342778434,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 5,
+          "train_loss": 1.15891218824046,
+          "val_auc": 0.7758756395120032,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 6,
+          "train_loss": 1.149532213807106,
+          "val_auc": 0.7577725304998032,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 7,
+          "train_loss": 1.231987293277468,
+          "val_auc": 0.7843368752459661,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 8,
+          "train_loss": 1.0675203502178192,
+          "val_auc": 0.8181818181818182,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 9,
+          "train_loss": 1.0508218279906683,
+          "val_auc": 0.7898465171192444,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 10,
+          "train_loss": 1.0128641479781695,
+          "val_auc": 0.7565918929555293,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.9821784379226821,
+          "val_auc": 0.7876820149547423,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.905331725520747,
+          "val_auc": 0.7839433293978747,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.8867290914058685,
+          "val_auc": 0.8207398661944116,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 14,
+          "train_loss": 1.0806349483983857,
+          "val_auc": 0.7579693034238489,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 15,
+          "train_loss": 1.051948830485344,
+          "val_auc": 0.7979142070051162,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 16,
+          "train_loss": 1.0081940101725715,
+          "val_auc": 0.7491145218417946,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.9560602349894387,
+          "val_auc": 0.7292404565131837,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.9380755743810109,
+          "val_auc": 0.735340417158599,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 19,
+          "train_loss": 1.0294208824634552,
+          "val_auc": 0.7357339630066903,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.9102441072463989,
+          "val_auc": 0.764659582841401,
+          "bd_auc": NaN
+        },
+        {
+          "epoch": 21,
+          "train_loss": 0.9557110731090818,
+          "val_auc": 0.7884691066509248,
+          "bd_auc": NaN
+        }
+      ],
+      "elapsed_sec": 78.01398587226868,
+      "n_train_params": 48445589,
+      "frozen_encoder": false,
+      "linear_probe": false,
+      "no_pretrain": true
+    }
+  ]
+}
