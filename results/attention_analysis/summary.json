@@ -1,12 +1,12 @@
 {
-  "model_size": "small",
-  "n_samples": 128,
-  "n_layers": 4,
-  "n_heads": 4,
-  "attention_mean_offdiag": 0.06596908952239242,
-  "attention_median_offdiag": 0.05892771099597832,
-  "attention_std_offdiag": 0.04705286198749316,
-  "n_known_recovered": 0,
+  "model_size": "base",
+  "n_samples": 5000,
+  "n_layers": 8,
+  "n_heads": 8,
+  "attention_mean_offdiag": 0.029532675430636885,
+  "attention_median_offdiag": 0.0282921842550636,
+  "attention_std_offdiag": 0.007110584595940048,
+  "n_known_recovered": 3,
   "n_known_total": 13,
-  "top_coupling": "TDS-DOC"
+  "top_coupling": "Ca-HCO3"
 }
