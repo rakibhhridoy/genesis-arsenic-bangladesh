@@ -56,9 +56,21 @@ function drawArchitecture(svg, d3) {
     svg.append("line").attr("x1", x).attr("y1", yTop).attr("x2", x).attr("y2", yBot)
       .attr("stroke", C.arrow).attr("stroke-width", 1.6).attr("marker-end", "url(#arr)");
   }
-  function curve(d, { dash = false } = {}) {
+  function elbow(pts, r = 12, { dash = false } = {}) {
+    // orthogonal polyline through waypoints with smoothly rounded corners
+    let d = `M ${pts[0].x} ${pts[0].y}`;
+    for (let i = 1; i < pts.length - 1; i++) {
+      const p0 = pts[i - 1], p = pts[i], p1 = pts[i + 1];
+      const l0 = Math.hypot(p.x - p0.x, p.y - p0.y), l1 = Math.hypot(p1.x - p.x, p1.y - p.y);
+      const rr = Math.min(r, l0 / 2, l1 / 2);
+      const a = { x: p.x - (p.x - p0.x) / l0 * rr, y: p.y - (p.y - p0.y) / l0 * rr };
+      const b = { x: p.x + (p1.x - p.x) / l1 * rr, y: p.y + (p1.y - p.y) / l1 * rr };
+      d += ` L ${a.x} ${a.y} Q ${p.x} ${p.y} ${b.x} ${b.y}`;
+    }
+    const last = pts[pts.length - 1];
+    d += ` L ${last.x} ${last.y}`;
     const p = svg.append("path").attr("fill", "none").attr("stroke", C.arrow)
-      .attr("stroke-width", 1.5).attr("d", d).attr("marker-end", "url(#arr)");
+      .attr("stroke-width", 1.6).attr("d", d).attr("marker-end", "url(#arr)");
     if (dash) p.attr("stroke-dasharray", "4 3");
     return p;
   }
@@ -113,7 +125,7 @@ function drawArchitecture(svg, d3) {
   label((auxStart + auxEnd) / 2, 278, "auxiliary (satellite) tokens", { size: 11.5, fill: C.auxTxt, weight: "700" });
   label(cx, 302, "each token = type embedding + per-parameter value projection",
     { size: 11.5, fill: C.muted, italic: true });
-  vArrow(cx, 320, 356);
+  vArrow(cx, 320, 384);
 
   // ===================== ENCODER BLOCK (N×, AIAYN style) =====================
   stage(496, "Encoder (N×)");
@@ -135,8 +147,8 @@ function drawArchitecture(svg, d3) {
   vArrow(cx, 544, 556);   // FFN -> Add&Norm
   // curved residual connections (right side, downward bypass)
   const rx = slX + slW + 40;
-  curve(`M ${cx} 396 C ${rx} 396, ${rx} 468, ${slX + slW} 468`, { dash: true }); // around MHA into Add&Norm
-  curve(`M ${cx} 508 C ${rx} 508, ${rx} 572, ${slX + slW} 572`, { dash: true }); // around FFN into Add&Norm
+  elbow([{ x: cx, y: 372 }, { x: rx, y: 372 }, { x: rx, y: 468 }, { x: slX + slW, y: 468 }], 12, { dash: true }); // around MHA
+  elbow([{ x: cx, y: 490 }, { x: rx, y: 490 }, { x: rx, y: 572 }, { x: slX + slW, y: 572 }], 12, { dash: true }); // around FFN
 
   // ===================== [CLS] POOLING =====================
   stage(698, "Pool");
@@ -145,8 +157,8 @@ function drawArchitecture(svg, d3) {
 
   // ===================== HEADS (bottom, two curved branches) =====================
   stage(833, "Heads");
-  curve(`M ${cx} 724 C ${cx} 760, ${cx - 170} 752, ${cx - 170} 792`); // to MGM head
-  curve(`M ${cx} 724 C ${cx} 760, ${cx + 170} 752, ${cx + 170} 792`); // to classifier head
+  elbow([{ x: cx, y: 724 }, { x: cx, y: 760 }, { x: cx - 170, y: 760 }, { x: cx - 170, y: 792 }], 12); // to MGM head
+  elbow([{ x: cx, y: 724 }, { x: cx, y: 760 }, { x: cx + 170, y: 760 }, { x: cx + 170, y: 792 }], 12); // to classifier head
   boxL(cx - 290, 792, 240, 82, C.mgm, ["MGM Reconstruction Head", "(masked value prediction)"],
     { size: 13.5, weight: "700", fill: "#3B2415" });
   boxL(cx + 50, 792, 240, 82, C.clf, ["Classifier Head (MLP)", "WHO-threshold exceedance"],
