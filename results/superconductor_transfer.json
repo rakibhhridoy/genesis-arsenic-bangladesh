@@ -1,0 +1,103 @@
+{
+  "engineered_features": [
+    {
+      "held_out_n_elements": 2,
+      "n_test": 3280,
+      "pos_rate": 0.02926829268292683,
+      "auc_base": 0.9291624136306533,
+      "auc_enc": 0.9286618640075377,
+      "advantage": -0.0005005496231156314,
+      "energy_dist": 10.313085355655929
+    },
+    {
+      "held_out_n_elements": 3,
+      "n_test": 3895,
+      "pos_rate": 0.10346598202824134,
+      "auc_base": 0.959232943644317,
+      "auc_enc": 0.9475174024143096,
+      "advantage": -0.011715541230007398,
+      "energy_dist": 3.7575384148223705
+    },
+    {
+      "held_out_n_elements": 4,
+      "n_test": 4496,
+      "pos_rate": 0.5636120996441281,
+      "auc_base": 0.9087383048240162,
+      "auc_enc": 0.9132763830860542,
+      "advantage": 0.004538078262038003,
+      "energy_dist": 0.7856035056282309
+    },
+    {
+      "held_out_n_elements": 5,
+      "n_test": 5792,
+      "pos_rate": 0.7541436464088398,
+      "auc_base": 0.8889382723432934,
+      "auc_enc": 0.8793566496120919,
+      "advantage": -0.009581622731201445,
+      "energy_dist": 2.848198207376546
+    },
+    {
+      "held_out_n_elements": 6,
+      "n_test": 2666,
+      "pos_rate": 0.8762190547636909,
+      "auc_base": 0.8101468451639684,
+      "auc_enc": 0.8170026463262765,
+      "advantage": 0.006855801162308106,
+      "energy_dist": 4.0782884753550785
+    },
+    {
+      "held_out_n_elements": 7,
+      "n_test": 774,
+      "pos_rate": 0.9431524547803618,
+      "auc_base": 0.8320828144458282,
+      "auc_enc": 0.8380915317559152,
+      "advantage": 0.006008717310087008,
+      "energy_dist": 5.4792302730003275
+    }
+  ],
+  "raw_fractions": [
+    {
+      "held_out_n_elements": 2,
+      "n_test": 3280,
+      "auc_base": 0.8926746362018425,
+      "auc_enc": 0.7834763007747069,
+      "advantage": -0.10919833542713564
+    },
+    {
+      "held_out_n_elements": 3,
+      "n_test": 3895,
+      "auc_base": 0.951849530582487,
+      "auc_enc": 0.9450694106912929,
+      "advantage": -0.006780119891194092
+    },
+    {
+      "held_out_n_elements": 4,
+      "n_test": 4496,
+      "auc_base": 0.8929210042102231,
+      "auc_enc": 0.8847566067838256,
+      "advantage": -0.008164397426397518
+    },
+    {
+      "held_out_n_elements": 5,
+      "n_test": 5792,
+      "auc_base": 0.8729730811674281,
+      "auc_enc": 0.8699333861947978,
+      "advantage": -0.003039694972630347
+    },
+    {
+      "held_out_n_elements": 6,
+      "n_test": 2666,
+      "auc_base": 0.7937772415940225,
+      "auc_enc": 0.8050254254877541,
+      "advantage": 0.011248183893731611
+    },
+    {
+      "held_out_n_elements": 7,
+      "n_test": 774,
+      "auc_base": 0.6677303860523038,
+      "auc_enc": 0.6765722291407222,
+      "advantage": 0.0088418430884184
+    }
+  ],
+  "note": "Robustness check, NOT in manuscript. Encoder never beats logistic regression in either representation; confirms the negative pole of the law, does not reproduce the uranium pole."
+}
