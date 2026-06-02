@@ -4,18 +4,35 @@ Large artifacts (harmonized data tensors, encoder checkpoints, raw sources) are
 **not stored in git** because of size. They are released separately.
 
 > **Zenodo / archive DOI:** _TODO — add the DOI/URL once the artifact archive is uploaded._
+> Archive file: `zenodo_genesis_arsenic_bangladesh_v2.zip` (~540 MB compressed).
 
-## What's in the separate release
+## What's in the separate release (v2)
 
-| Artifact | Approx. size | Needed for |
+The release is **license-clean and derived-data-only**: it contains the harmonized
+tensors and the encoders/results needed to reproduce every number in the
+manuscript, but **no raw GEMStat** and **no `genesis.duckdb`** (the DB contains
+raw GEMStat rows that cannot be redistributed).
+
+| Artifact | Approx. size | Reproduces |
 |---|---|---|
-| `data/processed/` (harmonized tensors: `genesis_pretrain*.pt`, `genesis_held_out_bd*.pt`, parquet vectors) | ~565 MB | Pretraining + classification |
-| `checkpoints/{small,base,large}_stage{1,2}/best.pt` | ~17 MB – 553 MB each | Classification from a fixed encoder |
-| Raw source dumps (`data/GEMStat`, `data/Podgorski`, `data/raw/*`) | ~3.2 GB | Re-running curation from scratch |
+| `data/processed/` — harmonized tensors (`genesis_pretrain*.pt`, `genesis_temporal_pairs*.{pt,parquet}`, `genesis_held_out_bd*.pt`, `normalization_stats.json`) | ~565 MB | distribution shift, LORO, reconstruction/attention probes |
+| `checkpoints/small_stage2/best.pt`, `checkpoints/base_stage2/best.pt` | 17 MB, 103 MB | attention, reconstruction, aux-reliance, layer-wise, encoder-LORO (Small/Base) |
+| `checkpoints/classify_as*` (per-seed heads) | ~0.5 GB | headline BD-As classification table |
+| `results/` — all per-seed JSONs incl. `region_transfer*.json`, `reconstruction_probe.json`, `aux_reliance.json`, `layerwise_decodability.json`, `dist_shift.json`, `calibration_*` | ~30 MB | every figure and reported number |
 
-To reproduce the headline numbers you only need `data/processed/` and the relevant
-`checkpoints/`. Place them at the repository root so the `Path(__file__).parent.parent`
-references in `src/` resolve.
+**Not in the release** (reproducible only with provider access or the pod):
+- Large Stage-1 encoder (552 MB) — pull from the training pod; only needed to
+  re-derive the Large column of the attention / encoder-LORO results (the
+  shipped `results/*_large.json` already contain those numbers).
+- `genesis.duckdb` and raw source dumps — excluded for license/size (see below).
+  Exploration scripts `src/20`, `src/21` read the DB and therefore will not run
+  from the release; they are not needed for any manuscript number.
+
+To reproduce the manuscript numbers, unzip at the repository root so the
+`Path(__file__).parent.parent` references in `src/` resolve, then
+`pip install -r requirements.txt` and run the scripts in README order. The LORO
+benchmark (`src/18`, `src/19`) and all probes read only `data/processed/` tensors
+— no database required.
 
 ## Raw data provenance & access constraints
 

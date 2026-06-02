@@ -22,7 +22,6 @@ import json
 import numpy as np
 import pandas as pd
 import torch
-import duckdb
 from pathlib import Path
 from sklearn.linear_model import LogisticRegression
 from sklearn.impute import SimpleImputer
@@ -34,26 +33,34 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from model.genesis_encoder import GENESIS_PARAMS
 
-# Clean sources: the remediated DB table (correct Eh/Cl/TDS/U) + the clean BD
-# held-out pairs. We deliberately do NOT use
-# final_temporal_pairs_enriched_global.parquet, which is a pre-remediation
-# artifact with France Eh = temperature and U inflated 1000x (see src/17).
-DB = Path("data/genesis.duckdb")
+# Clean, license-safe sources: the released processed tensors
+# (genesis_temporal_pairs.pt + _meta.parquet, row-aligned) + the clean BD
+# held-out pairs. We deliberately do NOT use genesis.duckdb (it contains raw
+# GEMStat rows that cannot be redistributed) nor
+# final_temporal_pairs_enriched_global.parquet (a pre-remediation artifact with
+# France Eh = temperature and U inflated 1000x; see src/17). These derived
+# tensors carry the correct remediated Eh/Cl/TDS/U values.
+PAIRS_PT = Path("data/processed/genesis_temporal_pairs.pt")
+PAIRS_META = Path("data/processed/genesis_temporal_pairs_meta.parquet")
 BD_PT = Path("data/processed/genesis_held_out_bd_pairs.pt")
 OUT = Path("results/region_transfer.json")
 
 
 def load_clean_pairs():
-    cols = ["source", "country"] + \
-        [f"{p}_t0" for p in GENESIS_PARAMS] + [f"{p}_t1" for p in GENESIS_PARAMS]
-    con = duckdb.connect(str(DB), read_only=True)
-    g = con.execute(f"SELECT {', '.join(cols)} FROM genesis_temporal_pairs").df()
-    con.close()
+    gp = torch.load(PAIRS_PT, map_location="cpu", weights_only=False)
+    gm = pd.read_parquet(PAIRS_META)
+    t0, t1 = gp["t0"].numpy(), gp["t1"].numpy()
+    g = {f"{p}_t0": t0[:, i] for i, p in enumerate(GENESIS_PARAMS)}
+    g.update({f"{p}_t1": t1[:, i] for i, p in enumerate(GENESIS_PARAMS)})
+    g = pd.DataFrame(g)
+    g["source"] = gm["source"].values
+    g["country"] = gm["country"].values
+
     b = torch.load(BD_PT, map_location="cpu", weights_only=False)
     params = list(b["params"])
-    t0 = b["t0"].numpy(); t1 = b["t1"].numpy()
-    bd = {f"{p}_t0": t0[:, i] for i, p in enumerate(params)}
-    bd.update({f"{p}_t1": t1[:, i] for i, p in enumerate(params)})
+    bt0, bt1 = b["t0"].numpy(), b["t1"].numpy()
+    bd = {f"{p}_t0": bt0[:, i] for i, p in enumerate(params)}
+    bd.update({f"{p}_t1": bt1[:, i] for i, p in enumerate(params)})
     bd = pd.DataFrame(bd)
     bd["source"] = "bangladesh"; bd["country"] = "Bangladesh"
     return pd.concat([g, bd], ignore_index=True)
