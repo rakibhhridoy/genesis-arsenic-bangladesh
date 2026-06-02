@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GENESIS architecture</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<style>
+  body { margin: 0; background: #fafbfc; font-family: Helvetica, Arial, sans-serif; }
+  header { padding: 14px 20px; border-bottom: 1px solid #e1e6ea; display: flex; gap: 12px; align-items: center; }
+  h1 { font-size: 15px; margin: 0; color: #283747; font-weight: 700; }
+  button { font-size: 13px; padding: 6px 12px; border: 1px solid #b8c4cc; background: #fff; border-radius: 6px; cursor: pointer; }
+  button:hover { background: #eef2f4; }
+  #wrap { display: flex; justify-content: center; padding: 24px; }
+  svg { width: min(1060px, 96vw); height: auto; background: #fff; border: 1px solid #e1e6ea; border-radius: 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>GENESIS architecture</h1>
+  <button id="dl">Download SVG</button>
+</header>
+<div id="wrap"><svg id="fig"></svg></div>
+<script src="architecture.js"></script>
+<script>
+  const svg = d3.select("#fig");
+  drawArchitecture(svg, d3);
+  document.getElementById("dl").onclick = () => {
+    const s = new XMLSerializer().serializeToString(document.getElementById("fig"));
+    const blob = new Blob(['<?xml version="1.0" encoding="UTF-8"?>\n' + s], { type: "image/svg+xml" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = "architecture.svg"; a.click();
+  };
+</script>
+</body>
+</html>

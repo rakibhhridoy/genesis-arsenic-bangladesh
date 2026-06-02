@@ -35,3 +35,5 @@ logs/
 *.fdb_latexmk
 *.fls
 manuscript/*.pdf
+figures/architecture_d3/node_modules/
+figures/architecture_d3/package*.json
