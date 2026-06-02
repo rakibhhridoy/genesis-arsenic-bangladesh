@@ -1,0 +1,30 @@
+{
+  "As": {
+    "with": 0.671,
+    "without": 0.208
+  },
+  "Eh": {
+    "with": 0.538,
+    "without": -0.47
+  },
+  "Fe": {
+    "with": 0.731,
+    "without": 0.49
+  },
+  "U": {
+    "with": 0.637,
+    "without": 0.227
+  },
+  "NO3": {
+    "with": 0.796,
+    "without": 0.399
+  },
+  "Ca": {
+    "with": 0.946,
+    "without": 0.894
+  },
+  "Cl": {
+    "with": 0.924,
+    "without": 0.766
+  }
+}
