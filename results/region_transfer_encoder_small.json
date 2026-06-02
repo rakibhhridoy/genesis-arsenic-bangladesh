@@ -1,0 +1,852 @@
+{
+  "encoder_size": "small",
+  "ckpt": "runpod_backup/checkpoints/small_stage2/best.pt",
+  "results": [
+    {
+      "target": "As",
+      "held_out_region": "France",
+      "n_test": 23226,
+      "n_pos": 695,
+      "encoder_auc": 0.7314769448893272,
+      "encoder_ci95": [
+        0.7141662582922621,
+        0.7510614780472982
+      ],
+      "chem_auc": 0.8067261690087559,
+      "chem_ci95": [
+        0.789362780841977,
+        0.825892383907157
+      ],
+      "encoder_minus_chem": -0.07524922411942869,
+      "encoder_beats": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "USA",
+      "n_test": 6290,
+      "n_pos": 782,
+      "encoder_auc": 0.7593864012503855,
+      "encoder_ci95": [
+        0.7403118744344626,
+        0.7769743681615399
+      ],
+      "chem_auc": 0.8013726084072696,
+      "chem_ci95": [
+        0.7856728429711045,
+        0.8163729456771796
+      ],
+      "encoder_minus_chem": -0.04198620715688417,
+      "encoder_beats": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "EU",
+      "n_test": 3969,
+      "n_pos": 106,
+      "encoder_auc": 0.7148483057109306,
+      "encoder_ci95": [
+        0.6660584947448733,
+        0.7609112735846282
+      ],
+      "chem_auc": 0.6497152719171356,
+      "chem_ci95": [
+        0.5978920069489878,
+        0.7062593083502379
+      ],
+      "encoder_minus_chem": 0.06513303379379498,
+      "encoder_beats": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 3509,
+      "n_pos": 532,
+      "encoder_auc": 0.7051938505737422,
+      "encoder_ci95": [
+        0.6841375459017507,
+        0.7279871030181909
+      ],
+      "chem_auc": 0.7031457768906918,
+      "chem_ci95": [
+        0.6808617339809958,
+        0.7236391400250097
+      ],
+      "encoder_minus_chem": 0.0020480736830503776,
+      "encoder_beats": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Italy",
+      "n_test": 1314,
+      "n_pos": 46,
+      "encoder_auc": 0.7048465111467702,
+      "encoder_ci95": [
+        0.6384324844795108,
+        0.7627504493493261
+      ],
+      "chem_auc": 0.6563672110121357,
+      "chem_ci95": [
+        0.5667160385058848,
+        0.7493627396318767
+      ],
+      "encoder_minus_chem": 0.04847930013463453,
+      "encoder_beats": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Poland",
+      "n_test": 123,
+      "n_pos": 14,
+      "encoder_auc": 0.5140436282502496,
+      "encoder_ci95": [
+        0.3712269412269412,
+        0.6436703401343385
+      ],
+      "chem_auc": 0.4789616019547758,
+      "chem_ci95": [
+        0.3196102292203209,
+        0.6325315518664143
+      ],
+      "encoder_minus_chem": 0.035082026295473856,
+      "encoder_beats": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 70,
+      "encoder_auc": 0.40234217268354977,
+      "encoder_ci95": [
+        0.3219541821285601,
+        0.4783641255501147
+      ],
+      "chem_auc": 0.5647717363141651,
+      "chem_ci95": [
+        0.4747919803497085,
+        0.6418789828880943
+      ],
+      "encoder_minus_chem": -0.16242956363061534,
+      "encoder_beats": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "France",
+      "n_test": 27372,
+      "n_pos": 1433,
+      "encoder_auc": 0.8799751460356023,
+      "encoder_ci95": [
+        0.8716095619315225,
+        0.8886292732200168
+      ],
+      "chem_auc": 0.9121789681938796,
+      "chem_ci95": [
+        0.9036325965693797,
+        0.9199870467441286
+      ],
+      "encoder_minus_chem": -0.03220382215827722,
+      "encoder_beats": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "USA",
+      "n_test": 5180,
+      "n_pos": 18,
+      "encoder_auc": 0.9068233662594253,
+      "encoder_ci95": [
+        0.8506314966371918,
+        0.9589701988893194
+      ],
+      "chem_auc": 0.9753960183392852,
+      "chem_ci95": [
+        0.9529938704127787,
+        0.9921843788319402
+      ],
+      "encoder_minus_chem": -0.06857265207985996,
+      "encoder_beats": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "EU",
+      "n_test": 6342,
+      "n_pos": 145,
+      "encoder_auc": 0.936616767787049,
+      "encoder_ci95": [
+        0.9175115043887473,
+        0.9531451337156936
+      ],
+      "chem_auc": 0.9265205170579237,
+      "chem_ci95": [
+        0.8912615568437025,
+        0.9591629544967593
+      ],
+      "encoder_minus_chem": 0.010096250729125344,
+      "encoder_beats": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 4035,
+      "n_pos": 12,
+      "encoder_auc": 0.9156193572190474,
+      "encoder_ci95": [
+        0.8479265059242689,
+        0.9628519774286294
+      ],
+      "chem_auc": 0.8652941900204467,
+      "chem_ci95": [
+        0.6667128120216057,
+        0.9897042641395457
+      ],
+      "encoder_minus_chem": 0.050325167198600695,
+      "encoder_beats": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Greece",
+      "n_test": 598,
+      "n_pos": 75,
+      "encoder_auc": 0.7902524929505559,
+      "encoder_ci95": [
+        0.7426304887997403,
+        0.8386216970735128
+      ],
+      "chem_auc": 0.7831410558153084,
+      "chem_ci95": [
+        0.7169245205541741,
+        0.8490501702402111
+      ],
+      "encoder_minus_chem": 0.007111437135247534,
+      "encoder_beats": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "France",
+      "n_test": 2563,
+      "n_pos": 60,
+      "encoder_auc": 0.8861674315800854,
+      "encoder_ci95": [
+        0.8298537754756121,
+        0.9333217017523414
+      ],
+      "chem_auc": 0.873194100375832,
+      "chem_ci95": [
+        0.8198384406522974,
+        0.9267016578850377
+      ],
+      "encoder_minus_chem": 0.012973331204253369,
+      "encoder_beats": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "USA",
+      "n_test": 8085,
+      "n_pos": 544,
+      "encoder_auc": 0.8744714164806174,
+      "encoder_ci95": [
+        0.8590338815847732,
+        0.8883666473318232
+      ],
+      "chem_auc": 0.9251890027197355,
+      "chem_ci95": [
+        0.90575823058885,
+        0.940650186567242
+      ],
+      "encoder_minus_chem": -0.05071758623911804,
+      "encoder_beats": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "EU",
+      "n_test": 1630,
+      "n_pos": 18,
+      "encoder_auc": 0.6922517686513087,
+      "encoder_ci95": [
+        0.576243835281752,
+        0.8112597159126779
+      ],
+      "chem_auc": 0.5141381277429009,
+      "chem_ci95": [
+        0.33488857320429727,
+        0.6801117288869865
+      ],
+      "encoder_minus_chem": 0.17811364090840776,
+      "encoder_beats": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 998,
+      "n_pos": 204,
+      "encoder_auc": 0.7837583768156636,
+      "encoder_ci95": [
+        0.7496973986317037,
+        0.8209650511577369
+      ],
+      "chem_auc": 0.7999721891308006,
+      "chem_ci95": [
+        0.7633511867371037,
+        0.8390190226846658
+      ],
+      "encoder_minus_chem": -0.016213812315136966,
+      "encoder_beats": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "France",
+      "n_test": 1691,
+      "n_pos": 14,
+      "encoder_auc": 0.8406066513063408,
+      "encoder_ci95": [
+        0.7528409435313419,
+        0.9104467077783469
+      ],
+      "chem_auc": 0.9570055090516973,
+      "chem_ci95": [
+        0.8563719659151697,
+        0.9978685831627633
+      ],
+      "encoder_minus_chem": -0.11639885774535652,
+      "encoder_beats": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "USA",
+      "n_test": 3792,
+      "n_pos": 171,
+      "encoder_auc": 0.6707057594912079,
+      "encoder_ci95": [
+        0.6279155794992151,
+        0.7091798036301048
+      ],
+      "chem_auc": 0.3401821815676682,
+      "chem_ci95": [
+        0.2887815383436756,
+        0.38870876287401235
+      ],
+      "encoder_minus_chem": 0.3305235779235397,
+      "encoder_beats": true
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:France",
+      "n_test": 351,
+      "n_pos": 34,
+      "encoder_auc": 0.9021701714641333,
+      "encoder_ci95": [
+        0.843734618723878,
+        0.9479815706324327
+      ],
+      "chem_auc": 0.3701906602121454,
+      "chem_ci95": [
+        0.2988969567671046,
+        0.4353401449378496
+      ],
+      "encoder_minus_chem": 0.5319795112519878,
+      "encoder_beats": true
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:Canada",
+      "n_test": 209,
+      "n_pos": 138,
+      "encoder_auc": 0.5185249033603236,
+      "encoder_ci95": [
+        0.4407522716299073,
+        0.5974318182362656
+      ],
+      "chem_auc": 0.5485246896876935,
+      "chem_ci95": [
+        0.47433352950161617,
+        0.6158253277633671
+      ],
+      "encoder_minus_chem": -0.02999978632736988,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "France",
+      "n_test": 25570,
+      "n_pos": 1708,
+      "encoder_auc": 0.8325600097838464,
+      "encoder_ci95": [
+        0.8216256864434822,
+        0.8429620519521641
+      ],
+      "chem_auc": 0.7602010771564409,
+      "chem_ci95": [
+        0.7475243158767197,
+        0.7734061618951381
+      ],
+      "encoder_minus_chem": 0.07235893262740545,
+      "encoder_beats": true
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "USA",
+      "n_test": 5038,
+      "n_pos": 1657,
+      "encoder_auc": 0.8208142329855861,
+      "encoder_ci95": [
+        0.8080092582138048,
+        0.8349169091773744
+      ],
+      "chem_auc": 0.8257916029599461,
+      "chem_ci95": [
+        0.8141117927904905,
+        0.8394283165528224
+      ],
+      "encoder_minus_chem": -0.004977369974360046,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "EU",
+      "n_test": 2451,
+      "n_pos": 554,
+      "encoder_auc": 0.7868844874360111,
+      "encoder_ci95": [
+        0.7677644323180733,
+        0.8076400629076376
+      ],
+      "chem_auc": 0.8314652000111019,
+      "chem_ci95": [
+        0.8099722293193451,
+        0.8528114757264728
+      ],
+      "encoder_minus_chem": -0.044580712575090775,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 1159,
+      "n_pos": 83,
+      "encoder_auc": 0.6389063106035738,
+      "encoder_ci95": [
+        0.5566696670835211,
+        0.7151364098136628
+      ],
+      "chem_auc": 0.49780908004310814,
+      "chem_ci95": [
+        0.4137712851202581,
+        0.5844626527406511
+      ],
+      "encoder_minus_chem": 0.1410972305604657,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Italy",
+      "n_test": 457,
+      "n_pos": 14,
+      "encoder_auc": 0.7441322913794457,
+      "encoder_ci95": [
+        0.6148263729649164,
+        0.8784837375084011
+      ],
+      "chem_auc": 0.7277481626966394,
+      "chem_ci95": [
+        0.5538650653830389,
+        0.8682962427375803
+      ],
+      "encoder_minus_chem": 0.016384128682806254,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:France",
+      "n_test": 468,
+      "n_pos": 65,
+      "encoder_auc": 0.7716944479311115,
+      "encoder_ci95": [
+        0.721925189981753,
+        0.823388582801516
+      ],
+      "chem_auc": 0.6361279410538943,
+      "chem_ci95": [
+        0.5686031764084457,
+        0.7024604464144396
+      ],
+      "encoder_minus_chem": 0.13556650687721727,
+      "encoder_beats": true
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Ireland",
+      "n_test": 121,
+      "n_pos": 25,
+      "encoder_auc": 0.6357521098715212,
+      "encoder_ci95": [
+        0.5117506654835847,
+        0.7558178443420379
+      ],
+      "chem_auc": 0.729681667365129,
+      "chem_ci95": [
+        0.6072529856078391,
+        0.8272718192540174
+      ],
+      "encoder_minus_chem": -0.09392955749360776,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:India",
+      "n_test": 148,
+      "n_pos": 52,
+      "encoder_auc": 0.5713577080509942,
+      "encoder_ci95": [
+        0.4681991341991342,
+        0.6670893642698155
+      ],
+      "chem_auc": 0.4285904340942389,
+      "chem_ci95": [
+        0.33180003287652265,
+        0.52663738757099
+      ],
+      "encoder_minus_chem": 0.14276727395675526,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Sweden",
+      "n_test": 219,
+      "n_pos": 110,
+      "encoder_auc": 0.7968771447152698,
+      "encoder_ci95": [
+        0.7466189937513467,
+        0.8553171009063306
+      ],
+      "chem_auc": 0.9023189071430275,
+      "chem_ci95": [
+        0.8597889005257602,
+        0.9415502495315486
+      ],
+      "encoder_minus_chem": -0.10544176242775771,
+      "encoder_beats": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 212,
+      "encoder_auc": 0.6911770556150671,
+      "encoder_ci95": [
+        0.4936433506237982,
+        0.8524104663237461
+      ],
+      "chem_auc": 0.7233612744589238,
+      "chem_ci95": [
+        0.6000357540123947,
+        0.8377665011682242
+      ],
+      "encoder_minus_chem": -0.03218421884385669,
+      "encoder_beats": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "France",
+      "n_test": 25456,
+      "n_pos": 574,
+      "encoder_auc": 0.8662778680311439,
+      "encoder_ci95": [
+        0.8486407026274643,
+        0.8855690557185601
+      ],
+      "chem_auc": 0.8202774885769807,
+      "chem_ci95": [
+        0.7994431699373389,
+        0.842162274977406
+      ],
+      "encoder_minus_chem": 0.04600037945416324,
+      "encoder_beats": true
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "USA",
+      "n_test": 6381,
+      "n_pos": 756,
+      "encoder_auc": 0.8339979936931755,
+      "encoder_ci95": [
+        0.8199260146619889,
+        0.8502066174209242
+      ],
+      "chem_auc": 0.9037687028025969,
+      "chem_ci95": [
+        0.8894291309630354,
+        0.9188673804846428
+      ],
+      "encoder_minus_chem": -0.0697707091094214,
+      "encoder_beats": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "EU",
+      "n_test": 2516,
+      "n_pos": 30,
+      "encoder_auc": 0.5949180963829345,
+      "encoder_ci95": [
+        0.4981935168886844,
+        0.6931821189939417
+      ],
+      "chem_auc": 0.6364679149268583,
+      "chem_ci95": [
+        0.5070965342914576,
+        0.7415822927118193
+      ],
+      "encoder_minus_chem": -0.04154981854392381,
+      "encoder_beats": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 1257,
+      "n_pos": 38,
+      "encoder_auc": 0.757756515735978,
+      "encoder_ci95": [
+        0.6956109884954628,
+        0.823360948924096
+      ],
+      "chem_auc": 0.8254615540422918,
+      "chem_ci95": [
+        0.7544367917096363,
+        0.8963707261579656
+      ],
+      "encoder_minus_chem": -0.0677050383063138,
+      "encoder_beats": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "n_test": 106,
+      "n_pos": 16,
+      "encoder_auc": 0.32248181184274416,
+      "encoder_ci95": [
+        0.20367498636115658,
+        0.44967112674998516
+      ],
+      "chem_auc": 0.6238649961737844,
+      "chem_ci95": [
+        0.4578302804021598,
+        0.7780174796101282
+      ],
+      "encoder_minus_chem": -0.3013831843310403,
+      "encoder_beats": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 96,
+      "encoder_auc": 0.5036903289211124,
+      "encoder_ci95": [
+        0.4221269942075781,
+        0.5741671757820455
+      ],
+      "chem_auc": 0.5585698922955507,
+      "chem_ci95": [
+        0.4875919020845829,
+        0.6193690931253562
+      ],
+      "encoder_minus_chem": -0.05487956337443822,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "France",
+      "n_test": 7011,
+      "n_pos": 187,
+      "encoder_auc": 0.6411279914917479,
+      "encoder_ci95": [
+        0.6018906398941821,
+        0.678712013018454
+      ],
+      "chem_auc": 0.6494758037337559,
+      "chem_ci95": [
+        0.6028358273492574,
+        0.6924874960969304
+      ],
+      "encoder_minus_chem": -0.00834781224200798,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "USA",
+      "n_test": 5596,
+      "n_pos": 93,
+      "encoder_auc": 0.747863892544617,
+      "encoder_ci95": [
+        0.6998566845720774,
+        0.7932027331124305
+      ],
+      "chem_auc": 0.78610910191717,
+      "chem_ci95": [
+        0.7259364471208976,
+        0.8489324474988662
+      ],
+      "encoder_minus_chem": -0.038245209372552935,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "EU",
+      "n_test": 6385,
+      "n_pos": 1389,
+      "encoder_auc": 0.7309639177110213,
+      "encoder_ci95": [
+        0.7170151207199921,
+        0.7452700138068684
+      ],
+      "chem_auc": 0.7182379584133665,
+      "chem_ci95": [
+        0.7029450313200816,
+        0.7314645274274206
+      ],
+      "encoder_minus_chem": 0.012725959297654854,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Mexico",
+      "n_test": 4009,
+      "n_pos": 948,
+      "encoder_auc": 0.7925038685255308,
+      "encoder_ci95": [
+        0.7768531641004454,
+        0.8098331019589021
+      ],
+      "chem_auc": 0.836336502298617,
+      "chem_ci95": [
+        0.821652359084948,
+        0.8552330770050287
+      ],
+      "encoder_minus_chem": -0.043832633773086216,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Italy",
+      "n_test": 1377,
+      "n_pos": 69,
+      "encoder_auc": 0.7504847867847104,
+      "encoder_ci95": [
+        0.6989662791792982,
+        0.7969956972918248
+      ],
+      "chem_auc": 0.5754815766177647,
+      "chem_ci95": [
+        0.4931564456393555,
+        0.6497124934265175
+      ],
+      "encoder_minus_chem": 0.17500321016694576,
+      "encoder_beats": true
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Poland",
+      "n_test": 1182,
+      "n_pos": 47,
+      "encoder_auc": 0.7560570278990738,
+      "encoder_ci95": [
+        0.6866972698606512,
+        0.8276101521646154
+      ],
+      "chem_auc": 0.5758161235321496,
+      "chem_ci95": [
+        0.48610954226298914,
+        0.6729986318772598
+      ],
+      "encoder_minus_chem": 0.1802409043669242,
+      "encoder_beats": true
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Greece",
+      "n_test": 112,
+      "n_pos": 16,
+      "encoder_auc": 0.7753243579710701,
+      "encoder_ci95": [
+        0.6551492081207483,
+        0.8874466191360724
+      ],
+      "chem_auc": 0.8965062506713692,
+      "chem_ci95": [
+        0.8108075980392156,
+        0.9658617131062952
+      ],
+      "encoder_minus_chem": -0.12118189270029911,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:India",
+      "n_test": 327,
+      "n_pos": 38,
+      "encoder_auc": 0.4982377134682425,
+      "encoder_ci95": [
+        0.3947869259345552,
+        0.6001013305137017
+      ],
+      "chem_auc": 0.438111411683161,
+      "chem_ci95": [
+        0.30431283201823184,
+        0.5666319657450021
+      ],
+      "encoder_minus_chem": 0.06012630178508155,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Lithuania",
+      "n_test": 339,
+      "n_pos": 30,
+      "encoder_auc": 0.8133859805676678,
+      "encoder_ci95": [
+        0.7512630462836615,
+        0.8703964693557815
+      ],
+      "chem_auc": 0.6473132983299528,
+      "chem_ci95": [
+        0.5296373249875118,
+        0.7550373390404164
+      ],
+      "encoder_minus_chem": 0.16607268223771499,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "n_test": 313,
+      "n_pos": 20,
+      "encoder_auc": 0.7767121117869387,
+      "encoder_ci95": [
+        0.6572231520546586,
+        0.8933331643921852
+      ],
+      "chem_auc": 0.9591771500366366,
+      "chem_ci95": [
+        0.9262371314784025,
+        0.9850694444444444
+      ],
+      "encoder_minus_chem": -0.18246503824969795,
+      "encoder_beats": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "Bangladesh",
+      "n_test": 224,
+      "n_pos": 185,
+      "encoder_auc": 0.5130019102048438,
+      "encoder_ci95": [
+        0.42594549933375414,
+        0.6295989718279315
+      ],
+      "chem_auc": 0.6299543601197151,
+      "chem_ci95": [
+        0.5372719940410908,
+        0.7278582135475592
+      ],
+      "encoder_minus_chem": -0.1169524499148713,
+      "encoder_beats": false
+    }
+  ]
+}
