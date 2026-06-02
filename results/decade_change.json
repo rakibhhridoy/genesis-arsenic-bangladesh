@@ -1,0 +1,360 @@
+{
+  "targets": {
+    "As": [
+      {
+        "country": "FR",
+        "n": 9032,
+        "median_delta": -1.75,
+        "mean_delta": -4.610766952391497,
+        "pct_worsening": 18.655890168290522,
+        "wilcoxon_p": 0.0,
+        "tail_t0": 670,
+        "tail_t1": 699,
+        "tail_change": 29
+      },
+      {
+        "country": "IT",
+        "n": 130,
+        "median_delta": -0.416685,
+        "mean_delta": -1.5192765846153846,
+        "pct_worsening": 36.15384615384615,
+        "wilcoxon_p": 2.6834268017323535e-07,
+        "tail_t0": 5,
+        "tail_t1": 2,
+        "tail_change": -3
+      },
+      {
+        "country": "France",
+        "n": 182,
+        "median_delta": -0.125,
+        "mean_delta": -0.8955,
+        "pct_worsening": 43.956043956043956,
+        "wilcoxon_p": 0.001281081707885174,
+        "tail_t0": 7,
+        "tail_t1": 0,
+        "tail_change": -7
+      },
+      {
+        "country": "USA",
+        "n": 3927,
+        "median_delta": -0.020000000000000004,
+        "mean_delta": -1.1127336389101095,
+        "pct_worsening": 43.290043290043286,
+        "wilcoxon_p": 4.620578423137764e-08,
+        "tail_t0": 707,
+        "tail_t1": 782,
+        "tail_change": 75
+      },
+      {
+        "country": "Sweden",
+        "n": 207,
+        "median_delta": -0.010000000000000009,
+        "mean_delta": -0.006497584541062804,
+        "pct_worsening": 39.61352657004831,
+        "wilcoxon_p": 0.012293219004089029,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "ES",
+        "n": 674,
+        "median_delta": 0.0,
+        "mean_delta": -39.71890406221563,
+        "pct_worsening": 46.29080118694362,
+        "wilcoxon_p": 0.026479484436929625,
+        "tail_t0": 112,
+        "tail_t1": 82,
+        "tail_change": -30
+      },
+      {
+        "country": "Italy",
+        "n": 924,
+        "median_delta": 0.0,
+        "mean_delta": -0.9181818160173159,
+        "pct_worsening": 35.82251082251082,
+        "wilcoxon_p": 0.02076504024945766,
+        "tail_t0": 63,
+        "tail_t1": 46,
+        "tail_change": -17
+      },
+      {
+        "country": "Mexico",
+        "n": 3311,
+        "median_delta": 4.305,
+        "mean_delta": 0.09113349441256499,
+        "pct_worsening": 74.7810329205678,
+        "wilcoxon_p": 4.274534424739391e-189,
+        "tail_t0": 451,
+        "tail_t1": 532,
+        "tail_change": 81
+      },
+      {
+        "country": "Canada",
+        "n": 108,
+        "median_delta": 139.85000000000002,
+        "mean_delta": 150.1902777777778,
+        "pct_worsening": 86.11111111111111,
+        "wilcoxon_p": 1.581375291759742e-13,
+        "tail_t0": 40,
+        "tail_t1": 135,
+        "tail_change": 95
+      }
+    ],
+    "NO3": [
+      {
+        "country": "DE",
+        "n": 228,
+        "median_delta": -2.3231933235999986,
+        "mean_delta": -3.7517254897130035,
+        "pct_worsening": 18.421052631578945,
+        "wilcoxon_p": 4.153537406415061e-25,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "CZ",
+        "n": 165,
+        "median_delta": -1.66005,
+        "mean_delta": -2.313069400781818,
+        "pct_worsening": 23.03030303030303,
+        "wilcoxon_p": 2.5861344538104682e-12,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "RS",
+        "n": 120,
+        "median_delta": -1.6193656109999996,
+        "mean_delta": -1.7741448567416664,
+        "pct_worsening": 23.333333333333332,
+        "wilcoxon_p": 1.5452238635463267e-11,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "Lithuania",
+        "n": 338,
+        "median_delta": -0.9373828729595,
+        "mean_delta": -2.153255277039991,
+        "pct_worsening": 15.384615384615385,
+        "wilcoxon_p": 2.6098116766304873e-36,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "IT",
+        "n": 243,
+        "median_delta": -0.9188415579999998,
+        "mean_delta": -2.64503416776749,
+        "pct_worsening": 32.510288065843625,
+        "wilcoxon_p": 2.3678133259777894e-07,
+        "tail_t0": 6,
+        "tail_t1": 0,
+        "tail_change": -6
+      },
+      {
+        "country": "Poland",
+        "n": 733,
+        "median_delta": -0.50338682,
+        "mean_delta": -1.6254416878127584,
+        "pct_worsening": 21.55525238744884,
+        "wilcoxon_p": 2.7822464609921577e-45,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "Austria",
+        "n": 277,
+        "median_delta": -0.180877719658,
+        "mean_delta": -0.7197535869880741,
+        "pct_worsening": 35.018050541516246,
+        "wilcoxon_p": 1.4581551916702316e-05,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "AT",
+        "n": 164,
+        "median_delta": -0.14271098549999972,
+        "mean_delta": -0.5726345555243902,
+        "pct_worsening": 40.243902439024396,
+        "wilcoxon_p": 0.03660648075710753,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "Netherlands (-the )",
+        "n": 277,
+        "median_delta": -0.13544040000000002,
+        "mean_delta": -0.21850749678050543,
+        "pct_worsening": 24.187725631768952,
+        "wilcoxon_p": 2.2989210210201585e-19,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "Switzerland",
+        "n": 166,
+        "median_delta": -0.08826199400000001,
+        "mean_delta": -0.15647853683132534,
+        "pct_worsening": 42.168674698795186,
+        "wilcoxon_p": 0.10355751943441602,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "NO",
+        "n": 140,
+        "median_delta": -0.07736182499999997,
+        "mean_delta": -0.12664316749742857,
+        "pct_worsening": 20.714285714285715,
+        "wilcoxon_p": 6.611093492426037e-12,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "Denmark",
+        "n": 102,
+        "median_delta": 0.0,
+        "mean_delta": -1.5901169919549019,
+        "pct_worsening": 48.03921568627451,
+        "wilcoxon_p": 0.2568155322268595,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "France",
+        "n": 233,
+        "median_delta": 0.0,
+        "mean_delta": 0.011716393819742495,
+        "pct_worsening": 49.78540772532189,
+        "wilcoxon_p": 0.5031385271475434,
+        "tail_t0": 0,
+        "tail_t1": 4,
+        "tail_change": 4
+      },
+      {
+        "country": "Ireland",
+        "n": 338,
+        "median_delta": 0.0,
+        "mean_delta": -0.07993180217469822,
+        "pct_worsening": 28.106508875739642,
+        "wilcoxon_p": 0.00706598436964862,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "Canada",
+        "n": 200,
+        "median_delta": 0.00030000000000000003,
+        "mean_delta": -0.007296,
+        "pct_worsening": 50.0,
+        "wilcoxon_p": 0.031426270973759274,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "Italy",
+        "n": 475,
+        "median_delta": 0.0011439070449999998,
+        "mean_delta": -0.2594764272034464,
+        "pct_worsening": 50.10526315789474,
+        "wilcoxon_p": 0.9174584331622614,
+        "tail_t0": 8,
+        "tail_t1": 6,
+        "tail_change": -2
+      },
+      {
+        "country": "Mexico",
+        "n": 4007,
+        "median_delta": 0.008,
+        "mean_delta": 0.3250908340404293,
+        "pct_worsening": 52.38332917394559,
+        "wilcoxon_p": 1.6681425126120178e-07,
+        "tail_t0": 2,
+        "tail_t1": 12,
+        "tail_change": 10
+      },
+      {
+        "country": "Norway",
+        "n": 114,
+        "median_delta": 0.011413043000000001,
+        "mean_delta": 0.017054778275789474,
+        "pct_worsening": 59.64912280701754,
+        "wilcoxon_p": 0.05123256445303978,
+        "tail_t0": 0,
+        "tail_t1": 0,
+        "tail_change": 0
+      },
+      {
+        "country": "ES",
+        "n": 2644,
+        "median_delta": 0.018951200000000612,
+        "mean_delta": -1.148817285138038,
+        "pct_worsening": 50.26475037821483,
+        "wilcoxon_p": 0.1009853598364638,
+        "tail_t0": 138,
+        "tail_t1": 133,
+        "tail_change": -5
+      },
+      {
+        "country": "USA",
+        "n": 4603,
+        "median_delta": 0.063,
+        "mean_delta": 0.3593962633065392,
+        "pct_worsening": 57.26699978275038,
+        "wilcoxon_p": 6.677540088085797e-24,
+        "tail_t0": 12,
+        "tail_t1": 18,
+        "tail_change": 6
+      },
+      {
+        "country": "FR",
+        "n": 28604,
+        "median_delta": 0.19999999999999996,
+        "mean_delta": 0.8172893337093029,
+        "pct_worsening": 53.21633337994685,
+        "wilcoxon_p": 6.628804846758199e-112,
+        "tail_t0": 1109,
+        "tail_t1": 1442,
+        "tail_change": 333
+      },
+      {
+        "country": "India",
+        "n": 162,
+        "median_delta": 1.2053880000000001,
+        "mean_delta": 1.8729763679012343,
+        "pct_worsening": 81.48148148148148,
+        "wilcoxon_p": 3.8735905390831454e-15,
+        "tail_t0": 0,
+        "tail_t1": 1,
+        "tail_change": 1
+      },
+      {
+        "country": "Greece",
+        "n": 590,
+        "median_delta": 3.8906335435624997,
+        "mean_delta": 15.357918591255318,
+        "pct_worsening": 80.33898305084746,
+        "wilcoxon_p": 1.8410081994879945e-61,
+        "tail_t0": 16,
+        "tail_t1": 75,
+        "tail_change": 59
+      }
+    ]
+  }
+}
