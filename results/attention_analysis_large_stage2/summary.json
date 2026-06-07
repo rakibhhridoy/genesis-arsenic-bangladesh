@@ -1,0 +1,12 @@
+{
+  "model_size": "large",
+  "n_samples": 5000,
+  "n_layers": 12,
+  "n_heads": 8,
+  "attention_mean_offdiag": 0.029024985810120273,
+  "attention_median_offdiag": 0.027257967124827073,
+  "attention_std_offdiag": 0.009230003650014793,
+  "n_known_recovered": 4,
+  "n_known_total": 13,
+  "top_coupling": "Ca-HCO3"
+}
