@@ -72,7 +72,11 @@ def boot_auc(y, p, n=200, seed=0):
     return float(np.mean(aucs)), float(np.percentile(aucs, 2.5)), float(np.percentile(aucs, 97.5))
 
 
-def extract_embeddings(enc, ds, device, bs=256):
+def extract_embeddings(enc, ds, device, bs=128):
+    # bs kept small + MPS pool released each batch: on an 8GB M1, MPS unified
+    # memory competes with the OS, and PyTorch caches its pool across batches.
+    # Without empty_cache() the high-water mark of a full embed run stays
+    # resident and can starve WindowServer into a watchdog freeze.
     dl = DataLoader(ds, batch_size=bs, collate_fn=temporal_collate_fn, num_workers=0)
     out = []
     enc.eval()
@@ -81,6 +85,9 @@ def extract_embeddings(enc, ds, device, bs=256):
             cur = {k: v.to(device) for k, v in b["current"].items()}
             z = enc.get_latent(cur["param_ids"], cur["values"], cur["padding_mask"])
             out.append(z.cpu().numpy())
+            del cur, z
+            if device == "mps":
+                torch.mps.empty_cache()
     return np.concatenate(out, 0)
 
 
