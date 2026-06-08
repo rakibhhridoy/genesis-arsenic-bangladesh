@@ -1,0 +1,36 @@
+{
+  "experiment": "frozen-encoder vs Random Forest, matched head + matched inputs, 47 LORO cells, Large Stage-2",
+  "split_identity_check": "logreg_emb==encoder_auc and logreg_chem==chem_auc to 0.0000 (identical splits to src/19)",
+  "mean_auc": {
+    "logreg_chem": 0.7148,
+    "rf_chem": 0.7346,
+    "rf_raw": 0.7391,
+    "logreg_emb": 0.7244,
+    "rf_emb": 0.7,
+    "xgb_emb": 0.7187,
+    "xgb_raw": 0.726,
+    "rf_emb_raw": 0.7568
+  },
+  "std_auc": {
+    "logreg_chem": 0.1653,
+    "rf_chem": 0.1665,
+    "rf_raw": 0.1421,
+    "logreg_emb": 0.1067,
+    "rf_emb": 0.13,
+    "xgb_emb": 0.1269,
+    "xgb_raw": 0.1621,
+    "rf_emb_raw": 0.1454
+  },
+  "key_findings": [
+    "Frozen encoder alone (logreg_emb 0.724) does NOT beat RF (rf_raw 0.739, rf_chem 0.735).",
+    "Nonlinear head on embedding BACKFIRES: rf_emb 0.700, xgb_emb 0.719 < logreg_emb 0.724 (overfit on 512-dim).",
+    "BENCHMARK BEST = RF on [embedding ++ raw inputs]: rf_emb_raw 0.757 > rf_raw 0.739; representation adds info in 30/47 cells (+0.018 mean).",
+    "Encoder's only standalone edge is variance: std 0.107 vs 0.14-0.17 for trees; not higher accuracy."
+  ],
+  "hybrid_win": {
+    "config": "rf_emb_raw",
+    "mean_auc": 0.7568,
+    "beats_rf_raw_mean_by": 0.0177,
+    "positive_cells": 30
+  }
+}

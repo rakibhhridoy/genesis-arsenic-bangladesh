@@ -18,7 +18,21 @@
         0.825892383907157
       ],
       "encoder_minus_chem": -0.02914036170261869,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7629628962631821,
+      "xgb_ci95": [
+        0.7431788589122532,
+        0.781245670691915
+      ],
+      "rf_auc": 0.7433347477703759,
+      "rf_ci95": [
+        0.7202271274936033,
+        0.7657583067861915
+      ],
+      "encoder_minus_xgb": 0.0146229110429551,
+      "encoder_minus_rf": 0.03425105953576135,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "As",
@@ -36,7 +50,21 @@
         0.8163729456771796
       ],
       "encoder_minus_chem": 0.044680828061634204,
-      "encoder_beats": true
+      "encoder_beats": true,
+      "xgb_auc": 0.8518153446621863,
+      "xgb_ci95": [
+        0.8380516328108814,
+        0.8654205656412295
+      ],
+      "rf_auc": 0.9065068880880119,
+      "rf_ci95": [
+        0.8928254386819835,
+        0.9199580209239019
+      ],
+      "encoder_minus_xgb": -0.005761908193282483,
+      "encoder_minus_rf": -0.06045345161910809,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "As",
@@ -54,7 +82,21 @@
         0.7062593083502379
       ],
       "encoder_minus_chem": 0.03212578697869806,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.6582408232679131,
+      "xgb_ci95": [
+        0.5968389617161016,
+        0.7143534893740415
+      ],
+      "rf_auc": 0.6650425011943006,
+      "rf_ci95": [
+        0.6089420920057038,
+        0.7154405625998548
+      ],
+      "encoder_minus_xgb": 0.023600235627920574,
+      "encoder_minus_rf": 0.016798557701533046,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "As",
@@ -72,7 +114,21 @@
         0.7236391400250097
       ],
       "encoder_minus_chem": 0.04330533124565428,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7165041243584009,
+      "xgb_ci95": [
+        0.6916716883095176,
+        0.7398050068500612
+      ],
+      "rf_auc": 0.7295810318103076,
+      "rf_ci95": [
+        0.7052045594716594,
+        0.7530871466588672
+      ],
+      "encoder_minus_xgb": 0.029946983777945135,
+      "encoder_minus_rf": 0.01687007632603843,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "As",
@@ -90,7 +146,21 @@
         0.7493627396318767
       ],
       "encoder_minus_chem": 0.0720898963161104,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7008320423369849,
+      "xgb_ci95": [
+        0.6168331327797749,
+        0.7851723548098462
+      ],
+      "rf_auc": 0.7079785242671904,
+      "rf_ci95": [
+        0.6107118571334258,
+        0.7933603391740346
+      ],
+      "encoder_minus_xgb": 0.02762506499126116,
+      "encoder_minus_rf": 0.020478583061055655,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "As",
@@ -108,7 +178,21 @@
         0.6325315518664143
       ],
       "encoder_minus_chem": -0.0757415102951502,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.36490803513034675,
+      "xgb_ci95": [
+        0.19089364518976168,
+        0.548784120971621
+      ],
+      "rf_auc": 0.2662654380742823,
+      "rf_ci95": [
+        0.10422438251001337,
+        0.46565592434455383
+      ],
+      "encoder_minus_xgb": 0.038312056529278826,
+      "encoder_minus_rf": 0.13695465358534326,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "As",
@@ -126,7 +210,21 @@
         0.6418789828880943
       ],
       "encoder_minus_chem": 0.03470796349235494,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.6665863141339282,
+      "xgb_ci95": [
+        0.5935268089526647,
+        0.729346512065661
+      ],
+      "rf_auc": 0.6769313142224699,
+      "rf_ci95": [
+        0.602748343252712,
+        0.7452301298008536
+      ],
+      "encoder_minus_xgb": -0.06710661432740817,
+      "encoder_minus_rf": -0.07745161441594983,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "NO3",
@@ -144,7 +242,21 @@
         0.9199870467441286
       ],
       "encoder_minus_chem": -0.11623112073051367,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8937597579098768,
+      "xgb_ci95": [
+        0.8861249419567829,
+        0.9029255367018701
+      ],
+      "rf_auc": 0.8999079568615511,
+      "rf_ci95": [
+        0.8918554133096942,
+        0.9083524875801035
+      ],
+      "encoder_minus_xgb": -0.09781191044651094,
+      "encoder_minus_rf": -0.10396010939818523,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "NO3",
@@ -162,7 +274,21 @@
         0.9921843788319402
       ],
       "encoder_minus_chem": -0.19280965327156285,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8827507607507725,
+      "xgb_ci95": [
+        0.7762743852492182,
+        0.9559508751832252
+      ],
+      "rf_auc": 0.9402534828654416,
+      "rf_ci95": [
+        0.8864120004550411,
+        0.9837396465935302
+      ],
+      "encoder_minus_xgb": -0.10016439568305013,
+      "encoder_minus_rf": -0.15766711779771925,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "NO3",
@@ -180,7 +306,21 @@
         0.9591629544967593
       ],
       "encoder_minus_chem": -0.008170682258124895,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.9318187034712264,
+      "xgb_ci95": [
+        0.9035291439064743,
+        0.9566955740765891
+      ],
+      "rf_auc": 0.9507022928394807,
+      "rf_ci95": [
+        0.9324050699179881,
+        0.968968765478744
+      ],
+      "encoder_minus_xgb": -0.013468868671427603,
+      "encoder_minus_rf": -0.0323524580396819,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "NO3",
@@ -198,7 +338,21 @@
         0.9897042641395457
       ],
       "encoder_minus_chem": 0.010560039460700277,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8650874323665849,
+      "xgb_ci95": [
+        0.7481003944706072,
+        0.9638489568323497
+      ],
+      "rf_auc": 0.9383144569753056,
+      "rf_ci95": [
+        0.9060579196229246,
+        0.9721320885469923
+      ],
+      "encoder_minus_xgb": 0.010766797114562077,
+      "encoder_minus_rf": -0.06246022749415858,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "NO3",
@@ -216,7 +370,21 @@
         0.8490501702402111
       ],
       "encoder_minus_chem": -0.002348126925271643,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.696523646411703,
+      "xgb_ci95": [
+        0.6298430003548389,
+        0.7696346217166441
+      ],
+      "rf_auc": 0.6803849287096695,
+      "rf_ci95": [
+        0.6065045567546317,
+        0.745448240259616
+      ],
+      "encoder_minus_xgb": 0.08426928247833376,
+      "encoder_minus_rf": 0.10040800018036722,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "F",
@@ -234,7 +402,21 @@
         0.9267016578850377
       ],
       "encoder_minus_chem": -0.004098642469883784,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8626747571063825,
+      "xgb_ci95": [
+        0.8002634777778765,
+        0.9218643903708263
+      ],
+      "rf_auc": 0.8748962385678968,
+      "rf_ci95": [
+        0.8198000298586897,
+        0.9336973111179768
+      ],
+      "encoder_minus_xgb": 0.006420700799565693,
+      "encoder_minus_rf": -0.005800780661948557,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "F",
@@ -252,7 +434,21 @@
         0.940650186567242
       ],
       "encoder_minus_chem": -0.022106062439593566,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.9673778793089289,
+      "xgb_ci95": [
+        0.9593862629194405,
+        0.974492516253034
+      ],
+      "rf_auc": 0.9626810616325713,
+      "rf_ci95": [
+        0.953163194743554,
+        0.9724367225419773
+      ],
+      "encoder_minus_xgb": -0.06429493902878702,
+      "encoder_minus_rf": -0.05959812135242937,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "F",
@@ -270,7 +466,21 @@
         0.6801117288869865
       ],
       "encoder_minus_chem": 0.0625888344420682,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7475597064125811,
+      "xgb_ci95": [
+        0.6297658840876382,
+        0.8775095733258949
+      ],
+      "rf_auc": 0.6680002699037908,
+      "rf_ci95": [
+        0.5212876396554045,
+        0.8139231710461059
+      ],
+      "encoder_minus_xgb": -0.17083274422761197,
+      "encoder_minus_rf": -0.0912733077188217,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "F",
@@ -288,7 +498,21 @@
         0.8390190226846658
       ],
       "encoder_minus_chem": 0.011090751401694354,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8442358595236127,
+      "xgb_ci95": [
+        0.809574295003931,
+        0.8798794184110236
+      ],
+      "rf_auc": 0.8427064648202703,
+      "rf_ci95": [
+        0.8094884543477214,
+        0.8761066786723052
+      ],
+      "encoder_minus_xgb": -0.03317291899111774,
+      "encoder_minus_rf": -0.03164352428777539,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "U",
@@ -306,7 +530,21 @@
         0.9978685831627633
       ],
       "encoder_minus_chem": -0.26839343439451424,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.9452015008791809,
+      "xgb_ci95": [
+        0.8081452748039755,
+        0.9987109832348023
+      ],
+      "rf_auc": 0.9211725157084135,
+      "rf_ci95": [
+        0.7591942101402771,
+        0.9880850288310113
+      ],
+      "encoder_minus_xgb": -0.25658942622199776,
+      "encoder_minus_rf": -0.23256044105123042,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "U",
@@ -324,7 +562,21 @@
         0.38870876287401235
       ],
       "encoder_minus_chem": 0.33520382423465067,
-      "encoder_beats": true
+      "encoder_beats": true,
+      "xgb_auc": 0.5569536318989836,
+      "xgb_ci95": [
+        0.5210941475975879,
+        0.6048183871393699
+      ],
+      "rf_auc": 0.657818635973703,
+      "rf_ci95": [
+        0.6134263167682035,
+        0.7050089726423591
+      ],
+      "encoder_minus_xgb": 0.11843237390333528,
+      "encoder_minus_rf": 0.017567369828615842,
+      "encoder_beats_xgb": true,
+      "encoder_beats_rf": false
     },
     {
       "target": "U",
@@ -342,7 +594,21 @@
         0.4353401449378496
       ],
       "encoder_minus_chem": 0.20076570300223617,
-      "encoder_beats": true
+      "encoder_beats": true,
+      "xgb_auc": 0.43307108253832466,
+      "xgb_ci95": [
+        0.35680594214552275,
+        0.5017720042095354
+      ],
+      "rf_auc": 0.24023763279967134,
+      "rf_ci95": [
+        0.16348994335637484,
+        0.31612914173452156
+      ],
+      "encoder_minus_xgb": 0.13788528067605693,
+      "encoder_minus_rf": 0.3307187304147102,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": true
     },
     {
       "target": "U",
@@ -360,7 +626,21 @@
         0.6158253277633671
       ],
       "encoder_minus_chem": 0.013275361580404765,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.5215680615915597,
+      "xgb_ci95": [
+        0.4374029898710296,
+        0.6125680154333202
+      ],
+      "rf_auc": 0.5951945377902901,
+      "rf_ci95": [
+        0.5138169074985185,
+        0.6666651923219498
+      ],
+      "encoder_minus_xgb": 0.040231989676538626,
+      "encoder_minus_rf": -0.03339448652219179,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -378,7 +658,21 @@
         0.7734061618951381
       ],
       "encoder_minus_chem": 0.0681515167882778,
-      "encoder_beats": true
+      "encoder_beats": true,
+      "xgb_auc": 0.8427271210518736,
+      "xgb_ci95": [
+        0.8305045768513705,
+        0.85428092012254
+      ],
+      "rf_auc": 0.8283185164663035,
+      "rf_ci95": [
+        0.8144789216831072,
+        0.839412894166006
+      ],
+      "encoder_minus_xgb": -0.014374527107154922,
+      "encoder_minus_rf": 3.407747841521758e-05,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -396,7 +690,21 @@
         0.8394283165528224
       ],
       "encoder_minus_chem": -0.0099454814757447,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8425398011714784,
+      "xgb_ci95": [
+        0.8302956108332332,
+        0.8541292271476227
+      ],
+      "rf_auc": 0.8722554280401212,
+      "rf_ci95": [
+        0.8618358919778158,
+        0.8829266830186131
+      ],
+      "encoder_minus_xgb": -0.026693679687276983,
+      "encoder_minus_rf": -0.0564093065559198,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -414,7 +722,21 @@
         0.8528114757264728
       ],
       "encoder_minus_chem": -0.011873997810517234,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8244537305695481,
+      "xgb_ci95": [
+        0.8012347082438986,
+        0.8464411877321387
+      ],
+      "rf_auc": 0.8347392219548112,
+      "rf_ci95": [
+        0.8105112798479496,
+        0.8572098965512783
+      ],
+      "encoder_minus_xgb": -0.0048625283689633925,
+      "encoder_minus_rf": -0.015148019754226527,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -432,7 +754,21 @@
         0.5844626527406511
       ],
       "encoder_minus_chem": 0.14239653278168823,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7235401753213273,
+      "xgb_ci95": [
+        0.6731476877244166,
+        0.7802855805102682
+      ],
+      "rf_auc": 0.71612547832453,
+      "rf_ci95": [
+        0.6581883591138263,
+        0.7704317993394239
+      ],
+      "encoder_minus_xgb": -0.08333456249653093,
+      "encoder_minus_rf": -0.07591986549973362,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -450,7 +786,21 @@
         0.8682962427375803
       ],
       "encoder_minus_chem": 0.03938466684723119,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7350664898370973,
+      "xgb_ci95": [
+        0.5950700085156557,
+        0.8634702476496217
+      ],
+      "rf_auc": 0.6711630161460715,
+      "rf_ci95": [
+        0.5183326959961188,
+        0.8101002429743143
+      ],
+      "encoder_minus_xgb": 0.032066339706773306,
+      "encoder_minus_rf": 0.09596981339779909,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -468,7 +818,21 @@
         0.7024604464144396
       ],
       "encoder_minus_chem": 0.11843028180492565,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7591626703978005,
+      "xgb_ci95": [
+        0.6947013470818897,
+        0.8026629426362547
+      ],
+      "rf_auc": 0.791788720819122,
+      "rf_ci95": [
+        0.7426414917308718,
+        0.8350520343527654
+      ],
+      "encoder_minus_xgb": -0.004604447538980594,
+      "encoder_minus_rf": -0.03723049796030209,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -486,7 +850,21 @@
         0.8272718192540174
       ],
       "encoder_minus_chem": 0.048026056456884736,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.6919050725013385,
+      "xgb_ci95": [
+        0.5978304455445544,
+        0.7976661951909476
+      ],
+      "rf_auc": 0.6784708353671576,
+      "rf_ci95": [
+        0.5637398125731568,
+        0.7907335912032308
+      ],
+      "encoder_minus_xgb": 0.08580265132067522,
+      "encoder_minus_rf": 0.09923688845485612,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -504,7 +882,21 @@
         0.52663738757099
       ],
       "encoder_minus_chem": 0.017275000097398963,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.5968173575631455,
+      "xgb_ci95": [
+        0.4879318132909559,
+        0.6892792569138142
+      ],
+      "rf_auc": 0.489373605468019,
+      "rf_ci95": [
+        0.378610689582157,
+        0.5967121434613972
+      ],
+      "encoder_minus_xgb": -0.1509519233715076,
+      "encoder_minus_rf": -0.043508171276381125,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -522,7 +914,21 @@
         0.9415502495315486
       ],
       "encoder_minus_chem": -0.017284780077225337,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.9352740787913131,
+      "xgb_ci95": [
+        0.9016367884041591,
+        0.9666232059412552
+      ],
+      "rf_auc": 0.8540172199650236,
+      "rf_ci95": [
+        0.8092101914045643,
+        0.90203643307975
+      ],
+      "encoder_minus_xgb": -0.05023995172551088,
+      "encoder_minus_rf": 0.031016907100778646,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Fe",
@@ -540,7 +946,21 @@
         0.8377665011682242
       ],
       "encoder_minus_chem": -0.15593224471229727,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.5219160521789992,
+      "xgb_ci95": [
+        0.3346832959214152,
+        0.6880453065735752
+      ],
+      "rf_auc": 0.4464111328476485,
+      "rf_ci95": [
+        0.2717218387958138,
+        0.5993733554742653
+      ],
+      "encoder_minus_xgb": 0.0455129775676274,
+      "encoder_minus_rf": 0.12101789689897807,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Mn",
@@ -558,7 +978,21 @@
         0.842162274977406
       ],
       "encoder_minus_chem": 0.028815313279807242,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8330337268839051,
+      "xgb_ci95": [
+        0.8129932529686794,
+        0.8542435979458445
+      ],
+      "rf_auc": 0.7962088422445194,
+      "rf_ci95": [
+        0.7695247016355764,
+        0.8199826958820788
+      ],
+      "encoder_minus_xgb": 0.016059074972882836,
+      "encoder_minus_rf": 0.05288395961226855,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": true
     },
     {
       "target": "Mn",
@@ -576,7 +1010,21 @@
         0.9188673804846428
       ],
       "encoder_minus_chem": -0.0832133255541272,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.9085032089444743,
+      "xgb_ci95": [
+        0.8949493648308798,
+        0.9225994633080077
+      ],
+      "rf_auc": 0.9274570126205508,
+      "rf_ci95": [
+        0.914560812624228,
+        0.9392181882608498
+      ],
+      "encoder_minus_xgb": -0.08794783169600462,
+      "encoder_minus_rf": -0.10690163537208108,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Mn",
@@ -594,7 +1042,21 @@
         0.7415822927118193
       ],
       "encoder_minus_chem": -0.11935764394125137,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.6073501280771919,
+      "xgb_ci95": [
+        0.4909365912121234,
+        0.7166535362232692
+      ],
+      "rf_auc": 0.6120904060392567,
+      "rf_ci95": [
+        0.49607564015729994,
+        0.7038086149343022
+      ],
+      "encoder_minus_xgb": -0.090239857091585,
+      "encoder_minus_rf": -0.09498013505364977,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Mn",
@@ -612,7 +1074,21 @@
         0.8963707261579656
       ],
       "encoder_minus_chem": -0.005117769132574446,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8804696736089218,
+      "xgb_ci95": [
+        0.8336313336168502,
+        0.922433564721268
+      ],
+      "rf_auc": 0.8549335825952025,
+      "rf_ci95": [
+        0.8016446985219896,
+        0.9124614099817873
+      ],
+      "encoder_minus_xgb": -0.06012588869920443,
+      "encoder_minus_rf": -0.03458979768548509,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Mn",
@@ -630,7 +1106,21 @@
         0.7780174796101282
       ],
       "encoder_minus_chem": -0.18867093025257725,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.22942393887515578,
+      "xgb_ci95": [
+        0.1281394580304032,
+        0.3422433035714286
+      ],
+      "rf_auc": 0.46045532798828304,
+      "rf_ci95": [
+        0.29946682843459815,
+        0.6172999158902692
+      ],
+      "encoder_minus_xgb": 0.2057701270460514,
+      "encoder_minus_rf": -0.02526126206707585,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "Mn",
@@ -648,7 +1138,21 @@
         0.6193690931253562
       ],
       "encoder_minus_chem": -0.0043418838537374604,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.5696936035075614,
+      "xgb_ci95": [
+        0.49729506970047205,
+        0.6355058650649705
+      ],
+      "rf_auc": 0.5913141610510698,
+      "rf_ci95": [
+        0.5231055078979137,
+        0.6614754440437015
+      ],
+      "encoder_minus_xgb": -0.015465595065748183,
+      "encoder_minus_rf": -0.03708615260925663,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -666,7 +1170,21 @@
         0.6924874960969304
       ],
       "encoder_minus_chem": 0.04536803576418347,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.6840602080916207,
+      "xgb_ci95": [
+        0.6488072614810816,
+        0.7180988122563615
+      ],
+      "rf_auc": 0.7030555799833667,
+      "rf_ci95": [
+        0.6674224846279926,
+        0.7414013938032987
+      ],
+      "encoder_minus_xgb": 0.010783631406318661,
+      "encoder_minus_rf": -0.008211740485427277,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -684,7 +1202,21 @@
         0.8489324474988662
       ],
       "encoder_minus_chem": -0.01506275591817896,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7444560290202983,
+      "xgb_ci95": [
+        0.6867149755870459,
+        0.7950715752604688
+      ],
+      "rf_auc": 0.8858880907649792,
+      "rf_ci95": [
+        0.8443196828674697,
+        0.9191838916481107
+      ],
+      "encoder_minus_xgb": 0.02659031697869274,
+      "encoder_minus_rf": -0.11484174476598819,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -702,7 +1234,21 @@
         0.7314645274274206
       ],
       "encoder_minus_chem": -0.05856453815187879,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.6536980538901025,
+      "xgb_ci95": [
+        0.6359949708565971,
+        0.670227877810185
+      ],
+      "rf_auc": 0.7082449352773659,
+      "rf_ci95": [
+        0.6908378443347887,
+        0.7225451387449904
+      ],
+      "encoder_minus_xgb": 0.005975366371385182,
+      "encoder_minus_rf": -0.0485715150158782,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -720,7 +1266,21 @@
         0.8552330770050287
       ],
       "encoder_minus_chem": -0.07541081168133379,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7940688722154488,
+      "xgb_ci95": [
+        0.7779986993248192,
+        0.8118767045489961
+      ],
+      "rf_auc": 0.7683071953851806,
+      "rf_ci95": [
+        0.7516508030495905,
+        0.7865418393730086
+      ],
+      "encoder_minus_xgb": -0.03314318159816554,
+      "encoder_minus_rf": -0.00738150476789734,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -738,7 +1298,21 @@
         0.6497124934265175
       ],
       "encoder_minus_chem": 0.15175891120109464,
-      "encoder_beats": true
+      "encoder_beats": true,
+      "xgb_auc": 0.6811276528057116,
+      "xgb_ci95": [
+        0.6172342424256576,
+        0.7449086746534729
+      ],
+      "rf_auc": 0.6431652033765096,
+      "rf_ci95": [
+        0.5664464647118642,
+        0.7113188168669617
+      ],
+      "encoder_minus_xgb": 0.04611283501314767,
+      "encoder_minus_rf": 0.08407528444234968,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -756,7 +1330,21 @@
         0.6729986318772598
       ],
       "encoder_minus_chem": 0.1545893910953713,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.7252340096709724,
+      "xgb_ci95": [
+        0.6549774300842957,
+        0.810192740289971
+      ],
+      "rf_auc": 0.7281474046741252,
+      "rf_ci95": [
+        0.6575673406318386,
+        0.8196291975690316
+      ],
+      "encoder_minus_xgb": 0.0051715049565485005,
+      "encoder_minus_rf": 0.002258109953395704,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -774,7 +1362,21 @@
         0.9658617131062952
       ],
       "encoder_minus_chem": -0.0303903277851324,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8808512494321825,
+      "xgb_ci95": [
+        0.7775641025641025,
+        0.9534576534576534
+      ],
+      "rf_auc": 0.8619337612371075,
+      "rf_ci95": [
+        0.7521064165719338,
+        0.9442797651097051
+      ],
+      "encoder_minus_xgb": -0.01473532654594567,
+      "encoder_minus_rf": 0.004182161649129323,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -792,7 +1394,21 @@
         0.5666319657450021
       ],
       "encoder_minus_chem": 0.21694334476116767,
-      "encoder_beats": true
+      "encoder_beats": true,
+      "xgb_auc": 0.5872129418835941,
+      "xgb_ci95": [
+        0.474624408838878,
+        0.6835139562187548
+      ],
+      "rf_auc": 0.6567526227151762,
+      "rf_ci95": [
+        0.5668004775608245,
+        0.7448801302395371
+      ],
+      "encoder_minus_xgb": 0.06784181456073457,
+      "encoder_minus_rf": -0.001697866270847559,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -810,7 +1426,21 @@
         0.7550373390404164
       ],
       "encoder_minus_chem": 0.1779273683876632,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8123016717916566,
+      "xgb_ci95": [
+        0.7320545404808453,
+        0.8855799891360236
+      ],
+      "rf_auc": 0.7557812728157917,
+      "rf_ci95": [
+        0.6754274846723618,
+        0.8213749064378257
+      ],
+      "encoder_minus_xgb": 0.012938994925959402,
+      "encoder_minus_rf": 0.06945939390182432,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -828,7 +1458,21 @@
         0.9850694444444444
       ],
       "encoder_minus_chem": -0.02781291951529774,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.8834082101115118,
+      "xgb_ci95": [
+        0.8364275318003914,
+        0.9331615088242605
+      ],
+      "rf_auc": 0.9360434647643772,
+      "rf_ci95": [
+        0.9067531003887711,
+        0.9592151028319055
+      ],
+      "encoder_minus_xgb": 0.04795602040982705,
+      "encoder_minus_rf": -0.004679234243038288,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     },
     {
       "target": "PO4",
@@ -846,7 +1490,21 @@
         0.7278582135475592
       ],
       "encoder_minus_chem": 0.06529595557026435,
-      "encoder_beats": false
+      "encoder_beats": false,
+      "xgb_auc": 0.624920599921555,
+      "xgb_ci95": [
+        0.5106858333519256,
+        0.7379715128835914
+      ],
+      "rf_auc": 0.5846091302645877,
+      "rf_ci95": [
+        0.4894732712672698,
+        0.6818199760081399
+      ],
+      "encoder_minus_xgb": 0.0703297157684244,
+      "encoder_minus_rf": 0.1106411854253917,
+      "encoder_beats_xgb": false,
+      "encoder_beats_rf": false
     }
   ],
   "uranium_robustness": {
