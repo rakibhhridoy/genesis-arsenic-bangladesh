@@ -21,6 +21,7 @@ Inputs (all released, no model/GPU needed):
 Usage:  python src/30_redox_dissociation.py
 Writes: results/redox_dissociation.json  (machine-readable headline stats)
 """
+import argparse
 import json
 from collections import defaultdict
 
@@ -30,6 +31,8 @@ from scipy.stats import wilcoxon
 REDOX = {"As", "Fe", "Mn", "PO4"}          # redox-coupled (mechanism-defined)
 CONSERVATIVE = {"NO3", "F"}                 # conservatively-behaved major/minor ions
 URANIUM = {"U"}                             # confounded counter-example
+# defaults are the Large encoder; pass --ft/--enc/--out to run another size.
+# RF baselines are encoder-independent, so the cross-size comparison is FT(size) vs the same RF.
 FT = "results/loro_finetune_large_multiseed.json"
 ENC = "results/region_transfer_encoder_large.json"
 
@@ -61,8 +64,14 @@ def paired(a, b):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ft", default=FT, help="fine-tune multiseed JSON (src/29)")
+    ap.add_argument("--enc", default=ENC, help="frozen-encoder + RF/XGB JSON (src/19+27)")
+    ap.add_argument("--out", default="results/redox_dissociation.json")
+    args = ap.parse_args()
+
     # fine-tuned: seed-average per cell
-    ft_rows = load_rows(FT)
+    ft_rows = load_rows(args.ft)
     by = defaultdict(list)
     for r in ft_rows:
         by[(r["target"], r["held_out_region"])].append(r)
@@ -71,7 +80,7 @@ def main():
     seeds = sorted({r["seed"] for r in ft_rows})
 
     # frozen encoder + RF baseline
-    enc = {(c["target"], c["held_out_region"]): c for c in load_rows(ENC)}
+    enc = {(c["target"], c["held_out_region"]): c for c in load_rows(args.enc)}
 
     # assemble matched cells (need rf_auc + fine-tune + frozen)
     cells = []
@@ -131,8 +140,8 @@ def main():
               f"Δ{st['delta']:+.3f}  win {st['wins']}/{st['n']}  p={st['wilcoxon_p']:.3f}")
     results["per_target"] = per_t
 
-    json.dump(results, open("results/redox_dissociation.json", "w"), indent=2)
-    print("\nSaved results/redox_dissociation.json")
+    json.dump(results, open(args.out, "w"), indent=2)
+    print(f"\nSaved {args.out}")
 
 
 if __name__ == "__main__":
