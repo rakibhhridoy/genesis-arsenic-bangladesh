@@ -25,7 +25,38 @@ pip install xgboost scikit-learn pandas pyarrow   # if not already present
 export PYTHONUNBUFFERED=1
 ```
 
-## 1. PILOT FIRST (~15–40 min, ~$0.20) — the decisive 6 cells
+## MULTI-SEED RUN (the robustness test — 2026-06-08)
+Single-seed full run is done (`results/loro_finetune_large.json`): fine-tuned mean
+0.756 vs RF 0.735, but a statistical TIE (Wilcoxon p=0.11) and the only live
+positive is a target-specific As/PO4 edge that single-seed cannot validate. The
+distance-conditional law is dead vs RF (rho=0.00). So the decisive remaining test
+is multi-seed.
+
+**Recommended cheap test — 5 seeds on the 18 As+PO4 cells (~2 h, ~$1.50):**
+```bash
+cd /workspace
+export PYTHONUNBUFFERED=1
+setsid nohup python src/29_loro_finetune.py --encoder_size large \
+    --ckpt checkpoints/large_stage2/best.pt \
+    --seeds 42,43,44,45,46 \
+    --cells "PO4/France,PO4/USA,PO4/EU,PO4/GEMStat:Italy,PO4/GEMStat:India,PO4/GEMStat:Lithuania,PO4/GEMStat:Poland,PO4/GEMStat:Mexico,PO4/GEMStat:Greece,PO4/GEMStat:Netherlands (-the ),PO4/Bangladesh,As/France,As/USA,As/EU,As/GEMStat:Italy,As/GEMStat:Mexico,As/GEMStat:Poland,As/Bangladesh" \
+    --out results/loro_ft_aspo4_5seed.json \
+    > /workspace/multiseed.log 2>&1 < /dev/null &
+disown
+```
+**Full 3-seed benchmark (all 47 cells, ~6 h, ~$3) — only if you want the complete table:**
+```bash
+setsid nohup python src/29_loro_finetune.py --encoder_size large \
+    --ckpt checkpoints/large_stage2/best.pt --seeds 42,43,44 \
+    --out results/loro_finetune_large_multiseed.json \
+    > /workspace/multiseed.log 2>&1 < /dev/null &
+disown
+```
+Resumable: each (cell,seed) is skipped if already in `--out`. The run prints a
+seed-averaged paired Wilcoxon FT-vs-RF + per-target breakdown at the end. Watch:
+`tail -f /workspace/multiseed.log`. Verify it launched: `sleep 5 && tail -5 /workspace/multiseed.log && pgrep -af 29_loro`.
+
+## 1. (single-seed) PILOT — the decisive 6 cells
 ```bash
 python src/29_loro_finetune.py --encoder_size large \
     --ckpt checkpoints/large_stage2/best.pt \
