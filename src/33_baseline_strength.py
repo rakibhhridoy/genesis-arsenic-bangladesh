@@ -87,6 +87,10 @@ def main():
 
     ftrows = json.load(open("results/loro_finetune_large_multiseed.json"))["per_cell_seedmean"]
     ft = {(r["target"], r["held_out_region"]): r["finetune_auc_mean"] for r in ftrows}
+    # Use the SAME stored default-RF as the rest of the paper (src/19+27 -> redox_dissociation,
+    # fig13) so the default-RF column is identical everywhere; only the STRONGER trees are re-fit here.
+    rf_stored = {(c["target"], c["held_out_region"]): c.get("rf_auc")
+                 for c in json.load(open("results/region_transfer_encoder_large.json"))["results"]}
 
     cells = []
     for target, thr in TARGETS.items():
@@ -98,9 +102,10 @@ def main():
             if yte.sum() < MIN_POS or (len(yte) - yte.sum()) < MIN_NEG: continue
             if ytr.sum() < MIN_POS or tr.sum() < MIN_TRAIN: continue
             if (target, R) not in ft: continue
+            if rf_stored.get((target, R)) is None: continue
             Xtr, Xte = chem[tr], chem[te]
             d = dict(target=target, region=R, ft=ft[(target, R)])
-            d["rf_default"] = roc_auc_score(yte, rf(Xtr, ytr, Xte))
+            d["rf_default"] = rf_stored[(target, R)]   # stored, paper-consistent default RF
             d["rf_reg"] = roc_auc_score(yte, rf(Xtr, ytr, Xte, max_depth=12, min_samples_leaf=5, max_features="sqrt"))
             d["rf_leaf"] = roc_auc_score(yte, rf(Xtr, ytr, Xte, min_samples_leaf=20, max_features="sqrt"))
             d["histgb"] = roc_auc_score(yte, histgb(Xtr, ytr, Xte))
