@@ -1,0 +1,2831 @@
+{
+  "per_seed_rows": [
+    {
+      "target": "As",
+      "held_out_region": "France",
+      "seed": 42,
+      "n_test": 23226,
+      "n_pos": 695,
+      "finetune_auc": 0.7689179359299435,
+      "finetune_ci95": [
+        0.7472015730220911,
+        0.7945659876300487
+      ],
+      "val_auc": 0.935112524512245,
+      "rf_auc": 0.7433347477703759,
+      "xgb_auc": 0.7629628962631821,
+      "elapsed_sec": 194.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "USA",
+      "seed": 42,
+      "n_test": 6290,
+      "n_pos": 782,
+      "finetune_auc": 0.9296288634564176,
+      "finetune_ci95": [
+        0.9205909590040542,
+        0.9397448899143004
+      ],
+      "val_auc": 0.924093583298485,
+      "rf_auc": 0.9065068880880119,
+      "xgb_auc": 0.8518153446621863,
+      "elapsed_sec": 284.3,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "As",
+      "held_out_region": "EU",
+      "seed": 42,
+      "n_test": 3969,
+      "n_pos": 106,
+      "finetune_auc": 0.7168618836845915,
+      "finetune_ci95": [
+        0.6570186578756323,
+        0.7697709731963328
+      ],
+      "val_auc": 0.9484267162553562,
+      "rf_auc": 0.6650425011943006,
+      "xgb_auc": 0.6582408232679131,
+      "elapsed_sec": 305.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 42,
+      "n_test": 3509,
+      "n_pos": 532,
+      "finetune_auc": 0.748484854576606,
+      "finetune_ci95": [
+        0.7214820460341244,
+        0.7711466454455217
+      ],
+      "val_auc": 0.9391022885099399,
+      "rf_auc": 0.7295810318103076,
+      "xgb_auc": 0.7165041243584009,
+      "elapsed_sec": 326.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 42,
+      "n_test": 1314,
+      "n_pos": 46,
+      "finetune_auc": 0.7720781853734241,
+      "finetune_ci95": [
+        0.6929661156903887,
+        0.8483951583892159
+      ],
+      "val_auc": 0.9378462080330076,
+      "rf_auc": 0.7079785242671904,
+      "xgb_auc": 0.7008320423369849,
+      "elapsed_sec": 195.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Poland",
+      "seed": 42,
+      "n_test": 123,
+      "n_pos": 14,
+      "finetune_auc": 0.36863552537056576,
+      "finetune_ci95": [
+        0.22141358078858078,
+        0.4979547856878601
+      ],
+      "val_auc": 0.9336959151960771,
+      "rf_auc": 0.2662654380742823,
+      "xgb_auc": 0.36490803513034675,
+      "elapsed_sec": 324.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "Bangladesh",
+      "seed": 42,
+      "n_test": 224,
+      "n_pos": 70,
+      "finetune_auc": 0.6433889831383689,
+      "finetune_ci95": [
+        0.5605853531626853,
+        0.7117865143369175
+      ],
+      "val_auc": 0.9339821967037052,
+      "rf_auc": 0.6769313142224699,
+      "xgb_auc": 0.6665863141339282,
+      "elapsed_sec": 301.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "France",
+      "seed": 42,
+      "n_test": 27372,
+      "n_pos": 1433,
+      "finetune_auc": 0.8897907693977716,
+      "finetune_ci95": [
+        0.8827023254707878,
+        0.8975165354721136
+      ],
+      "val_auc": 0.9866487455197133,
+      "rf_auc": 0.8999079568615511,
+      "xgb_auc": 0.8937597579098768,
+      "elapsed_sec": 149.6,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "USA",
+      "seed": 42,
+      "n_test": 5180,
+      "n_pos": 18,
+      "finetune_auc": 0.8457428555794748,
+      "finetune_ci95": [
+        0.6809203376457102,
+        0.9533275083667425
+      ],
+      "val_auc": 0.9595314263562704,
+      "rf_auc": 0.9402534828654416,
+      "xgb_auc": 0.8827507607507725,
+      "elapsed_sec": 229.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "EU",
+      "seed": 42,
+      "n_test": 6342,
+      "n_pos": 145,
+      "finetune_auc": 0.9536574241100633,
+      "finetune_ci95": [
+        0.9331323819252743,
+        0.9730063445352098
+      ],
+      "val_auc": 0.9500633987493154,
+      "rf_auc": 0.9507022928394807,
+      "xgb_auc": 0.9318187034712264,
+      "elapsed_sec": 223.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 42,
+      "n_test": 4035,
+      "n_pos": 12,
+      "finetune_auc": 0.8224935245648993,
+      "finetune_ci95": [
+        0.5604136130653771,
+        0.9899511921893672
+      ],
+      "val_auc": 0.9694788060151598,
+      "rf_auc": 0.9383144569753056,
+      "xgb_auc": 0.8650874323665849,
+      "elapsed_sec": 205.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Greece",
+      "seed": 42,
+      "n_test": 598,
+      "n_pos": 75,
+      "finetune_auc": 0.7743082192078468,
+      "finetune_ci95": [
+        0.7239375767018702,
+        0.8320988507358262
+      ],
+      "val_auc": 0.9694211467069985,
+      "rf_auc": 0.6803849287096695,
+      "xgb_auc": 0.696523646411703,
+      "elapsed_sec": 282.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "France",
+      "seed": 42,
+      "n_test": 2563,
+      "n_pos": 60,
+      "finetune_auc": 0.8990712562864449,
+      "finetune_ci95": [
+        0.8358407182905084,
+        0.9514340057210589
+      ],
+      "val_auc": 0.9861440589624102,
+      "rf_auc": 0.8748962385678968,
+      "xgb_auc": 0.8626747571063825,
+      "elapsed_sec": 95.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "USA",
+      "seed": 42,
+      "n_test": 8085,
+      "n_pos": 544,
+      "finetune_auc": 0.9691581087098138,
+      "finetune_ci95": [
+        0.9626925168598736,
+        0.9753156434348511
+      ],
+      "val_auc": 0.9760914760914761,
+      "rf_auc": 0.9626810616325713,
+      "xgb_auc": 0.9673778793089289,
+      "elapsed_sec": 82.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "EU",
+      "seed": 42,
+      "n_test": 1630,
+      "n_pos": 18,
+      "finetune_auc": 0.7681882477074441,
+      "finetune_ci95": [
+        0.6773221097574957,
+        0.853517550097672
+      ],
+      "val_auc": 0.9823767334360555,
+      "rf_auc": 0.6680002699037908,
+      "xgb_auc": 0.7475597064125811,
+      "elapsed_sec": 71.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 42,
+      "n_test": 998,
+      "n_pos": 204,
+      "finetune_auc": 0.855474151892985,
+      "finetune_ci95": [
+        0.8234938771708838,
+        0.8871944784879916
+      ],
+      "val_auc": 0.9785895484525622,
+      "rf_auc": 0.8427064648202703,
+      "xgb_auc": 0.8442358595236127,
+      "elapsed_sec": 144.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "France",
+      "seed": 42,
+      "n_test": 1691,
+      "n_pos": 14,
+      "finetune_auc": 0.692109772346889,
+      "finetune_ci95": [
+        0.6080063262125242,
+        0.7572471743010113
+      ],
+      "val_auc": 0.9714060148520959,
+      "rf_auc": 0.9211725157084135,
+      "xgb_auc": 0.9452015008791809,
+      "elapsed_sec": 49.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "USA",
+      "seed": 42,
+      "n_test": 3792,
+      "n_pos": 171,
+      "finetune_auc": 0.7242891734201657,
+      "finetune_ci95": [
+        0.6898634627580519,
+        0.7560579704428084
+      ],
+      "val_auc": 0.9931005818786368,
+      "rf_auc": 0.657818635973703,
+      "xgb_auc": 0.5569536318989836,
+      "elapsed_sec": 65.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:France",
+      "seed": 42,
+      "n_test": 351,
+      "n_pos": 34,
+      "finetune_auc": 0.7022650318055412,
+      "finetune_ci95": [
+        0.6407918000699963,
+        0.7661455718932878
+      ],
+      "val_auc": 0.963790992848399,
+      "rf_auc": 0.24023763279967134,
+      "xgb_auc": 0.43307108253832466,
+      "elapsed_sec": 33.0,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:Canada",
+      "seed": 42,
+      "n_test": 209,
+      "n_pos": 138,
+      "finetune_auc": 0.49931483461761983,
+      "finetune_ci95": [
+        0.4204704721217088,
+        0.5699232008969238
+      ],
+      "val_auc": 0.9621911753098114,
+      "rf_auc": 0.5951945377902901,
+      "xgb_auc": 0.5215680615915597,
+      "elapsed_sec": 53.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "France",
+      "seed": 42,
+      "n_test": 25570,
+      "n_pos": 1708,
+      "finetune_auc": 0.8423325723386759,
+      "finetune_ci95": [
+        0.8319776627304459,
+        0.8507302352834103
+      ],
+      "val_auc": 0.9287956713902331,
+      "rf_auc": 0.8283185164663035,
+      "xgb_auc": 0.8427271210518736,
+      "elapsed_sec": 131.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "USA",
+      "seed": 42,
+      "n_test": 5038,
+      "n_pos": 1657,
+      "finetune_auc": 0.854555427212687,
+      "finetune_ci95": [
+        0.8441863555251891,
+        0.8657852293586508
+      ],
+      "val_auc": 0.9463407804316896,
+      "rf_auc": 0.8722554280401212,
+      "xgb_auc": 0.8425398011714784,
+      "elapsed_sec": 215.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "EU",
+      "seed": 42,
+      "n_test": 2451,
+      "n_pos": 554,
+      "finetune_auc": 0.8286436117590279,
+      "finetune_ci95": [
+        0.809683290188007,
+        0.8474237540688238
+      ],
+      "val_auc": 0.9407615744885487,
+      "rf_auc": 0.8347392219548112,
+      "xgb_auc": 0.8244537305695481,
+      "elapsed_sec": 232.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 42,
+      "n_test": 1159,
+      "n_pos": 83,
+      "finetune_auc": 0.6663944722277536,
+      "finetune_ci95": [
+        0.600363332105068,
+        0.7362521578683617
+      ],
+      "val_auc": 0.9549169183254683,
+      "rf_auc": 0.71612547832453,
+      "xgb_auc": 0.7235401753213273,
+      "elapsed_sec": 281.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 42,
+      "n_test": 457,
+      "n_pos": 14,
+      "finetune_auc": 0.6907271665237914,
+      "finetune_ci95": [
+        0.5413881726154222,
+        0.8256647940074907
+      ],
+      "val_auc": 0.9392912426802343,
+      "rf_auc": 0.6711630161460715,
+      "xgb_auc": 0.7350664898370973,
+      "elapsed_sec": 251.6,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:France",
+      "seed": 42,
+      "n_test": 468,
+      "n_pos": 65,
+      "finetune_auc": 0.7347472189929638,
+      "finetune_ci95": [
+        0.6745104603371715,
+        0.7864610862394801
+      ],
+      "val_auc": 0.9473709572877745,
+      "rf_auc": 0.791788720819122,
+      "xgb_auc": 0.7591626703978005,
+      "elapsed_sec": 249.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Ireland",
+      "seed": 42,
+      "n_test": 121,
+      "n_pos": 25,
+      "finetune_auc": 0.7120529839627394,
+      "finetune_ci95": [
+        0.609048886138614,
+        0.7893489952718677
+      ],
+      "val_auc": 0.9471769005318956,
+      "rf_auc": 0.6784708353671576,
+      "xgb_auc": 0.6919050725013385,
+      "elapsed_sec": 257.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:India",
+      "seed": 42,
+      "n_test": 148,
+      "n_pos": 52,
+      "finetune_auc": 0.48161671410854096,
+      "finetune_ci95": [
+        0.39230071119356835,
+        0.5752247115523351
+      ],
+      "val_auc": 0.9487185655150294,
+      "rf_auc": 0.489373605468019,
+      "xgb_auc": 0.5968173575631455,
+      "elapsed_sec": 313.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Sweden",
+      "seed": 42,
+      "n_test": 219,
+      "n_pos": 110,
+      "finetune_auc": 0.9371886674161902,
+      "finetune_ci95": [
+        0.9019859819778869,
+        0.9671170263022025
+      ],
+      "val_auc": 0.9455495322071118,
+      "rf_auc": 0.8540172199650236,
+      "xgb_auc": 0.9352740787913131,
+      "elapsed_sec": 210.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "Bangladesh",
+      "seed": 42,
+      "n_test": 224,
+      "n_pos": 212,
+      "finetune_auc": 0.5986421187950722,
+      "finetune_ci95": [
+        0.4321223599100538,
+        0.7748932991890739
+      ],
+      "val_auc": 0.944738356598428,
+      "rf_auc": 0.4464111328476485,
+      "xgb_auc": 0.5219160521789992,
+      "elapsed_sec": 195.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "France",
+      "seed": 42,
+      "n_test": 25456,
+      "n_pos": 574,
+      "finetune_auc": 0.8658729867486211,
+      "finetune_ci95": [
+        0.8476102443589083,
+        0.8867946711787572
+      ],
+      "val_auc": 0.9562573356807511,
+      "rf_auc": 0.7962088422445194,
+      "xgb_auc": 0.8330337268839051,
+      "elapsed_sec": 104.0,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "USA",
+      "seed": 42,
+      "n_test": 6381,
+      "n_pos": 756,
+      "finetune_auc": 0.9129828745468666,
+      "finetune_ci95": [
+        0.9008457504861351,
+        0.9234400413191317
+      ],
+      "val_auc": 0.9518453442530624,
+      "rf_auc": 0.9274570126205508,
+      "xgb_auc": 0.9085032089444743,
+      "elapsed_sec": 167.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "EU",
+      "seed": 42,
+      "n_test": 2516,
+      "n_pos": 30,
+      "finetune_auc": 0.5779508008849259,
+      "finetune_ci95": [
+        0.46162756626657997,
+        0.7002989453951715
+      ],
+      "val_auc": 0.9560806247428056,
+      "rf_auc": 0.6120904060392567,
+      "xgb_auc": 0.6073501280771919,
+      "elapsed_sec": 146.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 42,
+      "n_test": 1257,
+      "n_pos": 38,
+      "finetune_auc": 0.8709896931291172,
+      "finetune_ci95": [
+        0.8244782938162575,
+        0.9226691938134388
+      ],
+      "val_auc": 0.9610492655507242,
+      "rf_auc": 0.8549335825952025,
+      "xgb_auc": 0.8804696736089218,
+      "elapsed_sec": 190.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "seed": 42,
+      "n_test": 106,
+      "n_pos": 16,
+      "finetune_auc": 0.40889812275218845,
+      "finetune_ci95": [
+        0.25709263854425146,
+        0.5911154996206542
+      ],
+      "val_auc": 0.9598467193785544,
+      "rf_auc": 0.46045532798828304,
+      "xgb_auc": 0.22942393887515578,
+      "elapsed_sec": 210.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "Bangladesh",
+      "seed": 42,
+      "n_test": 224,
+      "n_pos": 96,
+      "finetune_auc": 0.5393371479873229,
+      "finetune_ci95": [
+        0.4739330451313836,
+        0.6149420966546315
+      ],
+      "val_auc": 0.9442973566326447,
+      "rf_auc": 0.5913141610510698,
+      "xgb_auc": 0.5696936035075614,
+      "elapsed_sec": 196.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "France",
+      "seed": 42,
+      "n_test": 7011,
+      "n_pos": 187,
+      "finetune_auc": 0.7512730058197173,
+      "finetune_ci95": [
+        0.71082230695777,
+        0.7831390546954591
+      ],
+      "val_auc": 0.9524715158000754,
+      "rf_auc": 0.7030555799833667,
+      "xgb_auc": 0.6840602080916207,
+      "elapsed_sec": 147.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "USA",
+      "seed": 42,
+      "n_test": 5596,
+      "n_pos": 93,
+      "finetune_auc": 0.8350080520538796,
+      "finetune_ci95": [
+        0.7861716591610953,
+        0.8813014554795692
+      ],
+      "val_auc": 0.9382860566046998,
+      "rf_auc": 0.8858880907649792,
+      "xgb_auc": 0.7444560290202983,
+      "elapsed_sec": 155.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "EU",
+      "seed": 42,
+      "n_test": 6385,
+      "n_pos": 1389,
+      "finetune_auc": 0.6970196417005448,
+      "finetune_ci95": [
+        0.6807192199153534,
+        0.7111762660290611
+      ],
+      "val_auc": 0.9413108026554013,
+      "rf_auc": 0.7082449352773659,
+      "xgb_auc": 0.6536980538901025,
+      "elapsed_sec": 171.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 42,
+      "n_test": 4009,
+      "n_pos": 948,
+      "finetune_auc": 0.8331386103371855,
+      "finetune_ci95": [
+        0.815940353843313,
+        0.8494707324780539
+      ],
+      "val_auc": 0.9433954736689395,
+      "rf_auc": 0.7683071953851806,
+      "xgb_auc": 0.7940688722154488,
+      "elapsed_sec": 154.6,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 42,
+      "n_test": 1377,
+      "n_pos": 69,
+      "finetune_auc": 0.7305250104581418,
+      "finetune_ci95": [
+        0.6679053931609993,
+        0.7914542716445434
+      ],
+      "val_auc": 0.9528924777176508,
+      "rf_auc": 0.6431652033765096,
+      "xgb_auc": 0.6811276528057116,
+      "elapsed_sec": 214.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Poland",
+      "seed": 42,
+      "n_test": 1182,
+      "n_pos": 47,
+      "finetune_auc": 0.7545332219277787,
+      "finetune_ci95": [
+        0.6833333540862886,
+        0.8240245618973363
+      ],
+      "val_auc": 0.9511217324293668,
+      "rf_auc": 0.7281474046741252,
+      "xgb_auc": 0.7252340096709724,
+      "elapsed_sec": 220.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Greece",
+      "seed": 42,
+      "n_test": 112,
+      "n_pos": 16,
+      "finetune_auc": 0.8809869420668679,
+      "finetune_ci95": [
+        0.7971212703211737,
+        0.948767855733896
+      ],
+      "val_auc": 0.950703970299513,
+      "rf_auc": 0.8619337612371075,
+      "xgb_auc": 0.8808512494321825,
+      "elapsed_sec": 193.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:India",
+      "seed": 42,
+      "n_test": 327,
+      "n_pos": 38,
+      "finetune_auc": 0.640850676443288,
+      "finetune_ci95": [
+        0.5537633098654142,
+        0.7324121282394003
+      ],
+      "val_auc": 0.943222604259095,
+      "rf_auc": 0.6567526227151762,
+      "xgb_auc": 0.5872129418835941,
+      "elapsed_sec": 201.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Lithuania",
+      "seed": 42,
+      "n_test": 339,
+      "n_pos": 30,
+      "finetune_auc": 0.9052397704811673,
+      "finetune_ci95": [
+        0.8638482655013107,
+        0.9422587540716614
+      ],
+      "val_auc": 0.9450671332692111,
+      "rf_auc": 0.7557812728157917,
+      "xgb_auc": 0.8123016717916566,
+      "elapsed_sec": 209.8,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "seed": 42,
+      "n_test": 313,
+      "n_pos": 20,
+      "finetune_auc": 0.9276336021768523,
+      "finetune_ci95": [
+        0.8706891940857509,
+        0.965875539051003
+      ],
+      "val_auc": 0.9360411946761653,
+      "rf_auc": 0.9360434647643772,
+      "xgb_auc": 0.8834082101115118,
+      "elapsed_sec": 204.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "Bangladesh",
+      "seed": 42,
+      "n_test": 224,
+      "n_pos": 185,
+      "finetune_auc": 0.598178724296279,
+      "finetune_ci95": [
+        0.48985312071877357,
+        0.6966329079184334
+      ],
+      "val_auc": 0.9479185806561038,
+      "rf_auc": 0.5846091302645877,
+      "xgb_auc": 0.624920599921555,
+      "elapsed_sec": 211.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "France",
+      "seed": 43,
+      "n_test": 23226,
+      "n_pos": 695,
+      "finetune_auc": 0.7814075925965116,
+      "finetune_ci95": [
+        0.7613774421193004,
+        0.804426229706153
+      ],
+      "val_auc": 0.9522060573099018,
+      "rf_auc": 0.7433347477703759,
+      "xgb_auc": 0.7629628962631821,
+      "elapsed_sec": 111.6,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "USA",
+      "seed": 43,
+      "n_test": 6290,
+      "n_pos": 782,
+      "finetune_auc": 0.8995200905832493,
+      "finetune_ci95": [
+        0.8886417119156398,
+        0.9117653083715219
+      ],
+      "val_auc": 0.9132880741743186,
+      "rf_auc": 0.9065068880880119,
+      "xgb_auc": 0.8518153446621863,
+      "elapsed_sec": 265.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "EU",
+      "seed": 43,
+      "n_test": 3969,
+      "n_pos": 106,
+      "finetune_auc": 0.7729833761203451,
+      "finetune_ci95": [
+        0.7214339112720095,
+        0.8223619172931218
+      ],
+      "val_auc": 0.9379607779047073,
+      "rf_auc": 0.6650425011943006,
+      "xgb_auc": 0.6582408232679131,
+      "elapsed_sec": 229.0,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 43,
+      "n_test": 3509,
+      "n_pos": 532,
+      "finetune_auc": 0.7493234689422533,
+      "finetune_ci95": [
+        0.724559369209908,
+        0.7720530268636068
+      ],
+      "val_auc": 0.9304288542693137,
+      "rf_auc": 0.7295810318103076,
+      "xgb_auc": 0.7165041243584009,
+      "elapsed_sec": 175.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 43,
+      "n_test": 1314,
+      "n_pos": 46,
+      "finetune_auc": 0.7757854015239141,
+      "finetune_ci95": [
+        0.7063271011943446,
+        0.84546113370278
+      ],
+      "val_auc": 0.94063938597163,
+      "rf_auc": 0.7079785242671904,
+      "xgb_auc": 0.7008320423369849,
+      "elapsed_sec": 254.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Poland",
+      "seed": 43,
+      "n_test": 123,
+      "n_pos": 14,
+      "finetune_auc": 0.35143091796934356,
+      "finetune_ci95": [
+        0.24990746921821694,
+        0.4577190441439295
+      ],
+      "val_auc": 0.941727287633519,
+      "rf_auc": 0.2662654380742823,
+      "xgb_auc": 0.36490803513034675,
+      "elapsed_sec": 298.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "Bangladesh",
+      "seed": 43,
+      "n_test": 224,
+      "n_pos": 70,
+      "finetune_auc": 0.6564532240869886,
+      "finetune_ci95": [
+        0.5832941541452519,
+        0.7220799399321934
+      ],
+      "val_auc": 0.9411636684704036,
+      "rf_auc": 0.6769313142224699,
+      "xgb_auc": 0.6665863141339282,
+      "elapsed_sec": 260.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "France",
+      "seed": 43,
+      "n_test": 27372,
+      "n_pos": 1433,
+      "finetune_auc": 0.8864375355437359,
+      "finetune_ci95": [
+        0.8774526611536583,
+        0.8941500896727748
+      ],
+      "val_auc": 0.9638238893558041,
+      "rf_auc": 0.8999079568615511,
+      "xgb_auc": 0.8937597579098768,
+      "elapsed_sec": 149.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "USA",
+      "seed": 43,
+      "n_test": 5180,
+      "n_pos": 18,
+      "finetune_auc": 0.8127143671466172,
+      "finetune_ci95": [
+        0.6722513407466514,
+        0.9338395191615926
+      ],
+      "val_auc": 0.9654067948254115,
+      "rf_auc": 0.9402534828654416,
+      "xgb_auc": 0.8827507607507725,
+      "elapsed_sec": 231.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "EU",
+      "seed": 43,
+      "n_test": 6342,
+      "n_pos": 145,
+      "finetune_auc": 0.9523845625790307,
+      "finetune_ci95": [
+        0.9289976952724976,
+        0.9751669994823395
+      ],
+      "val_auc": 0.9597790374152126,
+      "rf_auc": 0.9507022928394807,
+      "xgb_auc": 0.9318187034712264,
+      "elapsed_sec": 250.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 43,
+      "n_test": 4035,
+      "n_pos": 12,
+      "finetune_auc": 0.8525668179445302,
+      "finetune_ci95": [
+        0.6180884414936213,
+        0.9938376687767636
+      ],
+      "val_auc": 0.9636225727831446,
+      "rf_auc": 0.9383144569753056,
+      "xgb_auc": 0.8650874323665849,
+      "elapsed_sec": 312.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Greece",
+      "seed": 43,
+      "n_test": 598,
+      "n_pos": 75,
+      "finetune_auc": 0.7778055405659646,
+      "finetune_ci95": [
+        0.7281306687761034,
+        0.8343001953139147
+      ],
+      "val_auc": 0.9748616262097164,
+      "rf_auc": 0.6803849287096695,
+      "xgb_auc": 0.696523646411703,
+      "elapsed_sec": 253.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "France",
+      "seed": 43,
+      "n_test": 2563,
+      "n_pos": 60,
+      "finetune_auc": 0.8871363246560303,
+      "finetune_ci95": [
+        0.8267418717605586,
+        0.9409390441266343
+      ],
+      "val_auc": 0.9816031860899017,
+      "rf_auc": 0.8748962385678968,
+      "xgb_auc": 0.8626747571063825,
+      "elapsed_sec": 54.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "USA",
+      "seed": 43,
+      "n_test": 8085,
+      "n_pos": 544,
+      "finetune_auc": 0.9699279488056538,
+      "finetune_ci95": [
+        0.9640475250232348,
+        0.9750716058553291
+      ],
+      "val_auc": 0.9591494459418987,
+      "rf_auc": 0.9626810616325713,
+      "xgb_auc": 0.9673778793089289,
+      "elapsed_sec": 56.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "EU",
+      "seed": 43,
+      "n_test": 1630,
+      "n_pos": 18,
+      "finetune_auc": 0.6145030337525074,
+      "finetune_ci95": [
+        0.4885572921456232,
+        0.7094833152996786
+      ],
+      "val_auc": 0.9829790485651109,
+      "rf_auc": 0.6680002699037908,
+      "xgb_auc": 0.7475597064125811,
+      "elapsed_sec": 143.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 43,
+      "n_test": 998,
+      "n_pos": 204,
+      "finetune_auc": 0.8564761322710622,
+      "finetune_ci95": [
+        0.8254241933724352,
+        0.8849169677361065
+      ],
+      "val_auc": 0.9907411627959979,
+      "rf_auc": 0.8427064648202703,
+      "xgb_auc": 0.8442358595236127,
+      "elapsed_sec": 124.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "France",
+      "seed": 43,
+      "n_test": 1691,
+      "n_pos": 14,
+      "finetune_auc": 0.513845953871808,
+      "finetune_ci95": [
+        0.4147101721785429,
+        0.6020611510333369
+      ],
+      "val_auc": 0.9671649105611371,
+      "rf_auc": 0.9211725157084135,
+      "xgb_auc": 0.9452015008791809,
+      "elapsed_sec": 71.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "USA",
+      "seed": 43,
+      "n_test": 3792,
+      "n_pos": 171,
+      "finetune_auc": 0.7228090829309246,
+      "finetune_ci95": [
+        0.6900561241320411,
+        0.754422063893138
+      ],
+      "val_auc": 0.9946654812180484,
+      "rf_auc": 0.657818635973703,
+      "xgb_auc": 0.5569536318989836,
+      "elapsed_sec": 47.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:France",
+      "seed": 43,
+      "n_test": 351,
+      "n_pos": 34,
+      "finetune_auc": 0.7228767609576943,
+      "finetune_ci95": [
+        0.6353714631335868,
+        0.8022692272888655
+      ],
+      "val_auc": 0.9725410248666062,
+      "rf_auc": 0.24023763279967134,
+      "xgb_auc": 0.43307108253832466,
+      "elapsed_sec": 71.8,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:Canada",
+      "seed": 43,
+      "n_test": 209,
+      "n_pos": 138,
+      "finetune_auc": 0.4802730134686348,
+      "finetune_ci95": [
+        0.4084905377626896,
+        0.5523800406098603
+      ],
+      "val_auc": 0.979178142558114,
+      "rf_auc": 0.5951945377902901,
+      "xgb_auc": 0.5215680615915597,
+      "elapsed_sec": 45.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "France",
+      "seed": 43,
+      "n_test": 25570,
+      "n_pos": 1708,
+      "finetune_auc": 0.8168925598072321,
+      "finetune_ci95": [
+        0.8041913958778054,
+        0.8289004499401825
+      ],
+      "val_auc": 0.9243405875283984,
+      "rf_auc": 0.8283185164663035,
+      "xgb_auc": 0.8427271210518736,
+      "elapsed_sec": 122.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "USA",
+      "seed": 43,
+      "n_test": 5038,
+      "n_pos": 1657,
+      "finetune_auc": 0.8518512931505279,
+      "finetune_ci95": [
+        0.8390862727377756,
+        0.86347973537067
+      ],
+      "val_auc": 0.9356024235658243,
+      "rf_auc": 0.8722554280401212,
+      "xgb_auc": 0.8425398011714784,
+      "elapsed_sec": 206.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "EU",
+      "seed": 43,
+      "n_test": 2451,
+      "n_pos": 554,
+      "finetune_auc": 0.8223872499563422,
+      "finetune_ci95": [
+        0.7991309753285268,
+        0.8414638561569059
+      ],
+      "val_auc": 0.9452397712673765,
+      "rf_auc": 0.8347392219548112,
+      "xgb_auc": 0.8244537305695481,
+      "elapsed_sec": 250.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 43,
+      "n_test": 1159,
+      "n_pos": 83,
+      "finetune_auc": 0.6666256839327755,
+      "finetune_ci95": [
+        0.5903912516957918,
+        0.7415675001147202
+      ],
+      "val_auc": 0.9453767729183992,
+      "rf_auc": 0.71612547832453,
+      "xgb_auc": 0.7235401753213273,
+      "elapsed_sec": 203.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 43,
+      "n_test": 457,
+      "n_pos": 14,
+      "finetune_auc": 0.6768941395981343,
+      "finetune_ci95": [
+        0.49655746696426306,
+        0.8271215216085684
+      ],
+      "val_auc": 0.9360781197845122,
+      "rf_auc": 0.6711630161460715,
+      "xgb_auc": 0.7350664898370973,
+      "elapsed_sec": 242.6,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:France",
+      "seed": 43,
+      "n_test": 468,
+      "n_pos": 65,
+      "finetune_auc": 0.7761446940952587,
+      "finetune_ci95": [
+        0.7231944462921066,
+        0.8283519600165329
+      ],
+      "val_auc": 0.9460581775033666,
+      "rf_auc": 0.791788720819122,
+      "xgb_auc": 0.7591626703978005,
+      "elapsed_sec": 205.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Ireland",
+      "seed": 43,
+      "n_test": 121,
+      "n_pos": 25,
+      "finetune_auc": 0.7267194700311138,
+      "finetune_ci95": [
+        0.6165168692834855,
+        0.8251727096977827
+      ],
+      "val_auc": 0.9462823951873073,
+      "rf_auc": 0.6784708353671576,
+      "xgb_auc": 0.6919050725013385,
+      "elapsed_sec": 241.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:India",
+      "seed": 43,
+      "n_test": 148,
+      "n_pos": 52,
+      "finetune_auc": 0.4986809205239996,
+      "finetune_ci95": [
+        0.39518516230830997,
+        0.6110871685256049
+      ],
+      "val_auc": 0.9434001824265588,
+      "rf_auc": 0.489373605468019,
+      "xgb_auc": 0.5968173575631455,
+      "elapsed_sec": 264.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Sweden",
+      "seed": 43,
+      "n_test": 219,
+      "n_pos": 110,
+      "finetune_auc": 0.926092438447567,
+      "finetune_ci95": [
+        0.8852801276586443,
+        0.9571147325326892
+      ],
+      "val_auc": 0.9538747993305845,
+      "rf_auc": 0.8540172199650236,
+      "xgb_auc": 0.9352740787913131,
+      "elapsed_sec": 257.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "Bangladesh",
+      "seed": 43,
+      "n_test": 224,
+      "n_pos": 212,
+      "finetune_auc": 0.5452024512339211,
+      "finetune_ci95": [
+        0.35240997208814784,
+        0.7339608162565379
+      ],
+      "val_auc": 0.9450826770280252,
+      "rf_auc": 0.4464111328476485,
+      "xgb_auc": 0.5219160521789992,
+      "elapsed_sec": 234.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "France",
+      "seed": 43,
+      "n_test": 25456,
+      "n_pos": 574,
+      "finetune_auc": 0.8737791425947279,
+      "finetune_ci95": [
+        0.8550990722336572,
+        0.8940884075884916
+      ],
+      "val_auc": 0.9426019659624412,
+      "rf_auc": 0.7962088422445194,
+      "xgb_auc": 0.8330337268839051,
+      "elapsed_sec": 110.6,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "USA",
+      "seed": 43,
+      "n_test": 6381,
+      "n_pos": 756,
+      "finetune_auc": 0.9217441960637289,
+      "finetune_ci95": [
+        0.9099174475955605,
+        0.932630881048066
+      ],
+      "val_auc": 0.965406626506024,
+      "rf_auc": 0.9274570126205508,
+      "xgb_auc": 0.9085032089444743,
+      "elapsed_sec": 169.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "EU",
+      "seed": 43,
+      "n_test": 2516,
+      "n_pos": 30,
+      "finetune_auc": 0.5525817124528001,
+      "finetune_ci95": [
+        0.4420979835621496,
+        0.6646576398077724
+      ],
+      "val_auc": 0.9551452313791263,
+      "rf_auc": 0.6120904060392567,
+      "xgb_auc": 0.6073501280771919,
+      "elapsed_sec": 253.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 43,
+      "n_test": 1257,
+      "n_pos": 38,
+      "finetune_auc": 0.8610187811233421,
+      "finetune_ci95": [
+        0.7960725226577067,
+        0.9179815690347626
+      ],
+      "val_auc": 0.9615446343114599,
+      "rf_auc": 0.8549335825952025,
+      "xgb_auc": 0.8804696736089218,
+      "elapsed_sec": 216.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "seed": 43,
+      "n_test": 106,
+      "n_pos": 16,
+      "finetune_auc": 0.4822745980791059,
+      "finetune_ci95": [
+        0.31979598374605095,
+        0.6767685112860263
+      ],
+      "val_auc": 0.9570229025669568,
+      "rf_auc": 0.46045532798828304,
+      "xgb_auc": 0.22942393887515578,
+      "elapsed_sec": 172.6,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "Bangladesh",
+      "seed": 43,
+      "n_test": 224,
+      "n_pos": 96,
+      "finetune_auc": 0.5633841847964802,
+      "finetune_ci95": [
+        0.49868271415115245,
+        0.6348365182208372
+      ],
+      "val_auc": 0.9585897866179232,
+      "rf_auc": 0.5913141610510698,
+      "xgb_auc": 0.5696936035075614,
+      "elapsed_sec": 177.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "France",
+      "seed": 43,
+      "n_test": 7011,
+      "n_pos": 187,
+      "finetune_auc": 0.7384213366576766,
+      "finetune_ci95": [
+        0.6934842251749629,
+        0.7733979431017468
+      ],
+      "val_auc": 0.9475937382898834,
+      "rf_auc": 0.7030555799833667,
+      "xgb_auc": 0.6840602080916207,
+      "elapsed_sec": 148.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "USA",
+      "seed": 43,
+      "n_test": 5596,
+      "n_pos": 93,
+      "finetune_auc": 0.8354518528943942,
+      "finetune_ci95": [
+        0.7879246385550341,
+        0.8774523583357834
+      ],
+      "val_auc": 0.9372171526826818,
+      "rf_auc": 0.8858880907649792,
+      "xgb_auc": 0.7444560290202983,
+      "elapsed_sec": 174.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "EU",
+      "seed": 43,
+      "n_test": 6385,
+      "n_pos": 1389,
+      "finetune_auc": 0.7199113875825879,
+      "finetune_ci95": [
+        0.7037203000676359,
+        0.7348543326478701
+      ],
+      "val_auc": 0.940989902293942,
+      "rf_auc": 0.7082449352773659,
+      "xgb_auc": 0.6536980538901025,
+      "elapsed_sec": 115.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 43,
+      "n_test": 4009,
+      "n_pos": 948,
+      "finetune_auc": 0.7894133111085253,
+      "finetune_ci95": [
+        0.7714717092946042,
+        0.8077070587728793
+      ],
+      "val_auc": 0.9382179769828428,
+      "rf_auc": 0.7683071953851806,
+      "xgb_auc": 0.7940688722154488,
+      "elapsed_sec": 246.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 43,
+      "n_test": 1377,
+      "n_pos": 69,
+      "finetune_auc": 0.7459079776943773,
+      "finetune_ci95": [
+        0.6830875785353383,
+        0.7993466821936124
+      ],
+      "val_auc": 0.9450178380004839,
+      "rf_auc": 0.6431652033765096,
+      "xgb_auc": 0.6811276528057116,
+      "elapsed_sec": 186.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Poland",
+      "seed": 43,
+      "n_test": 1182,
+      "n_pos": 47,
+      "finetune_auc": 0.741664510979852,
+      "finetune_ci95": [
+        0.6725890117320981,
+        0.8080634938320397
+      ],
+      "val_auc": 0.9494479922831575,
+      "rf_auc": 0.7281474046741252,
+      "xgb_auc": 0.7252340096709724,
+      "elapsed_sec": 170.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Greece",
+      "seed": 43,
+      "n_test": 112,
+      "n_pos": 16,
+      "finetune_auc": 0.8943453228722369,
+      "finetune_ci95": [
+        0.8294452066540903,
+        0.9559048192053248
+      ],
+      "val_auc": 0.9499256231363937,
+      "rf_auc": 0.8619337612371075,
+      "xgb_auc": 0.8808512494321825,
+      "elapsed_sec": 189.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:India",
+      "seed": 43,
+      "n_test": 327,
+      "n_pos": 38,
+      "finetune_auc": 0.6937961902223193,
+      "finetune_ci95": [
+        0.6171663189043326,
+        0.7585972553334556
+      ],
+      "val_auc": 0.9426897641929997,
+      "rf_auc": 0.6567526227151762,
+      "xgb_auc": 0.5872129418835941,
+      "elapsed_sec": 204.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Lithuania",
+      "seed": 43,
+      "n_test": 339,
+      "n_pos": 30,
+      "finetune_auc": 0.8801630946775796,
+      "finetune_ci95": [
+        0.8317029723127037,
+        0.933411149565454
+      ],
+      "val_auc": 0.9493536795551365,
+      "rf_auc": 0.7557812728157917,
+      "xgb_auc": 0.8123016717916566,
+      "elapsed_sec": 205.4,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "seed": 43,
+      "n_test": 313,
+      "n_pos": 20,
+      "finetune_auc": 0.9495182552259627,
+      "finetune_ci95": [
+        0.9135880744531407,
+        0.9816263981328348
+      ],
+      "val_auc": 0.9416693341269697,
+      "rf_auc": 0.9360434647643772,
+      "xgb_auc": 0.8834082101115118,
+      "elapsed_sec": 175.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "Bangladesh",
+      "seed": 43,
+      "n_test": 224,
+      "n_pos": 185,
+      "finetune_auc": 0.6973895206624192,
+      "finetune_ci95": [
+        0.5969021424332847,
+        0.7735432208226326
+      ],
+      "val_auc": 0.9460510230164816,
+      "rf_auc": 0.5846091302645877,
+      "xgb_auc": 0.624920599921555,
+      "elapsed_sec": 156.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "France",
+      "seed": 44,
+      "n_test": 23226,
+      "n_pos": 695,
+      "finetune_auc": 0.7910262452902603,
+      "finetune_ci95": [
+        0.7725074006815699,
+        0.8131926624171009
+      ],
+      "val_auc": 0.9410577458078921,
+      "rf_auc": 0.7433347477703759,
+      "xgb_auc": 0.7629628962631821,
+      "elapsed_sec": 99.2,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "As",
+      "held_out_region": "USA",
+      "seed": 44,
+      "n_test": 6290,
+      "n_pos": 782,
+      "finetune_auc": 0.8939485424444527,
+      "finetune_ci95": [
+        0.8832548570661564,
+        0.905268030317151
+      ],
+      "val_auc": 0.9413413314603541,
+      "rf_auc": 0.9065068880880119,
+      "xgb_auc": 0.8518153446621863,
+      "elapsed_sec": 276.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "EU",
+      "seed": 44,
+      "n_test": 3969,
+      "n_pos": 106,
+      "finetune_auc": 0.7538149920454487,
+      "finetune_ci95": [
+        0.7029102193230553,
+        0.8032177971623221
+      ],
+      "val_auc": 0.9422272888641552,
+      "rf_auc": 0.6650425011943006,
+      "xgb_auc": 0.6582408232679131,
+      "elapsed_sec": 237.6,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 44,
+      "n_test": 3509,
+      "n_pos": 532,
+      "finetune_auc": 0.776137274601144,
+      "finetune_ci95": [
+        0.7514349709793222,
+        0.7975695448086074
+      ],
+      "val_auc": 0.9365374423244792,
+      "rf_auc": 0.7295810318103076,
+      "xgb_auc": 0.7165041243584009,
+      "elapsed_sec": 282.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 44,
+      "n_test": 1314,
+      "n_pos": 46,
+      "finetune_auc": 0.8307041445646951,
+      "finetune_ci95": [
+        0.7727455883560606,
+        0.8806325407521499
+      ],
+      "val_auc": 0.936063574813846,
+      "rf_auc": 0.7079785242671904,
+      "xgb_auc": 0.7008320423369849,
+      "elapsed_sec": 352.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Poland",
+      "seed": 44,
+      "n_test": 123,
+      "n_pos": 14,
+      "finetune_auc": 0.40596259534250023,
+      "finetune_ci95": [
+        0.28663276484234046,
+        0.5426367949083123
+      ],
+      "val_auc": 0.9301089461868836,
+      "rf_auc": 0.2662654380742823,
+      "xgb_auc": 0.36490803513034675,
+      "elapsed_sec": 177.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "As",
+      "held_out_region": "Bangladesh",
+      "seed": 44,
+      "n_test": 224,
+      "n_pos": 70,
+      "finetune_auc": 0.6476632917085555,
+      "finetune_ci95": [
+        0.5701414344734019,
+        0.7220900928539749
+      ],
+      "val_auc": 0.9383514885123371,
+      "rf_auc": 0.6769313142224699,
+      "xgb_auc": 0.6665863141339282,
+      "elapsed_sec": 195.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "France",
+      "seed": 44,
+      "n_test": 27372,
+      "n_pos": 1433,
+      "finetune_auc": 0.8744378160895886,
+      "finetune_ci95": [
+        0.8660881884281101,
+        0.8835474725642052
+      ],
+      "val_auc": 0.9898116192119644,
+      "rf_auc": 0.8999079568615511,
+      "xgb_auc": 0.8937597579098768,
+      "elapsed_sec": 167.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "USA",
+      "seed": 44,
+      "n_test": 5180,
+      "n_pos": 18,
+      "finetune_auc": 0.8795643583539423,
+      "finetune_ci95": [
+        0.7743865163359156,
+        0.9554373554245204
+      ],
+      "val_auc": 0.9518011713571296,
+      "rf_auc": 0.9402534828654416,
+      "xgb_auc": 0.8827507607507725,
+      "elapsed_sec": 223.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "EU",
+      "seed": 44,
+      "n_test": 6342,
+      "n_pos": 145,
+      "finetune_auc": 0.9510888467512821,
+      "finetune_ci95": [
+        0.9271537706373433,
+        0.9704131350451525
+      ],
+      "val_auc": 0.9684446784525762,
+      "rf_auc": 0.9507022928394807,
+      "xgb_auc": 0.9318187034712264,
+      "elapsed_sec": 275.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 44,
+      "n_test": 4035,
+      "n_pos": 12,
+      "finetune_auc": 0.8123715879014979,
+      "finetune_ci95": [
+        0.5661999690134865,
+        0.9789895786624752
+      ],
+      "val_auc": 0.9641180807203077,
+      "rf_auc": 0.9383144569753056,
+      "xgb_auc": 0.8650874323665849,
+      "elapsed_sec": 233.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Greece",
+      "seed": 44,
+      "n_test": 598,
+      "n_pos": 75,
+      "finetune_auc": 0.7898202581171191,
+      "finetune_ci95": [
+        0.7358551757977014,
+        0.8432675314371565
+      ],
+      "val_auc": 0.9687894644011994,
+      "rf_auc": 0.6803849287096695,
+      "xgb_auc": 0.696523646411703,
+      "elapsed_sec": 188.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "France",
+      "seed": 44,
+      "n_test": 2563,
+      "n_pos": 60,
+      "finetune_auc": 0.8844784494311831,
+      "finetune_ci95": [
+        0.82301751864075,
+        0.9392108786909364
+      ],
+      "val_auc": 0.9826252254467945,
+      "rf_auc": 0.8748962385678968,
+      "xgb_auc": 0.8626747571063825,
+      "elapsed_sec": 85.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "USA",
+      "seed": 44,
+      "n_test": 8085,
+      "n_pos": 544,
+      "finetune_auc": 0.9715091854339934,
+      "finetune_ci95": [
+        0.9626880353215215,
+        0.9786092207830009
+      ],
+      "val_auc": 0.9687842528315673,
+      "rf_auc": 0.9626810616325713,
+      "xgb_auc": 0.9673778793089289,
+      "elapsed_sec": 43.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "EU",
+      "seed": 44,
+      "n_test": 1630,
+      "n_pos": 18,
+      "finetune_auc": 0.8326174843398461,
+      "finetune_ci95": [
+        0.7581383464686473,
+        0.8998666404626875
+      ],
+      "val_auc": 0.970214879017696,
+      "rf_auc": 0.6680002699037908,
+      "xgb_auc": 0.7475597064125811,
+      "elapsed_sec": 70.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "F",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 44,
+      "n_test": 998,
+      "n_pos": 204,
+      "finetune_auc": 0.8644184862757862,
+      "finetune_ci95": [
+        0.8383236724300251,
+        0.8934845906235513
+      ],
+      "val_auc": 0.9775116937227311,
+      "rf_auc": 0.8427064648202703,
+      "xgb_auc": 0.8442358595236127,
+      "elapsed_sec": 90.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "France",
+      "seed": 44,
+      "n_test": 1691,
+      "n_pos": 14,
+      "finetune_auc": 0.43767047601333475,
+      "finetune_ci95": [
+        0.36072196389244754,
+        0.5118087899871581
+      ],
+      "val_auc": 0.9669436581134143,
+      "rf_auc": 0.9211725157084135,
+      "xgb_auc": 0.9452015008791809,
+      "elapsed_sec": 54.4,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "USA",
+      "seed": 44,
+      "n_test": 3792,
+      "n_pos": 171,
+      "finetune_auc": 0.7216876262465723,
+      "finetune_ci95": [
+        0.6902637514905772,
+        0.7537565660052936
+      ],
+      "val_auc": 0.9838556505223172,
+      "rf_auc": 0.657818635973703,
+      "xgb_auc": 0.5569536318989836,
+      "elapsed_sec": 44.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:France",
+      "seed": 44,
+      "n_test": 351,
+      "n_pos": 34,
+      "finetune_auc": 0.7962767394681447,
+      "finetune_ci95": [
+        0.7246835645210228,
+        0.8690264582438805
+      ],
+      "val_auc": 0.9849137931034484,
+      "rf_auc": 0.24023763279967134,
+      "xgb_auc": 0.43307108253832466,
+      "elapsed_sec": 74.4,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:Canada",
+      "seed": 44,
+      "n_test": 209,
+      "n_pos": 138,
+      "finetune_auc": 0.5807322239564208,
+      "finetune_ci95": [
+        0.49461081334499063,
+        0.6545405554808541
+      ],
+      "val_auc": 0.9652173913043478,
+      "rf_auc": 0.5951945377902901,
+      "xgb_auc": 0.5215680615915597,
+      "elapsed_sec": 82.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "France",
+      "seed": 44,
+      "n_test": 25570,
+      "n_pos": 1708,
+      "finetune_auc": 0.8376744240917777,
+      "finetune_ci95": [
+        0.8274173184187513,
+        0.8488882701720135
+      ],
+      "val_auc": 0.9236915513093203,
+      "rf_auc": 0.8283185164663035,
+      "xgb_auc": 0.8427271210518736,
+      "elapsed_sec": 138.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "USA",
+      "seed": 44,
+      "n_test": 5038,
+      "n_pos": 1657,
+      "finetune_auc": 0.8818782505478149,
+      "finetune_ci95": [
+        0.8726758462870687,
+        0.8921148046585042
+      ],
+      "val_auc": 0.9406399926819463,
+      "rf_auc": 0.8722554280401212,
+      "xgb_auc": 0.8425398011714784,
+      "elapsed_sec": 162.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "EU",
+      "seed": 44,
+      "n_test": 2451,
+      "n_pos": 554,
+      "finetune_auc": 0.8242604458657233,
+      "finetune_ci95": [
+        0.802928971010193,
+        0.8433606043112222
+      ],
+      "val_auc": 0.9472450065350715,
+      "rf_auc": 0.8347392219548112,
+      "xgb_auc": 0.8244537305695481,
+      "elapsed_sec": 191.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 44,
+      "n_test": 1159,
+      "n_pos": 83,
+      "finetune_auc": 0.6653926257956835,
+      "finetune_ci95": [
+        0.5970809845906638,
+        0.7285063583569277
+      ],
+      "val_auc": 0.9462237519064008,
+      "rf_auc": 0.71612547832453,
+      "xgb_auc": 0.7235401753213273,
+      "elapsed_sec": 190.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 44,
+      "n_test": 457,
+      "n_pos": 14,
+      "finetune_auc": 0.7005144294829557,
+      "finetune_ci95": [
+        0.5323954457741673,
+        0.8482859085100176
+      ],
+      "val_auc": 0.9488523167450933,
+      "rf_auc": 0.6711630161460715,
+      "xgb_auc": 0.7350664898370973,
+      "elapsed_sec": 228.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:France",
+      "seed": 44,
+      "n_test": 468,
+      "n_pos": 65,
+      "finetune_auc": 0.7692927518168338,
+      "finetune_ci95": [
+        0.7201118225162069,
+        0.8150091134784129
+      ],
+      "val_auc": 0.949994106126002,
+      "rf_auc": 0.791788720819122,
+      "xgb_auc": 0.7591626703978005,
+      "elapsed_sec": 231.1,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Ireland",
+      "seed": 44,
+      "n_test": 121,
+      "n_pos": 25,
+      "finetune_auc": 0.6411516204923583,
+      "finetune_ci95": [
+        0.5251569264069263,
+        0.7428431147358727
+      ],
+      "val_auc": 0.9384026431803019,
+      "rf_auc": 0.6784708353671576,
+      "xgb_auc": 0.6919050725013385,
+      "elapsed_sec": 190.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:India",
+      "seed": 44,
+      "n_test": 148,
+      "n_pos": 52,
+      "finetune_auc": 0.4399264312733486,
+      "finetune_ci95": [
+        0.34535202729655795,
+        0.5393587429046747
+      ],
+      "val_auc": 0.9481021841829436,
+      "rf_auc": 0.489373605468019,
+      "xgb_auc": 0.5968173575631455,
+      "elapsed_sec": 314.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Sweden",
+      "seed": 44,
+      "n_test": 219,
+      "n_pos": 110,
+      "finetune_auc": 0.9353347385816804,
+      "finetune_ci95": [
+        0.9018599724494909,
+        0.9656688057616772
+      ],
+      "val_auc": 0.9365376676241753,
+      "rf_auc": 0.8540172199650236,
+      "xgb_auc": 0.9352740787913131,
+      "elapsed_sec": 243.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "Bangladesh",
+      "seed": 44,
+      "n_test": 224,
+      "n_pos": 212,
+      "finetune_auc": 0.6042330399360635,
+      "finetune_ci95": [
+        0.45248378421135904,
+        0.7546049718340114
+      ],
+      "val_auc": 0.9397481644799984,
+      "rf_auc": 0.4464111328476485,
+      "xgb_auc": 0.5219160521789992,
+      "elapsed_sec": 237.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "France",
+      "seed": 44,
+      "n_test": 25456,
+      "n_pos": 574,
+      "finetune_auc": 0.8725530192790716,
+      "finetune_ci95": [
+        0.8540976194484817,
+        0.8943486219340392
+      ],
+      "val_auc": 0.9520164501444142,
+      "rf_auc": 0.7962088422445194,
+      "xgb_auc": 0.8330337268839051,
+      "elapsed_sec": 96.3,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "USA",
+      "seed": 44,
+      "n_test": 6381,
+      "n_pos": 756,
+      "finetune_auc": 0.9001691321018203,
+      "finetune_ci95": [
+        0.8888806541910212,
+        0.9135100284743312
+      ],
+      "val_auc": 0.9614470519180085,
+      "rf_auc": 0.9274570126205508,
+      "xgb_auc": 0.9085032089444743,
+      "elapsed_sec": 226.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "EU",
+      "seed": 44,
+      "n_test": 2516,
+      "n_pos": 30,
+      "finetune_auc": 0.5798176876137926,
+      "finetune_ci95": [
+        0.4595256904773284,
+        0.6942202957731589
+      ],
+      "val_auc": 0.9591352350812941,
+      "rf_auc": 0.6120904060392567,
+      "xgb_auc": 0.6073501280771919,
+      "elapsed_sec": 261.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 44,
+      "n_test": 1257,
+      "n_pos": 38,
+      "finetune_auc": 0.8682717368822159,
+      "finetune_ci95": [
+        0.8169354785948688,
+        0.9157515959026911
+      ],
+      "val_auc": 0.9663364470783657,
+      "rf_auc": 0.8549335825952025,
+      "xgb_auc": 0.8804696736089218,
+      "elapsed_sec": 198.8,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "seed": 44,
+      "n_test": 106,
+      "n_pos": 16,
+      "finetune_auc": 0.37601980731215917,
+      "finetune_ci95": [
+        0.2331145594643048,
+        0.5327232142857143
+      ],
+      "val_auc": 0.9605029515837085,
+      "rf_auc": 0.46045532798828304,
+      "xgb_auc": 0.22942393887515578,
+      "elapsed_sec": 203.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "Bangladesh",
+      "seed": 44,
+      "n_test": 224,
+      "n_pos": 96,
+      "finetune_auc": 0.5173678408259929,
+      "finetune_ci95": [
+        0.44097871015416107,
+        0.583816548729802
+      ],
+      "val_auc": 0.9435517688460827,
+      "rf_auc": 0.5913141610510698,
+      "xgb_auc": 0.5696936035075614,
+      "elapsed_sec": 248.2,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "France",
+      "seed": 44,
+      "n_test": 7011,
+      "n_pos": 187,
+      "finetune_auc": 0.7043947213160342,
+      "finetune_ci95": [
+        0.6658747954855405,
+        0.7384514322029759
+      ],
+      "val_auc": 0.9475593419957329,
+      "rf_auc": 0.7030555799833667,
+      "xgb_auc": 0.6840602080916207,
+      "elapsed_sec": 239.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "USA",
+      "seed": 44,
+      "n_test": 5596,
+      "n_pos": 93,
+      "finetune_auc": 0.7550055421705878,
+      "finetune_ci95": [
+        0.6918791293493677,
+        0.8137232928892026
+      ],
+      "val_auc": 0.9405929207074609,
+      "rf_auc": 0.8858880907649792,
+      "xgb_auc": 0.7444560290202983,
+      "elapsed_sec": 230.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "EU",
+      "seed": 44,
+      "n_test": 6385,
+      "n_pos": 1389,
+      "finetune_auc": 0.7199097852567783,
+      "finetune_ci95": [
+        0.7021877840280613,
+        0.7346501789682541
+      ],
+      "val_auc": 0.9455572201252969,
+      "rf_auc": 0.7082449352773659,
+      "xgb_auc": 0.6536980538901025,
+      "elapsed_sec": 116.0,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Mexico",
+      "seed": 44,
+      "n_test": 4009,
+      "n_pos": 948,
+      "finetune_auc": 0.8418506900906518,
+      "finetune_ci95": [
+        0.8238977799364223,
+        0.8569263866668703
+      ],
+      "val_auc": 0.9491335646469934,
+      "rf_auc": 0.7683071953851806,
+      "xgb_auc": 0.7940688722154488,
+      "elapsed_sec": 126.2,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Italy",
+      "seed": 44,
+      "n_test": 1377,
+      "n_pos": 69,
+      "finetune_auc": 0.7467583311776254,
+      "finetune_ci95": [
+        0.6801919892226567,
+        0.8025005408248788
+      ],
+      "val_auc": 0.9526400378350649,
+      "rf_auc": 0.6431652033765096,
+      "xgb_auc": 0.6811276528057116,
+      "elapsed_sec": 237.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Poland",
+      "seed": 44,
+      "n_test": 1182,
+      "n_pos": 47,
+      "finetune_auc": 0.7277599158576052,
+      "finetune_ci95": [
+        0.6587427629633551,
+        0.7967702157532202
+      ],
+      "val_auc": 0.9375713674567614,
+      "rf_auc": 0.7281474046741252,
+      "xgb_auc": 0.7252340096709724,
+      "elapsed_sec": 187.3,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Greece",
+      "seed": 44,
+      "n_test": 112,
+      "n_pos": 16,
+      "finetune_auc": 0.8847126646909939,
+      "finetune_ci95": [
+        0.8118351862980768,
+        0.9474915912643895
+      ],
+      "val_auc": 0.9358813889429596,
+      "rf_auc": 0.8619337612371075,
+      "xgb_auc": 0.8808512494321825,
+      "elapsed_sec": 307.9,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:India",
+      "seed": 44,
+      "n_test": 327,
+      "n_pos": 38,
+      "finetune_auc": 0.6672278310514024,
+      "finetune_ci95": [
+        0.5708673938887316,
+        0.7573151819687918
+      ],
+      "val_auc": 0.9464043105132569,
+      "rf_auc": 0.6567526227151762,
+      "xgb_auc": 0.5872129418835941,
+      "elapsed_sec": 248.7,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Lithuania",
+      "seed": 44,
+      "n_test": 339,
+      "n_pos": 30,
+      "finetune_auc": 0.8837354415490566,
+      "finetune_ci95": [
+        0.8355160425128869,
+        0.935624904202797
+      ],
+      "val_auc": 0.935841570398091,
+      "rf_auc": 0.7557812728157917,
+      "xgb_auc": 0.8123016717916566,
+      "elapsed_sec": 196.8,
+      "finetune_beats_rf": true
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "seed": 44,
+      "n_test": 313,
+      "n_pos": 20,
+      "finetune_auc": 0.9052360894826671,
+      "finetune_ci95": [
+        0.8399837820944612,
+        0.9610690014153537
+      ],
+      "val_auc": 0.9394086277218503,
+      "rf_auc": 0.9360434647643772,
+      "xgb_auc": 0.8834082101115118,
+      "elapsed_sec": 182.5,
+      "finetune_beats_rf": false
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "Bangladesh",
+      "seed": 44,
+      "n_test": 224,
+      "n_pos": 185,
+      "finetune_auc": 0.6954720369785227,
+      "finetune_ci95": [
+        0.6061266792070364,
+        0.7761727455457331
+      ],
+      "val_auc": 0.9411040503692261,
+      "rf_auc": 0.5846091302645877,
+      "xgb_auc": 0.624920599921555,
+      "elapsed_sec": 184.4,
+      "finetune_beats_rf": false
+    }
+  ],
+  "per_cell_seedmean": [
+    {
+      "target": "As",
+      "held_out_region": "France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7804505912722384,
+      "finetune_auc_std": 0.00905101188979676,
+      "rf_auc": 0.7433347477703759,
+      "ft_minus_rf": 0.03711584350186248
+    },
+    {
+      "target": "As",
+      "held_out_region": "USA",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.9076991654947065,
+      "finetune_auc_std": 0.0156725721497704,
+      "rf_auc": 0.9065068880880119,
+      "ft_minus_rf": 0.0011922774066945863
+    },
+    {
+      "target": "As",
+      "held_out_region": "EU",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7478867506167951,
+      "finetune_auc_std": 0.023291822787284394,
+      "rf_auc": 0.6650425011943006,
+      "ft_minus_rf": 0.08284424942249446
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Mexico",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7579818660400011,
+      "finetune_auc_std": 0.012842376818696337,
+      "rf_auc": 0.7295810318103076,
+      "ft_minus_rf": 0.028400834229693417
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Italy",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7928559104873445,
+      "finetune_auc_std": 0.026805502917337208,
+      "rf_auc": 0.7079785242671904,
+      "ft_minus_rf": 0.08487738622015406
+    },
+    {
+      "target": "As",
+      "held_out_region": "GEMStat:Poland",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.3753430128941366,
+      "finetune_auc_std": 0.022762084716206686,
+      "rf_auc": 0.2662654380742823,
+      "ft_minus_rf": 0.10907757481985425
+    },
+    {
+      "target": "As",
+      "held_out_region": "Bangladesh",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.6491684996446376,
+      "finetune_auc_std": 0.00543861723167641,
+      "rf_auc": 0.6769313142224699,
+      "ft_minus_rf": -0.02776281457783225
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.883555373677032,
+      "finetune_auc_std": 0.006590823751763927,
+      "rf_auc": 0.8999079568615511,
+      "ft_minus_rf": -0.016352583184519154
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "USA",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8460071936933448,
+      "finetune_auc_std": 0.027292034699813006,
+      "rf_auc": 0.9402534828654416,
+      "ft_minus_rf": -0.09424628917209688
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "EU",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.9523769444801253,
+      "finetune_auc_std": 0.0010486311517351127,
+      "rf_auc": 0.9507022928394807,
+      "ft_minus_rf": 0.00167465164064462
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Mexico",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8291439768036425,
+      "finetune_auc_std": 0.017070159456156694,
+      "rf_auc": 0.9383144569753056,
+      "ft_minus_rf": -0.10917048017166309
+    },
+    {
+      "target": "NO3",
+      "held_out_region": "GEMStat:Greece",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7806446726303101,
+      "finetune_auc_std": 0.006643359639007503,
+      "rf_auc": 0.6803849287096695,
+      "ft_minus_rf": 0.10025974392064063
+    },
+    {
+      "target": "F",
+      "held_out_region": "France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8902286767912194,
+      "finetune_auc_std": 0.006346100339302886,
+      "rf_auc": 0.8748962385678968,
+      "ft_minus_rf": 0.015332438223322642
+    },
+    {
+      "target": "F",
+      "held_out_region": "USA",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.9701984143164871,
+      "finetune_auc_std": 0.000978691008492994,
+      "rf_auc": 0.9626810616325713,
+      "ft_minus_rf": 0.0075173526839158455
+    },
+    {
+      "target": "F",
+      "held_out_region": "EU",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7384362552665992,
+      "finetune_auc_std": 0.09149631751935601,
+      "rf_auc": 0.6680002699037908,
+      "ft_minus_rf": 0.07043598536280837
+    },
+    {
+      "target": "F",
+      "held_out_region": "GEMStat:Mexico",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.858789590146611,
+      "finetune_auc_std": 0.004001195229286232,
+      "rf_auc": 0.8427064648202703,
+      "ft_minus_rf": 0.016083125326340708
+    },
+    {
+      "target": "U",
+      "held_out_region": "France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.5478754007440106,
+      "finetune_auc_std": 0.10662501682844604,
+      "rf_auc": 0.9211725157084135,
+      "ft_minus_rf": -0.3732971149644029
+    },
+    {
+      "target": "U",
+      "held_out_region": "USA",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7229286275325543,
+      "finetune_auc_std": 0.001065435781872701,
+      "rf_auc": 0.657818635973703,
+      "ft_minus_rf": 0.06510999155885122
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7404728440771268,
+      "finetune_auc_std": 0.04034655623692631,
+      "rf_auc": 0.24023763279967134,
+      "ft_minus_rf": 0.5002352112774554
+    },
+    {
+      "target": "U",
+      "held_out_region": "GEMStat:Canada",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.5201066906808918,
+      "finetune_auc_std": 0.04356787196910268,
+      "rf_auc": 0.5951945377902901,
+      "ft_minus_rf": -0.07508784710939831
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8322998520792285,
+      "finetune_auc_std": 0.011059327213972282,
+      "rf_auc": 0.8283185164663035,
+      "ft_minus_rf": 0.003981335612925019
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "USA",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8627616569703432,
+      "finetune_auc_std": 0.013562477594726926,
+      "rf_auc": 0.8722554280401212,
+      "ft_minus_rf": -0.009493771069778001
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "EU",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8250971025270312,
+      "finetune_auc_std": 0.002621769317110021,
+      "rf_auc": 0.8347392219548112,
+      "ft_minus_rf": -0.009642119427780038
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Mexico",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.6661375939854043,
+      "finetune_auc_std": 0.0005351622283050426,
+      "rf_auc": 0.71612547832453,
+      "ft_minus_rf": -0.04998788433912571
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Italy",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.6893785785349605,
+      "finetune_auc_std": 0.009689979041376164,
+      "rf_auc": 0.6711630161460715,
+      "ft_minus_rf": 0.018215562388888995
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.760061554968352,
+      "finetune_auc_std": 0.01811719225216469,
+      "rf_auc": 0.791788720819122,
+      "ft_minus_rf": -0.031727165850769956
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Ireland",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.6933080248287372,
+      "finetune_auc_std": 0.03736303287451681,
+      "rf_auc": 0.6784708353671576,
+      "ft_minus_rf": 0.014837189461579636
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:India",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.4734080219686297,
+      "finetune_auc_std": 0.024678728651237245,
+      "rf_auc": 0.489373605468019,
+      "ft_minus_rf": -0.015965583499389313
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "GEMStat:Sweden",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.9328719481484792,
+      "finetune_auc_std": 0.004853217274443081,
+      "rf_auc": 0.8540172199650236,
+      "ft_minus_rf": 0.07885472818345562
+    },
+    {
+      "target": "Fe",
+      "held_out_region": "Bangladesh",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.582692536655019,
+      "finetune_auc_std": 0.02660757383981869,
+      "rf_auc": 0.4464111328476485,
+      "ft_minus_rf": 0.13628140380737047
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8707350495408068,
+      "finetune_auc_std": 0.0034742467330023995,
+      "rf_auc": 0.7962088422445194,
+      "ft_minus_rf": 0.07452620729628745
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "USA",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.9116320675708053,
+      "finetune_auc_std": 0.008859622108383798,
+      "rf_auc": 0.9274570126205508,
+      "ft_minus_rf": -0.01582494504974552
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "EU",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.5701167336505062,
+      "finetune_auc_std": 0.012422534438608109,
+      "rf_auc": 0.6120904060392567,
+      "ft_minus_rf": -0.041973672388750494
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Mexico",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8667600703782251,
+      "finetune_auc_std": 0.004208612065055314,
+      "rf_auc": 0.8549335825952025,
+      "ft_minus_rf": 0.011826487783022643
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.42239750938115117,
+      "finetune_auc_std": 0.04441617738129933,
+      "rf_auc": 0.46045532798828304,
+      "ft_minus_rf": -0.038057818607131866
+    },
+    {
+      "target": "Mn",
+      "held_out_region": "Bangladesh",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.5400297245365987,
+      "finetune_auc_std": 0.01879247588460175,
+      "rf_auc": 0.5913141610510698,
+      "ft_minus_rf": -0.05128443651447112
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "France",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.731363021264476,
+      "finetune_auc_std": 0.019778072903167014,
+      "rf_auc": 0.7030555799833667,
+      "ft_minus_rf": 0.028307441281109402
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "USA",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8084884823729538,
+      "finetune_auc_std": 0.03781858369738268,
+      "rf_auc": 0.8858880907649792,
+      "ft_minus_rf": -0.07739960839202542
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "EU",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7122802715133036,
+      "finetune_auc_std": 0.010790894845606672,
+      "rf_auc": 0.7082449352773659,
+      "ft_minus_rf": 0.00403533623593777
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Mexico",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8214675371787875,
+      "finetune_auc_std": 0.022943120103570615,
+      "rf_auc": 0.7683071953851806,
+      "ft_minus_rf": 0.05316034179360696
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Italy",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7410637731100481,
+      "finetune_auc_std": 0.007460112328757996,
+      "rf_auc": 0.6431652033765096,
+      "ft_minus_rf": 0.0978985697335385
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Poland",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.7413192162550786,
+      "finetune_auc_std": 0.010932883145721875,
+      "rf_auc": 0.7281474046741252,
+      "ft_minus_rf": 0.013171811580953374
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Greece",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.886681643210033,
+      "finetune_auc_std": 0.005628454005713028,
+      "rf_auc": 0.8619337612371075,
+      "ft_minus_rf": 0.024747881972925434
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:India",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.6672915659056698,
+      "finetune_auc_std": 0.021614962470938748,
+      "rf_auc": 0.6567526227151762,
+      "ft_minus_rf": 0.010538943190493644
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Lithuania",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.8897127689026011,
+      "finetune_auc_std": 0.011075686556842573,
+      "rf_auc": 0.7557812728157917,
+      "ft_minus_rf": 0.13393149608680943
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "GEMStat:Netherlands (-the )",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.9274626489618273,
+      "finetune_auc_std": 0.018078522607050805,
+      "rf_auc": 0.9360434647643772,
+      "ft_minus_rf": -0.00858081580254988
+    },
+    {
+      "target": "PO4",
+      "held_out_region": "Bangladesh",
+      "n_seeds": 3,
+      "finetune_auc_mean": 0.6636800939790737,
+      "finetune_auc_std": 0.0463230774644136,
+      "rf_auc": 0.5846091302645877,
+      "ft_minus_rf": 0.07907096371448596
+    }
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}
