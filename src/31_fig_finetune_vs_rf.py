@@ -11,7 +11,7 @@ Two panels, both read straight from the released result JSONs (no model/GPU):
 
   (b) Per-cell scatter of fine-tuned AUC (y) vs Random-Forest AUC (x), one point
       per leave-one-region-out cell, coloured by mechanism group. Points above the
-      diagonal are cells where fine-tuning beats the forest. The redox-coupled
+      diagonal are cells where fine-tuning leads the default forest. The redox-coupled
       cells cluster above the line; uranium sits below; Bangladesh arsenic (the
       concept-shift pole, where every model fails) is labelled.
 
@@ -149,7 +149,7 @@ def main():
     axa.set_xticklabels([g for g, _ in groups], fontsize=9.5)
     axa.set_ylabel("Mean zero-shot transfer AUC")
     axa.set_ylim(0.5, top + 0.13)
-    axa.set_title("(a)  Fine-tuning beats the forest on the redox-coupled suite, and only there",
+    axa.set_title("(a)  Advantage over the default random forest, by mechanism group",
                   fontsize=10.5, weight="bold", loc="left")
     axa.legend(loc="upper right", frameon=True, fontsize=9)
     axa.spines["top"].set_visible(False)
