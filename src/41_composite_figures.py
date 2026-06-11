@@ -186,13 +186,13 @@ def draw_ft_vs_rf_scatter(ax):
                    label=g if g not in seen else None, zorder=3)
         seen.add(g)
     ax.plot([0.3, 1], [0.3, 1], ls="--", color="#888", lw=1.0)
-    ax.set_xlim(0.3, 1); ax.set_ylim(0.3, 1); ax.set_aspect("equal")
+    ax.set_xlim(0.3, 1); ax.set_ylim(0.3, 1)  # fill cell width (no forced square)
     ax.set_xlabel("Random-forest AUC"); ax.set_ylabel("Fine-tuned AUC")
     ax.legend(loc="lower right", fontsize=7.5)
 
 
 def draw_baseline_strength(ax):
-    """Forest plot: redox-suite paired advantage (FT - tree) +/- 95% CI per baseline."""
+    """Horizontal bars + 95% CI whiskers: redox-suite advantage (FT - tree) per baseline."""
     cells = [c for c in json.load(open("results/baseline_strength.json"))["per_cell"]
              if c["target"] in {"As", "Fe", "Mn", "PO4"}]
     gsum = json.load(open("results/baseline_strength.json"))["group_summary"]["REDOX_AsFeMnPO4"]
@@ -200,24 +200,23 @@ def draw_baseline_strength(ax):
              ("rf_leaf", "RF (leaf=20)"), ("histgb", "HistGradientBoosting"),
              ("xgb_strong", "XGBoost (strong)"), ("best_tree", "per-cell best tree")]
     cols = [fs.NAVY, fs.TEAL, fs.YELLOW, fs.ORANGE, fs.RED, fs.GREY]
+    hatches = [fs.hatch("frozen"), fs.hatch("rf"), "----", fs.hatch("histgb"),
+               fs.hatch("xgb"), fs.hatch("redox")]
     y = np.arange(len(order))[::-1]
     n = len(cells)
-    for yi, (k, lab), c in zip(y, order, cols):
+    for yi, (k, lab), c, h in zip(y, order, cols, hatches):
         diffs = np.array([cc["ft"] - cc[k] for cc in cells])
         m = diffs.mean(); se = diffs.std(ddof=1) / np.sqrt(n); ci = 1.96 * se
         p = gsum[k]["wilcoxon_p"]; sig = p < 0.05
-        ax.plot([m - ci, m + ci], [yi, yi], color=c, lw=2.2, zorder=2,
-                solid_capstyle="round")
-        ax.plot([m - ci, m - ci], [yi - 0.12, yi + 0.12], color=c, lw=1.6)  # caps
-        ax.plot([m + ci, m + ci], [yi - 0.12, yi + 0.12], color=c, lw=1.6)
-        ax.scatter(m, yi, s=110, color=c, edgecolor="#333", linewidth=0.8, zorder=3,
-                   marker="D" if sig else "o")
+        ax.barh(yi, m, color=c, hatch=h, zorder=2, **fs.BAR)
+        ax.errorbar(m, yi, xerr=ci, fmt="none", ecolor="#333", elinewidth=1.2,
+                    capsize=3.5, zorder=3)
         st = "**" if p < .01 else "*" if p < .05 else "n.s."
         ax.text(0.043, yi, st, va="center", ha="right", fontsize=8.5,
                 color="#222" if sig else "#999")
     ax.axvline(0, color="#444", lw=1.2, zorder=1)
     ax.set_yticks(y); ax.set_yticklabels([l for _, l in order], fontsize=8.5)
-    ax.set_ylim(-0.5, len(order) - 0.5)
+    ax.set_ylim(-0.6, len(order) - 0.4)
     ax.set_xlabel(r"$\Delta$AUC (fine-tuned $-$ tree)  $\pm$95\% CI")
     ax.set_xlim(-0.02, 0.045); ax.grid(axis="y", visible=False)
 
