@@ -41,6 +41,7 @@ def _load_attn(d):
 
 
 def draw_attention(ax):
+    """Cleveland dot plot: 3 encoder-size dots per coupling, with noise-floor band."""
     dirs = {"Small": "results/attention_analysis_small",
             "Base": "results/attention_analysis",
             "Large": "results/attention_analysis_large_stage2"}
@@ -48,18 +49,28 @@ def draw_attention(ax):
     coup = lambda A, idx, a, b: (A[idx[a], idx[b]] + A[idx[b], idx[a]]) / 2
     floors = [float(np.median(A[~np.eye(A.shape[0], dtype=bool)])) for A, _ in data.values()]
     vals = {k: [coup(A, idx, a, b) for _, (a, b) in COUPLINGS] for k, (A, idx) in data.items()}
-    x = np.arange(len(COUPLINGS)); w = 0.27
-    for i, sz in enumerate(["Small", "Base", "Large"]):
-        ax.bar(x + (i - 1) * w, vals[sz], w, color=fs.color(sz), hatch=fs.hatch(sz),
-               label={"Small": "Small (1.47M)", "Base": "Base (8.99M)", "Large": "Large (48.4M)"}[sz], **fs.BAR)
-    ax.axhspan(min(floors), max(floors), color="#999", alpha=0.22, zorder=0)
-    ax.axhline(float(np.median(floors)), color="#666", ls="--", lw=0.9)
-    ax.axvline(2.5, color="#bbb", ls="--", lw=1.0)
-    ax.text(1, 0.075, "Oxic major-ion", ha="center", fontsize=9.5, color="#333", fontweight="bold")
-    ax.text(4, 0.075, "Reducing arsenic", ha="center", fontsize=9.5, color=fs.RED, fontweight="bold")
-    ax.set_xticks(x); ax.set_xticklabels([c[0] for c in COUPLINGS], fontsize=8)
-    ax.set_ylabel("Mean learned attention weight"); ax.set_ylim(0, 0.08)
-    ax.legend(title="Encoder", loc="upper right", fontsize=7.5); ax.grid(axis="x", visible=False)
+    y = np.arange(len(COUPLINGS))[::-1]
+    mk = {"Small": "o", "Base": "s", "Large": "D"}
+    lbl = {"Small": "Small (1.47M)", "Base": "Base (8.99M)", "Large": "Large (48.4M)"}
+    # noise floor band (vertical)
+    ax.axvspan(min(floors), max(floors), color="#999", alpha=0.22, zorder=0)
+    ax.axvline(float(np.median(floors)), color="#666", ls="--", lw=0.9, zorder=1)
+    ax.text(float(np.median(floors)), len(COUPLINGS) - 0.4, " noise floor", fontsize=7.5,
+            color="#666", style="italic", ha="left", va="top")
+    for yi, ci in zip(y, range(len(COUPLINGS))):
+        triple = [vals[s][ci] for s in ["Small", "Base", "Large"]]
+        ax.plot([min(triple), max(triple)], [yi, yi], color="#ddd", lw=1.5, zorder=1)
+        for s in ["Small", "Base", "Large"]:
+            ax.scatter(vals[s][ci], yi, s=68, color=fs.color(s), marker=mk[s],
+                       edgecolor="#333", linewidth=0.5, zorder=3,
+                       label=lbl[s] if ci == 0 else None)
+    # divider between oxic (top 3) and reducing (bottom 3) groups
+    ax.axhline(2.5, color="#bbb", ls="--", lw=1.0)
+    ax.set_yticks(y); ax.set_yticklabels([c[0] for c in COUPLINGS], fontsize=8.5)
+    ax.set_xlabel("Mean learned attention weight"); ax.set_xlim(0, 0.08)
+    ax.text(0.075, y[1], "oxic", ha="right", fontsize=8.5, color="#333", fontweight="bold")
+    ax.text(0.075, y[4], "reducing As", ha="right", fontsize=8.5, color=fs.RED, fontweight="bold")
+    ax.legend(title="Encoder", loc="lower right", fontsize=7.5); ax.grid(axis="y", visible=False)
 
 
 # ---------------------------------------------------------------- reconstruction (F2b)
@@ -68,23 +79,29 @@ RECON_ORDER = ["Eh", "As", "U", "Mn", "PO4", "Fe", "SO4", "NO3",
 
 
 def draw_reconstruction(ax):
+    """Dumbbell: corpus R2 -> Bangladesh R2 per parameter; long left arrow = collapse."""
     d = json.load(open("results/reconstruction_probe.json"))
     corp, bd = d["corpus"], d["bangladesh"]
     ps = [p for p in RECON_ORDER if p in corp and p in bd]
-    y = np.arange(len(ps))[::-1]; h = 0.38
+    y = np.arange(len(ps))[::-1]
+    from matplotlib.lines import Line2D
     for yi, p in zip(y, ps):
         red = p in REDOX
         col = fs.color("redox_active") if red else fs.color("conservative_ion")
-        hat = fs.hatch("redox_active") if red else ""
-        ax.barh(yi + h/2, corp[p]["r2"], h, color=col, hatch=hat, **fs.BAR)
-        ax.barh(yi - h/2, bd[p]["r2"], h, color=col, hatch=hat, alpha=0.45, **fs.BAR)
+        c_r2, b_r2 = corp[p]["r2"], bd[p]["r2"]
+        ax.plot([b_r2, c_r2], [yi, yi], color="#ccc", lw=2.0, zorder=1, solid_capstyle="round")
+        ax.scatter(b_r2, yi, s=70, color=col, marker="X", edgecolor="#333", linewidth=0.5, zorder=3)  # Bangladesh
+        ax.scatter(c_r2, yi, s=70, color=col, marker="o", edgecolor="#333", linewidth=0.5, zorder=3)  # corpus
     ax.axvline(0, color="#444", lw=1.0)
     ax.set_yticks(y); ax.set_yticklabels([p + (r" $^\ast$" if p in REDOX else "") for p in ps], fontsize=8)
-    ax.set_xlabel(r"Reconstruction $R^2$ (mask-one)"); ax.set_xlim(-5, 1.05)
+    ax.set_xlabel(r"Reconstruction $R^2$ (mask-one)"); ax.set_xlim(-5, 1.1)
     ax.grid(axis="y", visible=False)
-    ax.legend(handles=[Patch(facecolor=fs.color("redox_active"), hatch="....", edgecolor="white", label=r"redox-active ($^\ast$)"),
-                       Patch(facecolor=fs.color("conservative_ion"), edgecolor="white", label="conservative"),
-                       Patch(facecolor="#999", label="corpus | BD (faded)")],
+    ax.legend(handles=[Line2D([0], [0], marker="o", color="w", markerfacecolor="#555",
+                              markeredgecolor="#333", ms=8, label="corpus"),
+                       Line2D([0], [0], marker="X", color="w", markerfacecolor="#555",
+                              markeredgecolor="#333", ms=8, label="Bangladesh"),
+                       Patch(facecolor=fs.color("redox_active"), edgecolor="white", label=r"redox-active ($^\ast$)"),
+                       Patch(facecolor=fs.color("conservative_ion"), edgecolor="white", label="conservative")],
               loc="lower left", fontsize=7.5)
 
 
@@ -116,23 +133,27 @@ def draw_transfer_distance(ax):
 
 
 def draw_ft_vs_rf_bars(ax):
+    """Dumbbell: fine-tuned vs default random forest per mechanism group."""
     s = json.load(open("results/redox_dissociation.json"))
-    groups = [("Redox\n(As,Fe,Mn,PO$_4$)", "ft_vs_rf__REDOX_AsFeMnPO4"),
-              ("Conserv.\n(NO$_3$,F)", "ft_vs_rf__CONSERVATIVE_NO3F"),
-              ("Uranium", "ft_vs_rf__URANIUM"), ("All", "ft_vs_rf__ALL_47")]
-    x = np.arange(len(groups)); w = 0.36
-    ft = [s[k]["mean_a"] for _, k in groups]; rf = [s[k]["mean_b"] for _, k in groups]
-    ps = [s[k]["wilcoxon_p"] for _, k in groups]
-    ax.bar(x - w/2, ft, w, color=fs.color("finetuned"), hatch=fs.hatch("finetuned"), label="Fine-tuned", **fs.BAR)
-    ax.bar(x + w/2, rf, w, color=fs.color("rf"), hatch=fs.hatch("rf"), label="Random forest", **fs.BAR)
-    ax.axhline(0.5, color="#999", ls=":", lw=1.0)
-    for i, p in enumerate(ps):
+    groups = [("Redox (As,Fe,Mn,PO$_4$)", "ft_vs_rf__REDOX_AsFeMnPO4"),
+              ("Conservative (NO$_3$,F)", "ft_vs_rf__CONSERVATIVE_NO3F"),
+              ("Uranium", "ft_vs_rf__URANIUM"), ("All cells", "ft_vs_rf__ALL_47")]
+    y = np.arange(len(groups))[::-1]
+    for yi, (g, k) in zip(y, groups):
+        ft, rf, p = s[k]["mean_a"], s[k]["mean_b"], s[k]["wilcoxon_p"]
+        ax.plot([rf, ft], [yi, yi], color="#bbb", lw=2.5, zorder=1, solid_capstyle="round")
+        ax.scatter(rf, yi, s=95, color=fs.color("rf"), edgecolor="#333", linewidth=0.7,
+                   zorder=3, label="Random forest" if yi == y[0] else None)
+        ax.scatter(ft, yi, s=95, color=fs.color("finetuned"), edgecolor="#333", linewidth=0.7,
+                   zorder=3, marker="D", label="Fine-tuned" if yi == y[0] else None)
         st = "***" if p < .001 else "**" if p < .01 else "*" if p < .05 else "n.s."
-        ax.text(i, max(ft[i], rf[i]) + 0.02, st, ha="center", fontsize=10, fontweight="bold",
+        ax.text(max(ft, rf) + 0.012, yi, st, va="center", fontsize=9.5, fontweight="bold",
                 color="#222" if p < .05 else "#999")
-    ax.set_xticks(x); ax.set_xticklabels([g for g, _ in groups], fontsize=8)
-    ax.set_ylabel("Mean transfer AUC"); ax.set_ylim(0.5, 0.95)
-    ax.legend(loc="upper center", fontsize=7.5); ax.grid(axis="x", visible=False)
+    ax.axvline(0.5, color="#999", ls=":", lw=1.0)
+    ax.set_yticks(y); ax.set_yticklabels([g for g, _ in groups], fontsize=8.5)
+    ax.set_ylim(-0.6, len(groups) - 0.4)
+    ax.set_xlabel("Mean transfer AUC"); ax.set_xlim(0.5, 0.95)
+    ax.legend(loc="lower right", fontsize=7.5); ax.grid(axis="y", visible=False)
 
 
 def draw_ft_vs_rf_scatter(ax):
@@ -159,19 +180,24 @@ def draw_ft_vs_rf_scatter(ax):
 
 
 def draw_baseline_strength(ax):
+    """Lollipop: redox-suite advantage shrinking as the tree baseline strengthens."""
     g = json.load(open("results/baseline_strength.json"))["group_summary"]["REDOX_AsFeMnPO4"]
     order = [("rf_default", "RF\ndefault"), ("rf_reg", "RF\nreg."), ("rf_leaf", "RF\nleaf"),
              ("histgb", "HistGB"), ("xgb_strong", "XGB"), ("best_tree", "best\ntree")]
     cols = [fs.NAVY, fs.TEAL, fs.YELLOW, fs.ORANGE, fs.RED, fs.GREY]
     x = np.arange(len(order))
-    for xi, (k, _), c, h in zip(x, order, cols, fs.HATCH_CYCLE):
-        ax.bar(xi, g[k]["delta"], 0.66, color=c, hatch=h, **fs.BAR)
-    ax.axhline(0, color="#444", lw=1.0)
-    for xi, (k, _) in zip(x, order):
-        p = g[k]["wilcoxon_p"]; st = "**" if p < .01 else "*" if p < .05 else "n.s."
-        ax.text(xi, g[k]["delta"] + 0.0012, st, ha="center", fontsize=8.5,
+    deltas = [g[k]["delta"] for k, _ in order]
+    ax.plot(x, deltas, color="#bbb", lw=1.5, zorder=1, ls="-")  # trend connector
+    for xi, (k, _), c, d in zip(x, order, cols, deltas):
+        p = g[k]["wilcoxon_p"]
+        ax.plot([xi, xi], [0, d], color=c, lw=2.2, zorder=2)        # stem
+        ax.scatter(xi, d, s=130, color=c, edgecolor="#333", linewidth=0.7, zorder=3)
+        st = "**" if p < .01 else "*" if p < .05 else "n.s."
+        ax.text(xi, d + 0.0015, st, ha="center", va="bottom", fontsize=8.5,
                 color="#222" if p < .05 else "#999")
+    ax.axhline(0, color="#444", lw=1.0)
     ax.set_xticks(x); ax.set_xticklabels([l for _, l in order], fontsize=8)
+    ax.set_xlim(-0.5, len(order) - 0.5)
     ax.set_ylabel(r"$\Delta$AUC (FT $-$ tree)"); ax.grid(axis="x", visible=False)
 
 

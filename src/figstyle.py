@@ -35,21 +35,21 @@ COLORS = {
     "redox_active": RED, "conservative_ion": NAVY, "bulk": TEAL,
 }
 
-# ---- fixed category -> hatch (redundant with colour) ----
-# patterns requested: dotted, crossed, horizontal, vertical, line-crossed
+# ---- fixed category -> hatch (group-wise; NO plain/solid bars) ----
+# every category gets a non-empty pattern: dotted, crossed, horizontal,
+# vertical, line-crossed, diagonal
 HATCH = {
-    "Small": "", "Base": "....", "Large": "xxxx",
-    "redox": "", "conservative": "....", "uranium": "xxxx",
-    "As": "", "Fe": "....", "Mn": "xxxx", "PO4": "////",
-    "NO3": "----", "F": "||||", "U": "++++",
-    "finetuned": "", "frozen": "....", "rf": "xxxx", "logreg": "++++",
-    "histgb": "////", "xgb": "||||",
-    "redox_active": "....", "conservative_ion": "", "bulk": "xxxx",
+    "Small": "////", "Base": "....", "Large": "xxxx",
+    "redox": "////", "conservative": "....", "uranium": "xxxx",
+    "As": "////", "Fe": "....", "Mn": "xxxx", "PO4": "++++",
+    "NO3": "----", "F": "||||", "U": "oooo",
+    "finetuned": "////", "frozen": "....", "rf": "xxxx", "logreg": "++++",
+    "histgb": "----", "xgb": "||||",
+    "redox_active": "////", "conservative_ion": "....", "bulk": "xxxx",
 }
 
-# ordered hatch cycle (for arbitrary N categories): plain, dotted, crossed,
-# horizontal, vertical, line-crossed
-HATCH_CYCLE = ["", "....", "xxxx", "----", "||||", "++++", "////", "oooo"]
+# ordered hatch cycle (for arbitrary N categories); no plain/solid entry
+HATCH_CYCLE = ["////", "....", "xxxx", "----", "||||", "++++", "\\\\\\\\", "oooo"]
 
 # bar styling: vibrant fill, white edge so the hatch reads as a clean texture
 BAR = dict(edgecolor="white", linewidth=0.8)
