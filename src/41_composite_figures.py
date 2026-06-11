@@ -114,20 +114,22 @@ def build_F2():
 # ---------------------------------------------------------------- F3 benchmark
 def draw_transfer_distance(ax):
     rt = json.load(open("results/region_transfer.json"))["results"]
+    marks = {"As": "o", "Fe": "s", "Mn": "D", "PO4": "^", "U": "v", "NO3": "P", "F": "X"}
     for t in ["As", "Fe", "Mn", "PO4", "U", "NO3", "F"]:
         pts = [(c["energy_distance_4d"], c["transfer_auc_mean"], c["held_out_region"])
                for c in rt if c["target"] == t and c.get("energy_distance_4d") is not None]
         gw = [(x, y) for x, y, r in pts if r != "Bangladesh"]
         bd = [(x, y) for x, y, r in pts if r == "Bangladesh"]
         if gw:
-            ax.scatter([x for x, _ in gw], [y for _, y in gw], s=34, color=fs.color(t),
-                       edgecolor="white", linewidth=0.5, alpha=0.9, label=t, zorder=3)
+            ax.scatter([x for x, _ in gw], [y for _, y in gw], s=40, color=fs.color(t),
+                       marker=marks[t], edgecolor="#333", linewidth=0.5, alpha=0.9,
+                       label=t, zorder=3)
         if bd:
-            ax.scatter([x for x, _ in bd], [y for _, y in bd], s=120, color=fs.color(t),
-                       edgecolor="#222", linewidth=0.8, marker="*", zorder=4)
+            ax.scatter([x for x, _ in bd], [y for _, y in bd], s=150, color=fs.color(t),
+                       marker=marks[t], edgecolor="#000", linewidth=1.3, zorder=4)
     ax.axhline(0.5, color="#999", ls=":", lw=1.0)
     ax.set_xlabel("Distribution distance (4-D energy)"); ax.set_ylabel("Chemistry-only transfer AUC")
-    ax.legend(title="Contaminant", loc="upper right", fontsize=7, ncol=2)
+    ax.legend(title="Contaminant (bold edge = Bangladesh)", loc="upper right", fontsize=7, ncol=2)
 
 
 def draw_ft_vs_rf_bars(ax):
@@ -258,16 +260,26 @@ def draw_w1(ax):
 
 
 def draw_confusion(ax):
-    from matplotlib.colors import LinearSegmentedColormap
+    import matplotlib.colors as mcolors
     cm = json.load(open("results/calibration_logreg_as_chemonly.json"))["avg_confusion_at_f1_best"]
     M = np.array([[cm["tn"], cm["fp"]], [cm["fn"], cm["tp"]]])
-    # palette-matched warm sequential colormap (white -> orange -> red), the
-    # prominent colour used across Fig 4
-    theme_cmap = LinearSegmentedColormap.from_list("theme_warm", ["#ffffff", fs.ORANGE, fs.RED])
-    im = ax.imshow(M, cmap=theme_cmap, aspect="auto")  # fill cell width like other panels
+    # semantic colouring: predicted-Safe column = teal, predicted-Unsafe column =
+    # light red; cell intensity (alpha) scaled by count
+    teal = np.array(mcolors.to_rgb(fs.TEAL))
+    lred = np.array(mcolors.to_rgb("#E8836F"))   # light red
+    mx = M.max()
+    rgba = np.ones((2, 2, 4))
+    for i in range(2):
+        for j in range(2):
+            base = teal if j == 0 else lred
+            a = 0.20 + 0.70 * (M[i, j] / mx)
+            rgba[i, j, :3] = 1 - a * (1 - base)   # blend base over white
+            rgba[i, j, 3] = 1.0
+    ax.imshow(rgba, aspect="auto")
     for (i, j), v in np.ndenumerate(M):
+        dark = M[i, j] > 0.55 * mx
         ax.text(j, i, f"{int(round(v))}", ha="center", va="center", fontsize=16,
-                fontweight="bold", color="white" if v > M.max()*0.5 else "#222")
+                fontweight="bold", color="white" if dark else "#222")
     ax.set_xticks([0, 1]); ax.set_xticklabels(["Safe", "Unsafe"]); ax.set_xlabel("Predicted")
     ax.set_yticks([0, 1]); ax.set_yticklabels(["Safe", "Unsafe"]); ax.set_ylabel("True")
     ax.text(0.5, -0.32, f"recall {cm['recall']:.0%} · precision {cm['precision']:.0%}",
