@@ -261,8 +261,9 @@ def draw_confusion(ax):
     from matplotlib.colors import LinearSegmentedColormap
     cm = json.load(open("results/calibration_logreg_as_chemonly.json"))["avg_confusion_at_f1_best"]
     M = np.array([[cm["tn"], cm["fp"]], [cm["fn"], cm["tp"]]])
-    # palette-matched sequential colormap (white -> theme navy), not generic 'Blues'
-    theme_cmap = LinearSegmentedColormap.from_list("theme_navy", ["#ffffff", fs.TEAL, fs.NAVY])
+    # palette-matched warm sequential colormap (white -> orange -> red), the
+    # prominent colour used across Fig 4
+    theme_cmap = LinearSegmentedColormap.from_list("theme_warm", ["#ffffff", fs.ORANGE, fs.RED])
     im = ax.imshow(M, cmap=theme_cmap, aspect="auto")  # fill cell width like other panels
     for (i, j), v in np.ndenumerate(M):
         ax.text(j, i, f"{int(round(v))}", ha="center", va="center", fontsize=16,
@@ -292,7 +293,7 @@ def draw_reliability(ax):
     ax.legend(loc="lower right", fontsize=7.5)
     # inset: predicted-probability histogram (predictions pile up near 1.0)
     h = json.load(open("results/fig4_panels.json"))["pred_hist"]
-    iax = ax.inset_axes([0.10, 0.46, 0.40, 0.34])
+    iax = ax.inset_axes([0.04, 0.46, 0.40, 0.34])
     edges = np.array(h["edges"]); ctr = (edges[:-1] + edges[1:]) / 2
     iax.bar(ctr, h["counts"], width=0.092, color=fs.color("As"), hatch=fs.hatch("redox_active"),
             edgecolor="white", linewidth=0.4)
