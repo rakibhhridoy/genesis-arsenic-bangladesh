@@ -37,3 +37,7 @@ logs/
 manuscript/*.pdf
 figures/architecture_d3/node_modules/
 figures/architecture_d3/package*.json
+
+# manuscript & snippets kept out of the public repo
+manuscript/
+manuscript_snippets/
