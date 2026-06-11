@@ -233,15 +233,16 @@ def build_F3():
 
 # ---------------------------------------------------------------- F4 concept shift
 def draw_pc_ellipses(ax):
-    d = json.load(open("results/dist_shift.json"))
-    pm, ps, bm, bs = d["pretrain_pc_mean"], d["pretrain_pc_std"], d["bd_pc_mean"], d["bd_pc_std"]
-    for (mx, my, sx, sy, col, hat, lab) in [
-            (pm[0], pm[1], ps[0], ps[1], fs.color("Base"), "", "Corpus"),
-            (bm[0], bm[1], bs[0], bs[1], fs.color("As"), "....", "Bangladesh")]:
-        ax.add_patch(Ellipse((mx, my), 2*sx, 2*sy, facecolor=col, alpha=0.30,
-                             edgecolor=col, lw=1.6, hatch=hat, label=lab))
-        ax.plot(mx, my, "o", color=col, ms=7, markeredgecolor="#333", markeredgewidth=0.6)
-    ax.set_xlabel("PC1"); ax.set_ylabel("PC2"); ax.legend(loc="upper left", fontsize=8)
+    """Sample-level PCA scatter: corpus cloud vs Bangladesh points (PC1-2)."""
+    s = json.load(open("results/fig4_panels.json"))["pca_scatter"]
+    ax.scatter(s["corpus_pc1"], s["corpus_pc2"], s=6, color=fs.color("Base"),
+               alpha=0.18, edgecolor="none", zorder=2, label="Corpus (n=%d shown)" % len(s["corpus_pc1"]), rasterized=True)
+    ax.scatter(s["bd_pc1"], s["bd_pc2"], s=9, color=fs.color("As"), alpha=0.55,
+               edgecolor="none", zorder=3, label="Bangladesh", rasterized=True)
+    ax.set_xlabel("PC1"); ax.set_ylabel("PC2")
+    leg = ax.legend(loc="upper left", fontsize=8, markerscale=2)
+    for lh in leg.legend_handles:
+        lh.set_alpha(1)
 
 
 def draw_w1(ax):
@@ -271,16 +272,32 @@ def draw_confusion(ax):
 
 
 def draw_reliability(ax):
+    """Calibration curve + inset histogram of predicted probabilities."""
     rb = json.load(open("results/calibration_logreg_as_chemonly.json"))["reliability_quantile_10bin"]
-    ax.plot([0, 1], [0, 1], ls="--", color="#888", lw=1.2, label="perfect")
+    ax.plot([0, 1], [0, 1], ls="--", color="#888", lw=1.2, label="perfect calibration")
     ax.plot(rb["bin_mean_predicted_prob"], rb["bin_observed_positive_rate"], "o-",
-            color=fs.color("As"), ms=6, lw=2.0, markeredgecolor="#333", markeredgewidth=0.6, label="LogReg")
-    ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.set_aspect("equal")
-    ax.set_xlabel("Mean predicted prob."); ax.set_ylabel("Observed rate")
+            color=fs.color("As"), ms=6, lw=2.0, markeredgecolor="#333", markeredgewidth=0.6,
+            label="chemistry-only LogReg")
+    # shade the overconfidence gap (curve below diagonal)
+    pp = np.array(rb["bin_mean_predicted_prob"]); op = np.array(rb["bin_observed_positive_rate"])
+    ax.fill_between(pp, op, pp, color=fs.color("As"), alpha=0.12, zorder=1)
+    ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+    ax.set_xlabel("Mean predicted probability"); ax.set_ylabel("Observed exceedance rate")
     b = rb.get("brier_avg_probs")
     if b:
-        ax.text(0.05, 0.92, f"Brier {b:.2f}", fontsize=9, color="#555")
-    ax.legend(loc="lower right", fontsize=8)
+        ax.text(0.04, 0.94, f"Brier {b:.2f}\n(over-confident)", fontsize=8.5, color="#555", va="top")
+    ax.legend(loc="lower right", fontsize=7.5)
+    # inset: predicted-probability histogram (predictions pile up near 1.0)
+    h = json.load(open("results/fig4_panels.json"))["pred_hist"]
+    iax = ax.inset_axes([0.10, 0.46, 0.40, 0.34])
+    edges = np.array(h["edges"]); ctr = (edges[:-1] + edges[1:]) / 2
+    iax.bar(ctr, h["counts"], width=0.092, color=fs.color("As"), hatch=fs.hatch("redox_active"),
+            edgecolor="white", linewidth=0.4)
+    iax.set_title("predicted prob.", fontsize=7, pad=2)
+    iax.tick_params(labelsize=6, length=2); iax.set_yticks([])
+    iax.set_xlim(0, 1); iax.grid(False)
+    for sp in ("top", "right", "left"):
+        iax.spines[sp].set_visible(False)
 
 
 def build_F4():
