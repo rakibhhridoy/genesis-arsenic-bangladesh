@@ -79,8 +79,9 @@ def apply_theme():
         "axes.spines.right": False,
         "axes.grid": True,
         "axes.axisbelow": True,
-        "grid.color": "#E6E6E6",
-        "grid.linewidth": 0.7,
+        "grid.color": "#C9C9C9",
+        "grid.alpha": 0.3,          # very faint, barely visible
+        "grid.linewidth": 0.5,
         "xtick.color": "#222222",
         "ytick.color": "#222222",
         "xtick.labelsize": 9,

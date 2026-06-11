@@ -74,7 +74,7 @@ def draw_attention(ax):
     # region labels inside their bands (right side, clear of dots)
     ax.text(0.080, 4.0, "oxic", ha="right", va="center", fontsize=9, color=fs.NAVY, fontweight="bold")
     ax.text(0.080, 0.6, "reducing As", ha="right", va="center", fontsize=9, color=fs.RED, fontweight="bold")
-    ax.legend(title="Encoder", loc="upper left", fontsize=7.5); ax.grid(axis="y", visible=False)
+    ax.legend(title="Encoder", loc="upper left", fontsize=7.5); ax.grid(False)
 
 
 # ---------------------------------------------------------------- reconstruction (F2b)
@@ -134,6 +134,7 @@ def draw_transfer_distance(ax):
     ax.axhline(0.5, color="#999", ls=":", lw=1.0)
     ax.set_xlabel("Distribution distance (4-D energy)"); ax.set_ylabel("Chemistry-only transfer AUC")
     ax.legend(title="Contaminant (bold edge = Bangladesh)", loc="upper right", fontsize=7, ncol=2)
+    ax.grid(False)
 
 
 def draw_ft_vs_rf_bars(ax):
@@ -195,6 +196,7 @@ def draw_ft_vs_rf_scatter(ax):
     ax.set_xlim(0.3, 1); ax.set_ylim(0.3, 1)  # fill cell width (no forced square)
     ax.set_xlabel("Random-forest AUC"); ax.set_ylabel("Fine-tuned AUC")
     ax.legend(loc="lower right", fontsize=7.5)
+    ax.grid(False)
 
 
 def draw_baseline_strength(ax):
@@ -249,6 +251,7 @@ def draw_pc_ellipses(ax):
     leg = ax.legend(loc="upper left", fontsize=8, markerscale=2)
     for lh in leg.legend_handles:
         lh.set_alpha(1)
+    ax.grid(False)
 
 
 def draw_w1(ax):
