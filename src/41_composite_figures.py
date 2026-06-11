@@ -260,7 +260,7 @@ def draw_w1(ax):
 def draw_confusion(ax):
     cm = json.load(open("results/calibration_logreg_as_chemonly.json"))["avg_confusion_at_f1_best"]
     M = np.array([[cm["tn"], cm["fp"]], [cm["fn"], cm["tp"]]])
-    im = ax.imshow(M, cmap="Blues")
+    im = ax.imshow(M, cmap="Blues", aspect="auto")  # fill cell width like other panels
     for (i, j), v in np.ndenumerate(M):
         ax.text(j, i, f"{int(round(v))}", ha="center", va="center", fontsize=16,
                 fontweight="bold", color="white" if v > M.max()*0.5 else "#222")

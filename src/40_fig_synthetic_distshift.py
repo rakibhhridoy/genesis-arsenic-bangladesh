@@ -53,7 +53,7 @@ def fig_synthetic():
     c.plot(g, [r["auc_base"] for r in con], "s--", color=fs.color("logreg"), ms=6, lw=2.0,
            markeredgecolor="#333", markeredgewidth=0.6, label="logistic regression")
     c.axhline(0.5, color="#888", ls=":", lw=1.0)
-    c.text(max(g), 0.505, "chance", ha="right", va="bottom", fontsize=8.5, color="#777", style="italic")
+    c.text(min(g), 0.508, "chance", ha="left", va="bottom", fontsize=8.5, color="#777", style="italic")
     c.set_xlabel(r"Concept shift $\gamma$"); c.set_ylabel("Zero-shot AUC")
     c.set_title("(c)  Concept shift collapses transfer", loc="left", fontsize=11)
     c.legend(loc="upper right", fontsize=8.5)
