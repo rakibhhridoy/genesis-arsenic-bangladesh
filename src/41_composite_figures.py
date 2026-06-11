@@ -52,25 +52,29 @@ def draw_attention(ax):
     y = np.arange(len(COUPLINGS))[::-1]
     mk = {"Small": "o", "Base": "s", "Large": "D"}
     lbl = {"Small": "Small (1.47M)", "Base": "Base (8.99M)", "Large": "Large (48.4M)"}
-    # noise floor band (vertical)
-    ax.axvspan(min(floors), max(floors), color="#999", alpha=0.22, zorder=0)
+    ax.set_ylim(-0.5, len(COUPLINGS) - 0.5)        # first 3 couplings oxic, last 3 reducing
+    # semantic region shading: oxic (teal) top, reducing-As (red) bottom
+    ax.axhspan(2.5, len(COUPLINGS) - 0.5, color=fs.TEAL, alpha=0.10, zorder=0)
+    ax.axhspan(-0.5, 2.5, color=fs.RED, alpha=0.08, zorder=0)
+    ax.axhline(2.5, color="#bbb", ls="-", lw=0.8, zorder=1)
+    # noise-floor vertical band + line + label (kept inside the axes)
+    ax.axvspan(min(floors), max(floors), color="#999", alpha=0.15, zorder=0)
     ax.axvline(float(np.median(floors)), color="#666", ls="--", lw=0.9, zorder=1)
-    ax.text(float(np.median(floors)), len(COUPLINGS) - 0.4, " noise floor", fontsize=7.5,
-            color="#666", style="italic", ha="left", va="top")
+    ax.text(float(np.median(floors)) + 0.001, 5.35, "noise floor", fontsize=7.5,
+            color="#555", style="italic", ha="left", va="top", zorder=5)
     for yi, ci in zip(y, range(len(COUPLINGS))):
         triple = [vals[s][ci] for s in ["Small", "Base", "Large"]]
-        ax.plot([min(triple), max(triple)], [yi, yi], color="#ddd", lw=1.5, zorder=1)
+        ax.plot([min(triple), max(triple)], [yi, yi], color="#ccc", lw=1.5, zorder=2)
         for s in ["Small", "Base", "Large"]:
             ax.scatter(vals[s][ci], yi, s=68, color=fs.color(s), marker=mk[s],
                        edgecolor="#333", linewidth=0.5, zorder=3,
                        label=lbl[s] if ci == 0 else None)
-    # divider between oxic (top 3) and reducing (bottom 3) groups
-    ax.axhline(2.5, color="#bbb", ls="--", lw=1.0)
     ax.set_yticks(y); ax.set_yticklabels([c[0] for c in COUPLINGS], fontsize=8.5)
-    ax.set_xlabel("Mean learned attention weight"); ax.set_xlim(0, 0.08)
-    ax.text(0.075, y[1], "oxic", ha="right", fontsize=8.5, color="#333", fontweight="bold")
-    ax.text(0.075, y[4], "reducing As", ha="right", fontsize=8.5, color=fs.RED, fontweight="bold")
-    ax.legend(title="Encoder", loc="lower right", fontsize=7.5); ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Mean learned attention weight"); ax.set_xlim(0, 0.082)
+    # region labels inside their bands (right side, clear of dots)
+    ax.text(0.080, 4.0, "oxic", ha="right", va="center", fontsize=9, color=fs.NAVY, fontweight="bold")
+    ax.text(0.080, 0.6, "reducing As", ha="right", va="center", fontsize=9, color=fs.RED, fontweight="bold")
+    ax.legend(title="Encoder", loc="upper left", fontsize=7.5); ax.grid(axis="y", visible=False)
 
 
 # ---------------------------------------------------------------- reconstruction (F2b)
