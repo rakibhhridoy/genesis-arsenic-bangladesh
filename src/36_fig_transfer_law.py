@@ -20,9 +20,9 @@ import json
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
+import figstyle as fs
 
-PALETTE = {"As": "#c44e52", "Fe": "#dd8452", "Mn": "#937860", "PO4": "#8172b3",
-           "U": "#4c72b0", "NO3": "#55a868", "F": "#64b5cd"}
+PALETTE = {t: fs.color(t) for t in ["As", "Fe", "Mn", "PO4", "U", "NO3", "F"]}
 
 
 def short(region):
@@ -30,6 +30,7 @@ def short(region):
 
 
 def main():
+    fs.apply_theme()
     rt = json.load(open("results/region_transfer.json"))["results"]
     enc = json.load(open("results/region_transfer_encoder.json"))["results"]
 

@@ -30,16 +30,18 @@ from pathlib import Path
 
 import numpy as np
 import matplotlib.pyplot as plt
+import figstyle as fs
 
 # mechanism grouping — identical to src/30_redox_dissociation.py (pre-specified)
 REDOX = {"As", "Fe", "Mn", "PO4"}
 CONSERVATIVE = {"NO3", "F"}
 URANIUM = {"U"}
 
-# seaborn "deep" palette, consistent with fig7
-C_FT = "#4c72b0"      # fine-tuned encoder (highlight)
-C_RF = "#b0b0b0"      # random forest (neutral)
-C_GROUP = {"redox": "#4c72b0", "conservative": "#55a868", "uranium": "#c44e52"}
+# methods (color+hatch) and mechanism groups from the shared design system
+C_FT = fs.color("finetuned")
+C_RF = fs.color("rf")
+C_GROUP = {"redox": fs.color("redox"), "conservative": fs.color("conservative"),
+           "uranium": fs.color("uranium")}
 GROUP_LABEL = {"redox": "Redox-coupled (As, Fe, Mn, PO$_4$)",
                "conservative": "Conservative (NO$_3$, F)",
                "uranium": "Uranium"}
@@ -104,6 +106,7 @@ def main():
     stats = json.load(open(args.stats))
     cells = build_cells(args.ft, args.enc)
 
+    fs.apply_theme()
     fig, (axa, axb) = plt.subplots(1, 2, figsize=(13, 5.6))
 
     # ---------------- panel (a): grouped bars by mechanism group ----------------
@@ -121,13 +124,14 @@ def main():
     ps = [stats[k]["wilcoxon_p"] for _, k in groups]
 
     axa.bar(x - w / 2, ft_means, w, label="Fine-tuned encoder",
-            color=C_FT, edgecolor="white", linewidth=0.5)
+            color=C_FT, hatch=fs.hatch("finetuned"), **fs.BAR)
     axa.bar(x + w / 2, rf_means, w, label="Random forest",
-            color=C_RF, edgecolor="white", linewidth=0.5)
+            color=C_RF, hatch=fs.hatch("rf"), **fs.BAR)
 
     axa.axhline(0.5, color="#999999", ls=":", lw=1.0, zorder=0)
     axa.text(len(groups) - 0.45, 0.505, "chance", fontsize=8.5,
              color="#777777", style="italic", va="bottom", ha="right")
+    axa.grid(axis="x", visible=False)
 
     top = max(max(ft_means), max(rf_means))
     for i, (_, k) in enumerate(groups):
@@ -150,17 +154,17 @@ def main():
     axa.set_ylabel("Mean zero-shot transfer AUC")
     axa.set_ylim(0.5, top + 0.13)
     axa.set_title("(a)  Advantage over the default random forest, by mechanism group",
-                  fontsize=10.5, weight="bold", loc="left")
-    axa.legend(loc="upper right", frameon=True, fontsize=9)
-    axa.spines["top"].set_visible(False)
-    axa.spines["right"].set_visible(False)
+                  fontsize=11, weight="bold", loc="left")
+    axa.legend(loc="upper right")
 
     # ---------------- panel (b): per-cell scatter FT vs RF ----------------
+    MARK = {"redox": "o", "conservative": "s", "uranium": "D"}
     for g in ["redox", "conservative", "uranium"]:
         pts = [c for c in cells if c["group"] == g]
         axb.scatter([c["rf"] for c in pts], [c["ft"] for c in pts],
-                    s=46, color=C_GROUP[g], edgecolor="white", linewidth=0.6,
-                    alpha=0.9, label=f"{GROUP_LABEL[g]} (n={len(pts)})", zorder=3)
+                    s=58, color=C_GROUP[g], edgecolor="#333333", linewidth=0.6,
+                    marker=MARK[g], alpha=0.92,
+                    label=f"{GROUP_LABEL[g]} (n={len(pts)})", zorder=3)
 
     lo, hi = 0.30, 1.0
     axb.plot([lo, hi], [lo, hi], ls="--", color="#888888", lw=1.0, zorder=1)
@@ -186,10 +190,9 @@ def main():
     axb.set_xlabel("Random-forest AUC")
     axb.set_ylabel("Fine-tuned encoder AUC")
     axb.set_title("(b)  Per-cell comparison (47 leave-one-region-out cells)",
-                  fontsize=10.5, weight="bold", loc="left")
-    axb.legend(loc="upper left", frameon=True, fontsize=8)
-    axb.spines["top"].set_visible(False)
-    axb.spines["right"].set_visible(False)
+                  fontsize=11, weight="bold", loc="left")
+    axb.legend(loc="upper left")
+    axb.grid(True)
 
     fig.tight_layout()
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)

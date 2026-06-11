@@ -21,8 +21,7 @@ from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
-# seaborn "deep" palette — matches the original figure
-COLORS = {"Small": "#4c72b0", "Base": "#dd8452", "Large": "#55a868"}
+import figstyle as fs
 SIZE_LABEL = {"Small": "Small\n(1.47M)", "Base": "Base\n(8.99M)", "Large": "Large\n(48.4M)"}
 
 # (label for x-axis, (param_a, param_b)); first 3 oxic, last 3 reducing-arsenic
@@ -70,13 +69,14 @@ def main():
     vals = {k: [coupling(A, idx, a, b) for _, (a, b) in COUPLINGS]
             for k, (A, idx) in data.items()}
 
+    fs.apply_theme()
     x = np.arange(len(COUPLINGS))
     w = 0.27
     fig, ax = plt.subplots(figsize=(11, 5.5))
 
     for i, size in enumerate(["Small", "Base", "Large"]):
         ax.bar(x + (i - 1) * w, vals[size], w, label=SIZE_LABEL[size],
-               color=COLORS[size], edgecolor="white", linewidth=0.4)
+               color=fs.color(size), hatch=fs.hatch(size), **fs.BAR)
 
     # noise-floor band = range of per-encoder medians; dashed line = their median
     fl = list(floors.values())
@@ -99,10 +99,9 @@ def main():
     ax.set_xticklabels([c[0] for c in COUPLINGS])
     ax.set_ylabel("Mean learned attention weight")
     ax.set_ylim(0, ymax)
-    ax.set_title("Learned parameter couplings vs. encoder scale", weight="bold")
-    ax.legend(title="Encoder", loc="upper right", frameon=True)
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
+    ax.set_title("Learned parameter couplings vs. encoder scale")
+    ax.legend(title="Encoder", loc="upper right")
+    ax.grid(axis="x", visible=False)
 
     fig.tight_layout()
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
