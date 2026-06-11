@@ -79,36 +79,34 @@ RECON_ORDER = ["Eh", "As", "U", "Mn", "PO4", "Fe", "SO4", "NO3",
 
 
 def draw_reconstruction(ax):
-    """Dumbbell: corpus R2 -> Bangladesh R2 per parameter; long left arrow = collapse."""
+    """Diverging drop bars: corpus R2 - Bangladesh R2 per parameter (the redox collapse)."""
     d = json.load(open("results/reconstruction_probe.json"))
     corp, bd = d["corpus"], d["bangladesh"]
     ps = [p for p in RECON_ORDER if p in corp and p in bd]
-    y = np.arange(len(ps))[::-1]
-    from matplotlib.lines import Line2D
+    drops = {p: corp[p]["r2"] - bd[p]["r2"] for p in ps}
+    ps = sorted(ps, key=lambda p: drops[p])          # smallest drop at bottom
+    y = np.arange(len(ps))
     for yi, p in zip(y, ps):
         red = p in REDOX
         col = fs.color("redox_active") if red else fs.color("conservative_ion")
-        c_r2, b_r2 = corp[p]["r2"], bd[p]["r2"]
-        ax.plot([b_r2, c_r2], [yi, yi], color="#ccc", lw=2.0, zorder=1, solid_capstyle="round")
-        ax.scatter(b_r2, yi, s=70, color=col, marker="X", edgecolor="#333", linewidth=0.5, zorder=3)  # Bangladesh
-        ax.scatter(c_r2, yi, s=70, color=col, marker="o", edgecolor="#333", linewidth=0.5, zorder=3)  # corpus
+        hat = fs.hatch("redox_active") if red else fs.hatch("conservative_ion")
+        ax.barh(yi, drops[p], color=col, hatch=hat, **fs.BAR)
+        ax.text(drops[p] + 0.08, yi, f"{drops[p]:.1f}", va="center", fontsize=7, color="#555")
     ax.axvline(0, color="#444", lw=1.0)
     ax.set_yticks(y); ax.set_yticklabels([p + (r" $^\ast$" if p in REDOX else "") for p in ps], fontsize=8)
-    ax.set_xlabel(r"Reconstruction $R^2$ (mask-one)"); ax.set_xlim(-5, 1.1)
-    ax.grid(axis="y", visible=False)
-    ax.legend(handles=[Line2D([0], [0], marker="o", color="w", markerfacecolor="#555",
-                              markeredgecolor="#333", ms=8, label="corpus"),
-                       Line2D([0], [0], marker="X", color="w", markerfacecolor="#555",
-                              markeredgecolor="#333", ms=8, label="Bangladesh"),
-                       Patch(facecolor=fs.color("redox_active"), edgecolor="white", label=r"redox-active ($^\ast$)"),
-                       Patch(facecolor=fs.color("conservative_ion"), edgecolor="white", label="conservative")],
-              loc="lower left", fontsize=7.5)
+    ax.set_xlabel(r"Reconstruction $R^2$ collapse (corpus $-$ Bangladesh)")
+    ax.set_xlim(-0.4, max(drops.values()) + 0.6); ax.grid(axis="y", visible=False)
+    ax.legend(handles=[Patch(facecolor=fs.color("redox_active"), hatch=fs.hatch("redox_active"),
+                             edgecolor="white", label=r"redox-active ($^\ast$)"),
+                       Patch(facecolor=fs.color("conservative_ion"), hatch=fs.hatch("conservative_ion"),
+                             edgecolor="white", label="conservative")],
+              loc="lower right", fontsize=7.5)
 
 
 def build_F2():
     fig, (a, b) = plt.subplots(1, 2, figsize=(15, 6.2))
     draw_attention(a); panel_tag(a, "(a)  Learned attention couplings vs. encoder scale")
-    draw_reconstruction(b); panel_tag(b, "(b)  Masked-reconstruction learnability hierarchy")
+    draw_reconstruction(b); panel_tag(b, "(b)  Reconstruction collapse on the reducing aquifer")
     fig.tight_layout(); fig.savefig("figures/figF2_instrument.png")
     print("wrote figures/figF2_instrument.png")
 
@@ -133,27 +131,41 @@ def draw_transfer_distance(ax):
 
 
 def draw_ft_vs_rf_bars(ax):
-    """Dumbbell: fine-tuned vs default random forest per mechanism group."""
+    """Box + strip: per-cell FT vs RF AUC distributions per mechanism group."""
     s = json.load(open("results/redox_dissociation.json"))
-    groups = [("Redox (As,Fe,Mn,PO$_4$)", "ft_vs_rf__REDOX_AsFeMnPO4"),
-              ("Conservative (NO$_3$,F)", "ft_vs_rf__CONSERVATIVE_NO3F"),
-              ("Uranium", "ft_vs_rf__URANIUM"), ("All cells", "ft_vs_rf__ALL_47")]
-    y = np.arange(len(groups))[::-1]
-    for yi, (g, k) in zip(y, groups):
-        ft, rf, p = s[k]["mean_a"], s[k]["mean_b"], s[k]["wilcoxon_p"]
-        ax.plot([rf, ft], [yi, yi], color="#bbb", lw=2.5, zorder=1, solid_capstyle="round")
-        ax.scatter(rf, yi, s=95, color=fs.color("rf"), edgecolor="#333", linewidth=0.7,
-                   zorder=3, label="Random forest" if yi == y[0] else None)
-        ax.scatter(ft, yi, s=95, color=fs.color("finetuned"), edgecolor="#333", linewidth=0.7,
-                   zorder=3, marker="D", label="Fine-tuned" if yi == y[0] else None)
-        st = "***" if p < .001 else "**" if p < .01 else "*" if p < .05 else "n.s."
-        ax.text(max(ft, rf) + 0.012, yi, st, va="center", fontsize=9.5, fontweight="bold",
+    ft = {(r["target"], r["held_out_region"]): r["finetune_auc_mean"]
+          for r in json.load(open("results/loro_finetune_large_multiseed.json"))["per_cell_seedmean"]}
+    rf = {(c["target"], c["held_out_region"]): c.get("rf_auc")
+          for c in json.load(open("results/region_transfer_encoder_large.json"))["results"]}
+    groups = [("Redox\n(As,Fe,Mn,PO$_4$)", {"As", "Fe", "Mn", "PO4"}, "ft_vs_rf__REDOX_AsFeMnPO4"),
+              ("Conserv.\n(NO$_3$,F)", {"NO3", "F"}, "ft_vs_rf__CONSERVATIVE_NO3F"),
+              ("Uranium", {"U"}, "ft_vs_rf__URANIUM")]
+    rng = np.random.default_rng(0)
+    xc = np.arange(len(groups)); w = 0.34
+    for gi, (lab, sel, kk) in enumerate(groups):
+        keys = [k for k in ft if k[0] in sel and rf.get(k) is not None]
+        ftv = np.array([ft[k] for k in keys]); rfv = np.array([rf[k] for k in keys])
+        for off, vals, col, who in [(-w/2, ftv, fs.color("finetuned"), "FT"),
+                                    (+w/2, rfv, fs.color("rf"), "RF")]:
+            bp = ax.boxplot(vals, positions=[gi + off], widths=w*0.8, patch_artist=True,
+                            showfliers=False, medianprops=dict(color="#222", lw=1.3),
+                            whiskerprops=dict(color="#666"), capprops=dict(color="#666"))
+            for box in bp["boxes"]:
+                box.set(facecolor=col, alpha=0.45, edgecolor="#333", linewidth=0.8)
+            jx = gi + off + (rng.random(len(vals)) - 0.5) * w * 0.5
+            ax.scatter(jx, vals, s=18, color=col, edgecolor="#333", linewidth=0.3, zorder=3, alpha=0.9)
+        p = s[kk]["wilcoxon_p"]; st = "***" if p < .001 else "**" if p < .01 else "*" if p < .05 else "n.s."
+        top = max(ftv.max(), rfv.max())
+        ax.text(gi, top + 0.03, st, ha="center", fontsize=9.5, fontweight="bold",
                 color="#222" if p < .05 else "#999")
-    ax.axvline(0.5, color="#999", ls=":", lw=1.0)
-    ax.set_yticks(y); ax.set_yticklabels([g for g, _ in groups], fontsize=8.5)
-    ax.set_ylim(-0.6, len(groups) - 0.4)
-    ax.set_xlabel("Mean transfer AUC"); ax.set_xlim(0.5, 0.95)
-    ax.legend(loc="lower right", fontsize=7.5); ax.grid(axis="y", visible=False)
+    ax.axhline(0.5, color="#999", ls=":", lw=1.0)
+    ax.set_xticks(xc); ax.set_xticklabels([g for g, _, _ in groups], fontsize=8.5)
+    ax.set_ylabel("Per-cell transfer AUC"); ax.set_ylim(0.3, 1.02)
+    from matplotlib.patches import Patch
+    ax.legend(handles=[Patch(facecolor=fs.color("finetuned"), alpha=0.45, edgecolor="#333", label="Fine-tuned"),
+                       Patch(facecolor=fs.color("rf"), alpha=0.45, edgecolor="#333", label="Random forest")],
+              loc="lower left", fontsize=7.5)
+    ax.grid(axis="x", visible=False)
 
 
 def draw_ft_vs_rf_scatter(ax):
@@ -180,25 +192,34 @@ def draw_ft_vs_rf_scatter(ax):
 
 
 def draw_baseline_strength(ax):
-    """Lollipop: redox-suite advantage shrinking as the tree baseline strengthens."""
-    g = json.load(open("results/baseline_strength.json"))["group_summary"]["REDOX_AsFeMnPO4"]
-    order = [("rf_default", "RF\ndefault"), ("rf_reg", "RF\nreg."), ("rf_leaf", "RF\nleaf"),
-             ("histgb", "HistGB"), ("xgb_strong", "XGB"), ("best_tree", "best\ntree")]
+    """Forest plot: redox-suite paired advantage (FT - tree) +/- 95% CI per baseline."""
+    cells = [c for c in json.load(open("results/baseline_strength.json"))["per_cell"]
+             if c["target"] in {"As", "Fe", "Mn", "PO4"}]
+    gsum = json.load(open("results/baseline_strength.json"))["group_summary"]["REDOX_AsFeMnPO4"]
+    order = [("rf_default", "RF (default)"), ("rf_reg", "RF (regularized)"),
+             ("rf_leaf", "RF (leaf=20)"), ("histgb", "HistGradientBoosting"),
+             ("xgb_strong", "XGBoost (strong)"), ("best_tree", "per-cell best tree")]
     cols = [fs.NAVY, fs.TEAL, fs.YELLOW, fs.ORANGE, fs.RED, fs.GREY]
-    x = np.arange(len(order))
-    deltas = [g[k]["delta"] for k, _ in order]
-    ax.plot(x, deltas, color="#bbb", lw=1.5, zorder=1, ls="-")  # trend connector
-    for xi, (k, _), c, d in zip(x, order, cols, deltas):
-        p = g[k]["wilcoxon_p"]
-        ax.plot([xi, xi], [0, d], color=c, lw=2.2, zorder=2)        # stem
-        ax.scatter(xi, d, s=130, color=c, edgecolor="#333", linewidth=0.7, zorder=3)
+    y = np.arange(len(order))[::-1]
+    n = len(cells)
+    for yi, (k, lab), c in zip(y, order, cols):
+        diffs = np.array([cc["ft"] - cc[k] for cc in cells])
+        m = diffs.mean(); se = diffs.std(ddof=1) / np.sqrt(n); ci = 1.96 * se
+        p = gsum[k]["wilcoxon_p"]; sig = p < 0.05
+        ax.plot([m - ci, m + ci], [yi, yi], color=c, lw=2.2, zorder=2,
+                solid_capstyle="round")
+        ax.plot([m - ci, m - ci], [yi - 0.12, yi + 0.12], color=c, lw=1.6)  # caps
+        ax.plot([m + ci, m + ci], [yi - 0.12, yi + 0.12], color=c, lw=1.6)
+        ax.scatter(m, yi, s=110, color=c, edgecolor="#333", linewidth=0.8, zorder=3,
+                   marker="D" if sig else "o")
         st = "**" if p < .01 else "*" if p < .05 else "n.s."
-        ax.text(xi, d + 0.0015, st, ha="center", va="bottom", fontsize=8.5,
-                color="#222" if p < .05 else "#999")
-    ax.axhline(0, color="#444", lw=1.0)
-    ax.set_xticks(x); ax.set_xticklabels([l for _, l in order], fontsize=8)
-    ax.set_xlim(-0.5, len(order) - 0.5)
-    ax.set_ylabel(r"$\Delta$AUC (FT $-$ tree)"); ax.grid(axis="x", visible=False)
+        ax.text(0.043, yi, st, va="center", ha="right", fontsize=8.5,
+                color="#222" if sig else "#999")
+    ax.axvline(0, color="#444", lw=1.2, zorder=1)
+    ax.set_yticks(y); ax.set_yticklabels([l for _, l in order], fontsize=8.5)
+    ax.set_ylim(-0.5, len(order) - 0.5)
+    ax.set_xlabel(r"$\Delta$AUC (fine-tuned $-$ tree)  $\pm$95\% CI")
+    ax.set_xlim(-0.02, 0.045); ax.grid(axis="y", visible=False)
 
 
 def build_F3():
