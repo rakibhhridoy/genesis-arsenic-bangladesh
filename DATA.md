@@ -3,8 +3,16 @@
 Large artifacts (harmonized data tensors, encoder checkpoints, raw sources) are
 **not stored in git** because of size. They are released separately.
 
-> **Zenodo archive DOI:** https://doi.org/10.5281/zenodo.20631197
-> Archive file: `zenodo_genesis_arsenic_bangladesh_v3.zip` (~1.0 GB compressed).
+> **Zenodo archive, all versions (resolves to the latest):** https://doi.org/10.5281/zenodo.20631196
+> `zenodo_genesis_arsenic_bangladesh_v3.zip` (~1.0 GB) holds data tensors, checkpoints and June results.
+> `zenodo_genesis_evaluation_v4.zip` holds the evaluation predictions, partitions and summaries.
+
+## Evaluation archive (v4)
+
+Unzip at the repository root. It adds per-sample predictions for all methods
+(`results/conformal_preds/`, `results/conformal_preds_quantum/`, 47 cells and 3 seeds),
+the fixed partitions as row indices (`results/evaluation_splits.npz`) and the summary JSONs.
+`SHA256SUMS.txt` lists a checksum for every file.
 
 ## What's in the separate release (v3)
 

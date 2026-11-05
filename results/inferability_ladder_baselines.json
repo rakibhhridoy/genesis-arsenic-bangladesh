@@ -1,0 +1,5555 @@
+{
+ "row_identity_max_abs_diff_gb": 0.0027425381175465446,
+ "rows": [
+  {
+   "target": "As",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 165,
+   "r2": 0.2418090974106245,
+   "fm_r2": -0.15847493451295813,
+   "gb_r2_stored": 0.2418090974106245
+  },
+  {
+   "target": "As",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2653,
+   "r2": -0.2341603050374359,
+   "fm_r2": -0.40122118160630293,
+   "gb_r2_stored": -0.2341603050374359
+  },
+  {
+   "target": "As",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 165,
+   "r2": 0.28571774711601217,
+   "fm_r2": -0.15847493451295813,
+   "gb_r2_stored": 0.2418090974106245
+  },
+  {
+   "target": "As",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2653,
+   "r2": -0.19012165933580172,
+   "fm_r2": -0.40122118160630293,
+   "gb_r2_stored": -0.2341603050374359
+  },
+  {
+   "target": "As",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 165,
+   "r2": 0.19172316424913327,
+   "fm_r2": -0.15847493451295813,
+   "gb_r2_stored": 0.2418090974106245
+  },
+  {
+   "target": "As",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2653,
+   "r2": -0.21197045149370597,
+   "fm_r2": -0.40122118160630293,
+   "gb_r2_stored": -0.2341603050374359
+  },
+  {
+   "target": "As",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 165,
+   "r2": 0.247583284502508,
+   "fm_r2": 0.08523699377024752,
+   "gb_r2_stored": 0.247583284502508
+  },
+  {
+   "target": "As",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2653,
+   "r2": -0.18444838451098833,
+   "fm_r2": -0.4410962012648294,
+   "gb_r2_stored": -0.18444838451098833
+  },
+  {
+   "target": "As",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 165,
+   "r2": 0.3245372111479192,
+   "fm_r2": 0.08523699377024752,
+   "gb_r2_stored": 0.247583284502508
+  },
+  {
+   "target": "As",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2653,
+   "r2": -0.20517698421322916,
+   "fm_r2": -0.4410962012648294,
+   "gb_r2_stored": -0.18444838451098833
+  },
+  {
+   "target": "As",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 165,
+   "r2": 0.22977049438135266,
+   "fm_r2": 0.08523699377024752,
+   "gb_r2_stored": 0.247583284502508
+  },
+  {
+   "target": "As",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2653,
+   "r2": -0.19406625547389122,
+   "fm_r2": -0.4410962012648294,
+   "gb_r2_stored": -0.18444838451098833
+  },
+  {
+   "target": "As",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 165,
+   "r2": 0.3721750517883816,
+   "fm_r2": 0.21836514280985742,
+   "gb_r2_stored": 0.3721750517883816
+  },
+  {
+   "target": "As",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2653,
+   "r2": -0.16920764937448363,
+   "fm_r2": -0.3166712852302991,
+   "gb_r2_stored": -0.16920764937448363
+  },
+  {
+   "target": "As",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 165,
+   "r2": 0.37670621284018746,
+   "fm_r2": 0.21836514280985742,
+   "gb_r2_stored": 0.3721750517883816
+  },
+  {
+   "target": "As",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2653,
+   "r2": -0.1537615518845541,
+   "fm_r2": -0.3166712852302991,
+   "gb_r2_stored": -0.16920764937448363
+  },
+  {
+   "target": "As",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 165,
+   "r2": 0.3291067517171147,
+   "fm_r2": 0.21836514280985742,
+   "gb_r2_stored": 0.3721750517883816
+  },
+  {
+   "target": "As",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2653,
+   "r2": -0.2367492783163303,
+   "fm_r2": -0.3166712852302991,
+   "gb_r2_stored": -0.16920764937448363
+  },
+  {
+   "target": "As",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 165,
+   "r2": 0.43226123223856605,
+   "fm_r2": 0.4741865982561224,
+   "gb_r2_stored": 0.43226123223856605
+  },
+  {
+   "target": "As",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2653,
+   "r2": -0.31835713662280174,
+   "fm_r2": -0.49678718556123425,
+   "gb_r2_stored": -0.31835713662280174
+  },
+  {
+   "target": "As",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 165,
+   "r2": 0.46200412467652674,
+   "fm_r2": 0.4741865982561224,
+   "gb_r2_stored": 0.43226123223856605
+  },
+  {
+   "target": "As",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2653,
+   "r2": -0.2624840753474931,
+   "fm_r2": -0.49678718556123425,
+   "gb_r2_stored": -0.31835713662280174
+  },
+  {
+   "target": "As",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 165,
+   "r2": 0.3818535994674007,
+   "fm_r2": 0.4741865982561224,
+   "gb_r2_stored": 0.43226123223856605
+  },
+  {
+   "target": "As",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2653,
+   "r2": -0.20516422412483526,
+   "fm_r2": -0.49678718556123425,
+   "gb_r2_stored": -0.31835713662280174
+  },
+  {
+   "target": "As",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 165,
+   "r2": 0.5096498965182532,
+   "fm_r2": 0.5314255873064069,
+   "gb_r2_stored": 0.5096498965182532
+  },
+  {
+   "target": "As",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2653,
+   "r2": -0.05936451321806424,
+   "fm_r2": -0.2479722315761701,
+   "gb_r2_stored": -0.05936451321806424
+  },
+  {
+   "target": "As",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 165,
+   "r2": 0.4665924665076301,
+   "fm_r2": 0.5314255873064069,
+   "gb_r2_stored": 0.5096498965182532
+  },
+  {
+   "target": "As",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2653,
+   "r2": -0.04201897186145587,
+   "fm_r2": -0.2479722315761701,
+   "gb_r2_stored": -0.05936451321806424
+  },
+  {
+   "target": "As",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 165,
+   "r2": 0.3918825417330237,
+   "fm_r2": 0.5314255873064069,
+   "gb_r2_stored": 0.5096498965182532
+  },
+  {
+   "target": "As",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2653,
+   "r2": 0.004205000447614515,
+   "fm_r2": -0.2479722315761701,
+   "gb_r2_stored": -0.05936451321806424
+  },
+  {
+   "target": "Fe",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.022745963645013356,
+   "fm_r2": -0.0374046494815643,
+   "gb_r2_stored": 0.022745963645013356
+  },
+  {
+   "target": "Fe",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2676,
+   "r2": -1.0389296558816485,
+   "fm_r2": -1.4849244661711465,
+   "gb_r2_stored": -1.0389296558816485
+  },
+  {
+   "target": "Fe",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.0920189381722134,
+   "fm_r2": -0.0374046494815643,
+   "gb_r2_stored": 0.022745963645013356
+  },
+  {
+   "target": "Fe",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2676,
+   "r2": -1.229805385230791,
+   "fm_r2": -1.4849244661711465,
+   "gb_r2_stored": -1.0389296558816485
+  },
+  {
+   "target": "Fe",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.05148133186160875,
+   "fm_r2": -0.0374046494815643,
+   "gb_r2_stored": 0.022745963645013356
+  },
+  {
+   "target": "Fe",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2676,
+   "r2": -2.2825185064786555,
+   "fm_r2": -1.4849244661711465,
+   "gb_r2_stored": -1.0389296558816485
+  },
+  {
+   "target": "Fe",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.15783647952216184,
+   "fm_r2": 0.09859944720687353,
+   "gb_r2_stored": 0.15783647952216184
+  },
+  {
+   "target": "Fe",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2676,
+   "r2": -0.8589593752799873,
+   "fm_r2": -1.2023403388696638,
+   "gb_r2_stored": -0.8589593752799873
+  },
+  {
+   "target": "Fe",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.19475036170617266,
+   "fm_r2": 0.09859944720687353,
+   "gb_r2_stored": 0.15783647952216184
+  },
+  {
+   "target": "Fe",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2676,
+   "r2": -1.0981991344835955,
+   "fm_r2": -1.2023403388696638,
+   "gb_r2_stored": -0.8589593752799873
+  },
+  {
+   "target": "Fe",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.10606024687549853,
+   "fm_r2": 0.09859944720687353,
+   "gb_r2_stored": 0.15783647952216184
+  },
+  {
+   "target": "Fe",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2676,
+   "r2": -2.2537343500985143,
+   "fm_r2": -1.2023403388696638,
+   "gb_r2_stored": -0.8589593752799873
+  },
+  {
+   "target": "Fe",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.3194223129752095,
+   "fm_r2": 0.5260909174254866,
+   "gb_r2_stored": 0.3194223129752095
+  },
+  {
+   "target": "Fe",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2676,
+   "r2": -0.7938718935388416,
+   "fm_r2": -1.6380606986597281,
+   "gb_r2_stored": -0.7938718935388416
+  },
+  {
+   "target": "Fe",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.2645180603595395,
+   "fm_r2": 0.5260909174254866,
+   "gb_r2_stored": 0.3194223129752095
+  },
+  {
+   "target": "Fe",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2676,
+   "r2": -0.8948764056735861,
+   "fm_r2": -1.6380606986597281,
+   "gb_r2_stored": -0.7938718935388416
+  },
+  {
+   "target": "Fe",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.15117300208511975,
+   "fm_r2": 0.5260909174254866,
+   "gb_r2_stored": 0.3194223129752095
+  },
+  {
+   "target": "Fe",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2676,
+   "r2": -2.144863618356964,
+   "fm_r2": -1.6380606986597281,
+   "gb_r2_stored": -0.7938718935388416
+  },
+  {
+   "target": "Fe",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.36814246866635714,
+   "fm_r2": 0.5531818670348946,
+   "gb_r2_stored": 0.36814246866635714
+  },
+  {
+   "target": "Fe",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2676,
+   "r2": -1.5527154241354277,
+   "fm_r2": -1.6668574435956214,
+   "gb_r2_stored": -1.5527154241354277
+  },
+  {
+   "target": "Fe",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.3785783682061864,
+   "fm_r2": 0.5531818670348946,
+   "gb_r2_stored": 0.36814246866635714
+  },
+  {
+   "target": "Fe",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2676,
+   "r2": -1.2367330058412276,
+   "fm_r2": -1.6668574435956214,
+   "gb_r2_stored": -1.5527154241354277
+  },
+  {
+   "target": "Fe",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.1803099427785072,
+   "fm_r2": 0.5531818670348946,
+   "gb_r2_stored": 0.36814246866635714
+  },
+  {
+   "target": "Fe",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2676,
+   "r2": -2.2963555828849134,
+   "fm_r2": -1.6668574435956214,
+   "gb_r2_stored": -1.5527154241354277
+  },
+  {
+   "target": "Fe",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.6308245644401136,
+   "fm_r2": 0.7118637766718343,
+   "gb_r2_stored": 0.6308245644401136
+  },
+  {
+   "target": "Fe",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2676,
+   "r2": -0.7235939047715141,
+   "fm_r2": -0.7584634882535557,
+   "gb_r2_stored": -0.7235939047715141
+  },
+  {
+   "target": "Fe",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.5286047101802351,
+   "fm_r2": 0.7118637766718343,
+   "gb_r2_stored": 0.6308245644401136
+  },
+  {
+   "target": "Fe",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2676,
+   "r2": -0.4806450919157612,
+   "fm_r2": -0.7584634882535557,
+   "gb_r2_stored": -0.7235939047715141
+  },
+  {
+   "target": "Fe",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.33743686104893345,
+   "fm_r2": 0.7118637766718343,
+   "gb_r2_stored": 0.6308245644401136
+  },
+  {
+   "target": "Fe",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2676,
+   "r2": -1.4711964047309838,
+   "fm_r2": -0.7584634882535557,
+   "gb_r2_stored": -0.7235939047715141
+  },
+  {
+   "target": "Mn",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 249,
+   "r2": -0.06313694968961858,
+   "fm_r2": -0.24805639305391924,
+   "gb_r2_stored": -0.06313694968961858
+  },
+  {
+   "target": "Mn",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2707,
+   "r2": -0.13545047644855623,
+   "fm_r2": -0.1624554392914599,
+   "gb_r2_stored": -0.13545047644855623
+  },
+  {
+   "target": "Mn",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 249,
+   "r2": -0.08696277332764213,
+   "fm_r2": -0.24805639305391924,
+   "gb_r2_stored": -0.06313694968961858
+  },
+  {
+   "target": "Mn",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2707,
+   "r2": -0.18294375690553677,
+   "fm_r2": -0.1624554392914599,
+   "gb_r2_stored": -0.13545047644855623
+  },
+  {
+   "target": "Mn",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 249,
+   "r2": 0.003307729521167313,
+   "fm_r2": -0.24805639305391924,
+   "gb_r2_stored": -0.06313694968961858
+  },
+  {
+   "target": "Mn",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2707,
+   "r2": -0.49220459206501643,
+   "fm_r2": -0.1624554392914599,
+   "gb_r2_stored": -0.13545047644855623
+  },
+  {
+   "target": "Mn",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 249,
+   "r2": 0.1190700833651781,
+   "fm_r2": 0.16122589544872812,
+   "gb_r2_stored": 0.1190700833651781
+  },
+  {
+   "target": "Mn",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2707,
+   "r2": -0.4894205812755874,
+   "fm_r2": -0.22829782345519978,
+   "gb_r2_stored": -0.4894205812755874
+  },
+  {
+   "target": "Mn",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 249,
+   "r2": 0.12863190905143718,
+   "fm_r2": 0.16122589544872812,
+   "gb_r2_stored": 0.1190700833651781
+  },
+  {
+   "target": "Mn",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2707,
+   "r2": -0.6440958648830832,
+   "fm_r2": -0.22829782345519978,
+   "gb_r2_stored": -0.4894205812755874
+  },
+  {
+   "target": "Mn",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 249,
+   "r2": 0.054287269652035786,
+   "fm_r2": 0.16122589544872812,
+   "gb_r2_stored": 0.1190700833651781
+  },
+  {
+   "target": "Mn",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2707,
+   "r2": -0.42612175901222904,
+   "fm_r2": -0.22829782345519978,
+   "gb_r2_stored": -0.4894205812755874
+  },
+  {
+   "target": "Mn",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 249,
+   "r2": 0.30955039082865143,
+   "fm_r2": 0.4686315599731913,
+   "gb_r2_stored": 0.30955039082865143
+  },
+  {
+   "target": "Mn",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2707,
+   "r2": -0.13796734260993748,
+   "fm_r2": -0.4461179459901694,
+   "gb_r2_stored": -0.13796734260993748
+  },
+  {
+   "target": "Mn",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 249,
+   "r2": 0.13270520690565957,
+   "fm_r2": 0.4686315599731913,
+   "gb_r2_stored": 0.30955039082865143
+  },
+  {
+   "target": "Mn",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2707,
+   "r2": -0.10262105482154804,
+   "fm_r2": -0.4461179459901694,
+   "gb_r2_stored": -0.13796734260993748
+  },
+  {
+   "target": "Mn",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 249,
+   "r2": 0.09810772402370149,
+   "fm_r2": 0.4686315599731913,
+   "gb_r2_stored": 0.30955039082865143
+  },
+  {
+   "target": "Mn",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2707,
+   "r2": -0.4019930357766468,
+   "fm_r2": -0.4461179459901694,
+   "gb_r2_stored": -0.13796734260993748
+  },
+  {
+   "target": "Mn",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 249,
+   "r2": 0.36921762912912937,
+   "fm_r2": 0.4520806468280738,
+   "gb_r2_stored": 0.3692176291291205
+  },
+  {
+   "target": "Mn",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2707,
+   "r2": -0.2270825738761273,
+   "fm_r2": -0.5831210324653346,
+   "gb_r2_stored": -0.22708257387603648
+  },
+  {
+   "target": "Mn",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 249,
+   "r2": 0.15463180568787782,
+   "fm_r2": 0.4520806468280738,
+   "gb_r2_stored": 0.3692176291291205
+  },
+  {
+   "target": "Mn",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2707,
+   "r2": -0.11620512053938947,
+   "fm_r2": -0.5831210324653346,
+   "gb_r2_stored": -0.22708257387603648
+  },
+  {
+   "target": "Mn",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 249,
+   "r2": 0.13138548309857379,
+   "fm_r2": 0.4520806468280738,
+   "gb_r2_stored": 0.3692176291291205
+  },
+  {
+   "target": "Mn",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2707,
+   "r2": -0.44935404000366397,
+   "fm_r2": -0.5831210324653346,
+   "gb_r2_stored": -0.22708257387603648
+  },
+  {
+   "target": "Mn",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 249,
+   "r2": 0.48544803165479833,
+   "fm_r2": 0.6841164237605781,
+   "gb_r2_stored": 0.48544803165479833
+  },
+  {
+   "target": "Mn",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2707,
+   "r2": -0.2969530353584755,
+   "fm_r2": -0.2072853132426542,
+   "gb_r2_stored": -0.2969530353584755
+  },
+  {
+   "target": "Mn",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 249,
+   "r2": 0.3300678693664939,
+   "fm_r2": 0.6841164237605781,
+   "gb_r2_stored": 0.48544803165479833
+  },
+  {
+   "target": "Mn",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2707,
+   "r2": -0.198556956778714,
+   "fm_r2": -0.2072853132426542,
+   "gb_r2_stored": -0.2969530353584755
+  },
+  {
+   "target": "Mn",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 249,
+   "r2": 0.19901367732884645,
+   "fm_r2": 0.6841164237605781,
+   "gb_r2_stored": 0.48544803165479833
+  },
+  {
+   "target": "Mn",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2707,
+   "r2": -0.07870404209209259,
+   "fm_r2": -0.2072853132426542,
+   "gb_r2_stored": -0.2969530353584755
+  },
+  {
+   "target": "PO4",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 149,
+   "r2": 0.49155507691939704,
+   "fm_r2": -0.4965691812356585,
+   "gb_r2_stored": 0.49155507691939704
+  },
+  {
+   "target": "PO4",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2672,
+   "r2": -1.098994101695621,
+   "fm_r2": -0.7338873414365163,
+   "gb_r2_stored": -1.098994101695621
+  },
+  {
+   "target": "PO4",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 149,
+   "r2": 0.5056838839265196,
+   "fm_r2": -0.4965691812356585,
+   "gb_r2_stored": 0.49155507691939704
+  },
+  {
+   "target": "PO4",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2672,
+   "r2": -1.0931627341905679,
+   "fm_r2": -0.7338873414365163,
+   "gb_r2_stored": -1.098994101695621
+  },
+  {
+   "target": "PO4",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 149,
+   "r2": 0.2713048097758256,
+   "fm_r2": -0.4965691812356585,
+   "gb_r2_stored": 0.49155507691939704
+  },
+  {
+   "target": "PO4",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2672,
+   "r2": -1.3406842047281682,
+   "fm_r2": -0.7338873414365163,
+   "gb_r2_stored": -1.098994101695621
+  },
+  {
+   "target": "PO4",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 149,
+   "r2": 0.5834111486304285,
+   "fm_r2": -0.40949957290810035,
+   "gb_r2_stored": 0.5834111486304285
+  },
+  {
+   "target": "PO4",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2672,
+   "r2": -0.9132468027142153,
+   "fm_r2": -0.6372491091147601,
+   "gb_r2_stored": -0.9132468027142153
+  },
+  {
+   "target": "PO4",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 149,
+   "r2": 0.5776262450888504,
+   "fm_r2": -0.40949957290810035,
+   "gb_r2_stored": 0.5834111486304285
+  },
+  {
+   "target": "PO4",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2672,
+   "r2": -0.8848801623202831,
+   "fm_r2": -0.6372491091147601,
+   "gb_r2_stored": -0.9132468027142153
+  },
+  {
+   "target": "PO4",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 149,
+   "r2": 0.2893428709733282,
+   "fm_r2": -0.40949957290810035,
+   "gb_r2_stored": 0.5834111486304285
+  },
+  {
+   "target": "PO4",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2672,
+   "r2": -1.329086508566705,
+   "fm_r2": -0.6372491091147601,
+   "gb_r2_stored": -0.9132468027142153
+  },
+  {
+   "target": "PO4",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 149,
+   "r2": 0.6054978174151677,
+   "fm_r2": 0.811257322378037,
+   "gb_r2_stored": 0.6054978174151677
+  },
+  {
+   "target": "PO4",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2672,
+   "r2": -0.7107093688847423,
+   "fm_r2": -0.5295454559577764,
+   "gb_r2_stored": -0.7107093688847423
+  },
+  {
+   "target": "PO4",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 149,
+   "r2": 0.5655510621693647,
+   "fm_r2": 0.811257322378037,
+   "gb_r2_stored": 0.6054978174151677
+  },
+  {
+   "target": "PO4",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2672,
+   "r2": -0.5762848388201061,
+   "fm_r2": -0.5295454559577764,
+   "gb_r2_stored": -0.7107093688847423
+  },
+  {
+   "target": "PO4",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 149,
+   "r2": 0.28158117392751936,
+   "fm_r2": 0.811257322378037,
+   "gb_r2_stored": 0.6054978174151677
+  },
+  {
+   "target": "PO4",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2672,
+   "r2": -1.2619483234662594,
+   "fm_r2": -0.5295454559577764,
+   "gb_r2_stored": -0.7107093688847423
+  },
+  {
+   "target": "PO4",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 149,
+   "r2": 0.7619162432059876,
+   "fm_r2": 0.9040091718666996,
+   "gb_r2_stored": 0.7619162432059876
+  },
+  {
+   "target": "PO4",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2672,
+   "r2": -0.7824660903846656,
+   "fm_r2": -0.7435954139613505,
+   "gb_r2_stored": -0.7824660903846656
+  },
+  {
+   "target": "PO4",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 149,
+   "r2": 0.6656755724193401,
+   "fm_r2": 0.9040091718666996,
+   "gb_r2_stored": 0.7619162432059876
+  },
+  {
+   "target": "PO4",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2672,
+   "r2": -0.30278166332549605,
+   "fm_r2": -0.7435954139613505,
+   "gb_r2_stored": -0.7824660903846656
+  },
+  {
+   "target": "PO4",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 149,
+   "r2": 0.2885364409554664,
+   "fm_r2": 0.9040091718666996,
+   "gb_r2_stored": 0.7619162432059876
+  },
+  {
+   "target": "PO4",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2672,
+   "r2": -1.24951149316147,
+   "fm_r2": -0.7435954139613505,
+   "gb_r2_stored": -0.7824660903846656
+  },
+  {
+   "target": "PO4",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 149,
+   "r2": 0.8897863033687119,
+   "fm_r2": 0.9120847033021221,
+   "gb_r2_stored": 0.8897863033687119
+  },
+  {
+   "target": "PO4",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2672,
+   "r2": -0.3009155580011895,
+   "fm_r2": -0.6195823176271671,
+   "gb_r2_stored": -0.3009155580011895
+  },
+  {
+   "target": "PO4",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 149,
+   "r2": 0.8138086099205026,
+   "fm_r2": 0.9120847033021221,
+   "gb_r2_stored": 0.8897863033687119
+  },
+  {
+   "target": "PO4",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2672,
+   "r2": -0.12461679213944477,
+   "fm_r2": -0.6195823176271671,
+   "gb_r2_stored": -0.3009155580011895
+  },
+  {
+   "target": "PO4",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 149,
+   "r2": 0.3725484467601303,
+   "fm_r2": 0.9120847033021221,
+   "gb_r2_stored": 0.8897863033687119
+  },
+  {
+   "target": "PO4",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2672,
+   "r2": -1.0823333662476982,
+   "fm_r2": -0.6195823176271671,
+   "gb_r2_stored": -0.3009155580011895
+  },
+  {
+   "target": "F",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.40156116453902435,
+   "fm_r2": -0.5293882112281925,
+   "gb_r2_stored": 0.40156116453902435
+  },
+  {
+   "target": "F",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 840,
+   "r2": -0.5177840819270128,
+   "fm_r2": -0.7491661715510163,
+   "gb_r2_stored": -0.5177840819270128
+  },
+  {
+   "target": "F",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.4631653574988237,
+   "fm_r2": -0.5293882112281925,
+   "gb_r2_stored": 0.40156116453902435
+  },
+  {
+   "target": "F",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 840,
+   "r2": -0.5641846300294631,
+   "fm_r2": -0.7491661715510163,
+   "gb_r2_stored": -0.5177840819270128
+  },
+  {
+   "target": "F",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.40276655653221005,
+   "fm_r2": -0.5293882112281925,
+   "gb_r2_stored": 0.40156116453902435
+  },
+  {
+   "target": "F",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 840,
+   "r2": -0.5185527478781977,
+   "fm_r2": -0.7491661715510163,
+   "gb_r2_stored": -0.5177840819270128
+  },
+  {
+   "target": "F",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.5249435026195224,
+   "fm_r2": -0.02313617546752944,
+   "gb_r2_stored": 0.5249435026195224
+  },
+  {
+   "target": "F",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 840,
+   "r2": -0.3613819164776808,
+   "fm_r2": -0.42814113255348096,
+   "gb_r2_stored": -0.3613819164776808
+  },
+  {
+   "target": "F",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.5371071052878256,
+   "fm_r2": -0.02313617546752944,
+   "gb_r2_stored": 0.5249435026195224
+  },
+  {
+   "target": "F",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 840,
+   "r2": -0.14041499677041225,
+   "fm_r2": -0.42814113255348096,
+   "gb_r2_stored": -0.3613819164776808
+  },
+  {
+   "target": "F",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.4232011669897028,
+   "fm_r2": -0.02313617546752944,
+   "gb_r2_stored": 0.5249435026195224
+  },
+  {
+   "target": "F",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 840,
+   "r2": -0.15207207538804068,
+   "fm_r2": -0.42814113255348096,
+   "gb_r2_stored": -0.3613819164776808
+  },
+  {
+   "target": "F",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.7069047874621301,
+   "fm_r2": 0.7803312182731583,
+   "gb_r2_stored": 0.7069047874621301
+  },
+  {
+   "target": "F",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 840,
+   "r2": -0.1647371334050718,
+   "fm_r2": -0.25221184853462253,
+   "gb_r2_stored": -0.1647371334050718
+  },
+  {
+   "target": "F",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.7011838366899763,
+   "fm_r2": 0.7803312182731583,
+   "gb_r2_stored": 0.7069047874621301
+  },
+  {
+   "target": "F",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 840,
+   "r2": -0.02256278766161368,
+   "fm_r2": -0.25221184853462253,
+   "gb_r2_stored": -0.1647371334050718
+  },
+  {
+   "target": "F",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.5959541452221373,
+   "fm_r2": 0.7803312182731583,
+   "gb_r2_stored": 0.7069047874621301
+  },
+  {
+   "target": "F",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 840,
+   "r2": -0.03721518722157935,
+   "fm_r2": -0.25221184853462253,
+   "gb_r2_stored": -0.1647371334050718
+  },
+  {
+   "target": "F",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.6956515602165487,
+   "fm_r2": 0.8007597269572052,
+   "gb_r2_stored": 0.6956515602165487
+  },
+  {
+   "target": "F",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 840,
+   "r2": -0.10924661041317818,
+   "fm_r2": -0.12176079353290725,
+   "gb_r2_stored": -0.10924661041317818
+  },
+  {
+   "target": "F",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.7142614578209426,
+   "fm_r2": 0.8007597269572052,
+   "gb_r2_stored": 0.6956515602165487
+  },
+  {
+   "target": "F",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 840,
+   "r2": 0.020197527741609878,
+   "fm_r2": -0.12176079353290725,
+   "gb_r2_stored": -0.10924661041317818
+  },
+  {
+   "target": "F",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.601149659952135,
+   "fm_r2": 0.8007597269572052,
+   "gb_r2_stored": 0.6956515602165487
+  },
+  {
+   "target": "F",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 840,
+   "r2": -0.02367751741595514,
+   "fm_r2": -0.12176079353290725,
+   "gb_r2_stored": -0.10924661041317818
+  },
+  {
+   "target": "F",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 225,
+   "r2": 0.7052269729780287,
+   "fm_r2": 0.7986344909594774,
+   "gb_r2_stored": 0.7052269729780287
+  },
+  {
+   "target": "F",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 840,
+   "r2": -0.10608561560012997,
+   "fm_r2": -0.10737548567476374,
+   "gb_r2_stored": -0.10719108552051937
+  },
+  {
+   "target": "F",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 225,
+   "r2": 0.671768512434149,
+   "fm_r2": 0.7986344909594774,
+   "gb_r2_stored": 0.7052269729780287
+  },
+  {
+   "target": "F",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 840,
+   "r2": 0.016743989713986163,
+   "fm_r2": -0.10737548567476374,
+   "gb_r2_stored": -0.10719108552051937
+  },
+  {
+   "target": "F",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 225,
+   "r2": 0.6239329485006746,
+   "fm_r2": 0.7986344909594774,
+   "gb_r2_stored": 0.7052269729780287
+  },
+  {
+   "target": "F",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 840,
+   "r2": -0.04774708811905404,
+   "fm_r2": -0.10737548567476374,
+   "gb_r2_stored": -0.10719108552051937
+  },
+  {
+   "target": "U",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 85,
+   "r2": 0.4523075588520641,
+   "fm_r2": -0.9776399874661765,
+   "gb_r2_stored": 0.4523075588520641
+  },
+  {
+   "target": "U",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 85,
+   "r2": 0.4469846955044453,
+   "fm_r2": -0.9776399874661765,
+   "gb_r2_stored": 0.4523075588520641
+  },
+  {
+   "target": "U",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 85,
+   "r2": 0.5636035480738004,
+   "fm_r2": -0.9776399874661765,
+   "gb_r2_stored": 0.4523075588520641
+  },
+  {
+   "target": "U",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 85,
+   "r2": 0.4885555643991537,
+   "fm_r2": -0.664886948169177,
+   "gb_r2_stored": 0.4885555643991537
+  },
+  {
+   "target": "U",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 85,
+   "r2": 0.4937223306947326,
+   "fm_r2": -0.664886948169177,
+   "gb_r2_stored": 0.4885555643991537
+  },
+  {
+   "target": "U",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 85,
+   "r2": 0.6270585704688068,
+   "fm_r2": -0.664886948169177,
+   "gb_r2_stored": 0.4885555643991537
+  },
+  {
+   "target": "U",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 85,
+   "r2": 0.5293215653188372,
+   "fm_r2": 0.4080429114371076,
+   "gb_r2_stored": 0.5293215653188372
+  },
+  {
+   "target": "U",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 85,
+   "r2": 0.5608371391653679,
+   "fm_r2": 0.4080429114371076,
+   "gb_r2_stored": 0.5293215653188372
+  },
+  {
+   "target": "U",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 85,
+   "r2": 0.6143553575644325,
+   "fm_r2": 0.4080429114371076,
+   "gb_r2_stored": 0.5293215653188372
+  },
+  {
+   "target": "U",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 85,
+   "r2": 0.6287345349538673,
+   "fm_r2": 0.5854283776672911,
+   "gb_r2_stored": 0.6287345349538673
+  },
+  {
+   "target": "U",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 85,
+   "r2": 0.6190130419397419,
+   "fm_r2": 0.5854283776672911,
+   "gb_r2_stored": 0.6287345349538673
+  },
+  {
+   "target": "U",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 85,
+   "r2": 0.6574203908478318,
+   "fm_r2": 0.5854283776672911,
+   "gb_r2_stored": 0.6287345349538673
+  },
+  {
+   "target": "U",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 85,
+   "r2": 0.6766813597547539,
+   "fm_r2": 0.6404144203596843,
+   "gb_r2_stored": 0.6766813597547539
+  },
+  {
+   "target": "U",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 85,
+   "r2": 0.71866312135626,
+   "fm_r2": 0.6404144203596843,
+   "gb_r2_stored": 0.6766813597547539
+  },
+  {
+   "target": "U",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 85,
+   "r2": 0.7519937391454252,
+   "fm_r2": 0.6404144203596843,
+   "gb_r2_stored": 0.6766813597547539
+  },
+  {
+   "target": "NO3",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 215,
+   "r2": 0.20149713605500563,
+   "fm_r2": 0.12754807150698388,
+   "gb_r2_stored": 0.20149713605500563
+  },
+  {
+   "target": "NO3",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2674,
+   "r2": -0.15982122695860967,
+   "fm_r2": -0.6962945174284618,
+   "gb_r2_stored": -0.15982122695860967
+  },
+  {
+   "target": "NO3",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 215,
+   "r2": 0.28645580665778003,
+   "fm_r2": 0.12754807150698388,
+   "gb_r2_stored": 0.20149713605500563
+  },
+  {
+   "target": "NO3",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2674,
+   "r2": -0.036306571638610396,
+   "fm_r2": -0.6962945174284618,
+   "gb_r2_stored": -0.15982122695860967
+  },
+  {
+   "target": "NO3",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 215,
+   "r2": 0.24694422662370086,
+   "fm_r2": 0.12754807150698388,
+   "gb_r2_stored": 0.20149713605500563
+  },
+  {
+   "target": "NO3",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2674,
+   "r2": -0.08220369962306595,
+   "fm_r2": -0.6962945174284618,
+   "gb_r2_stored": -0.15982122695860967
+  },
+  {
+   "target": "NO3",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 215,
+   "r2": 0.31329456914366804,
+   "fm_r2": 0.14061901582903946,
+   "gb_r2_stored": 0.31329456914366804
+  },
+  {
+   "target": "NO3",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2674,
+   "r2": -0.5111132183590181,
+   "fm_r2": -0.5919806983479268,
+   "gb_r2_stored": -0.5111132183590181
+  },
+  {
+   "target": "NO3",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 215,
+   "r2": 0.3006294619909846,
+   "fm_r2": 0.14061901582903946,
+   "gb_r2_stored": 0.31329456914366804
+  },
+  {
+   "target": "NO3",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2674,
+   "r2": 0.021210407803843534,
+   "fm_r2": -0.5919806983479268,
+   "gb_r2_stored": -0.5111132183590181
+  },
+  {
+   "target": "NO3",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 215,
+   "r2": 0.32941329905724404,
+   "fm_r2": 0.14061901582903946,
+   "gb_r2_stored": 0.31329456914366804
+  },
+  {
+   "target": "NO3",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2674,
+   "r2": -0.023696692935271768,
+   "fm_r2": -0.5919806983479268,
+   "gb_r2_stored": -0.5111132183590181
+  },
+  {
+   "target": "NO3",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 215,
+   "r2": 0.48931376893042355,
+   "fm_r2": 0.6473711126816923,
+   "gb_r2_stored": 0.48931376893042355
+  },
+  {
+   "target": "NO3",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2674,
+   "r2": -1.104126247520834,
+   "fm_r2": -1.0139794523751222,
+   "gb_r2_stored": -1.104126247520834
+  },
+  {
+   "target": "NO3",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 215,
+   "r2": 0.4393421034371694,
+   "fm_r2": 0.6473711126816923,
+   "gb_r2_stored": 0.48931376893042355
+  },
+  {
+   "target": "NO3",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2674,
+   "r2": -0.06525700323103623,
+   "fm_r2": -1.0139794523751222,
+   "gb_r2_stored": -1.104126247520834
+  },
+  {
+   "target": "NO3",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 215,
+   "r2": 0.5239881679097913,
+   "fm_r2": 0.6473711126816923,
+   "gb_r2_stored": 0.48931376893042355
+  },
+  {
+   "target": "NO3",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2674,
+   "r2": 0.026288470605162595,
+   "fm_r2": -1.0139794523751222,
+   "gb_r2_stored": -1.104126247520834
+  },
+  {
+   "target": "NO3",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 215,
+   "r2": 0.5619503961168,
+   "fm_r2": 0.6944973905032337,
+   "gb_r2_stored": 0.5619503961168
+  },
+  {
+   "target": "NO3",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2674,
+   "r2": -1.0343374040415516,
+   "fm_r2": -1.0046287661547364,
+   "gb_r2_stored": -1.0343374040415516
+  },
+  {
+   "target": "NO3",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 215,
+   "r2": 0.44431539386788044,
+   "fm_r2": 0.6944973905032337,
+   "gb_r2_stored": 0.5619503961168
+  },
+  {
+   "target": "NO3",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2674,
+   "r2": -0.14999908782216043,
+   "fm_r2": -1.0046287661547364,
+   "gb_r2_stored": -1.0343374040415516
+  },
+  {
+   "target": "NO3",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 215,
+   "r2": 0.512663410072572,
+   "fm_r2": 0.6944973905032337,
+   "gb_r2_stored": 0.5619503961168
+  },
+  {
+   "target": "NO3",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2674,
+   "r2": 0.028821638945333294,
+   "fm_r2": -1.0046287661547364,
+   "gb_r2_stored": -1.0343374040415516
+  },
+  {
+   "target": "NO3",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 215,
+   "r2": 0.5842957516313022,
+   "fm_r2": 0.7481738998642464,
+   "gb_r2_stored": 0.5842957516313022
+  },
+  {
+   "target": "NO3",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2674,
+   "r2": -1.4580535541553612,
+   "fm_r2": -1.6470896492766993,
+   "gb_r2_stored": -1.4580535541553612
+  },
+  {
+   "target": "NO3",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 215,
+   "r2": 0.5001852812842141,
+   "fm_r2": 0.7481738998642464,
+   "gb_r2_stored": 0.5842957516313022
+  },
+  {
+   "target": "NO3",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2674,
+   "r2": -0.16205541923857592,
+   "fm_r2": -1.6470896492766993,
+   "gb_r2_stored": -1.4580535541553612
+  },
+  {
+   "target": "NO3",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 215,
+   "r2": 0.5623147806104034,
+   "fm_r2": 0.7481738998642464,
+   "gb_r2_stored": 0.5842957516313022
+  },
+  {
+   "target": "NO3",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2674,
+   "r2": -0.10383499513428096,
+   "fm_r2": -1.6470896492766993,
+   "gb_r2_stored": -1.4580535541553612
+  },
+  {
+   "target": "pH",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 146,
+   "r2": 0.37819419175169533,
+   "fm_r2": 0.09548797343569404,
+   "gb_r2_stored": 0.37819419175169533
+  },
+  {
+   "target": "pH",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2699,
+   "r2": -1.2151617639012797,
+   "fm_r2": -0.1786416553140815,
+   "gb_r2_stored": -1.2151617639012797
+  },
+  {
+   "target": "pH",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 146,
+   "r2": 0.42355043707127915,
+   "fm_r2": 0.09548797343569404,
+   "gb_r2_stored": 0.37819419175169533
+  },
+  {
+   "target": "pH",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2699,
+   "r2": -0.39241822543352023,
+   "fm_r2": -0.1786416553140815,
+   "gb_r2_stored": -1.2151617639012797
+  },
+  {
+   "target": "pH",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 146,
+   "r2": 0.4067361117804792,
+   "fm_r2": 0.09548797343569404,
+   "gb_r2_stored": 0.37819419175169533
+  },
+  {
+   "target": "pH",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2699,
+   "r2": -0.1479883263126478,
+   "fm_r2": -0.1786416553140815,
+   "gb_r2_stored": -1.2151617639012797
+  },
+  {
+   "target": "pH",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 146,
+   "r2": 0.44023685917457056,
+   "fm_r2": 0.2467167305263378,
+   "gb_r2_stored": 0.44023685917457056
+  },
+  {
+   "target": "pH",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2699,
+   "r2": -0.7939974513815162,
+   "fm_r2": -0.16149443024899046,
+   "gb_r2_stored": -0.7941211050639572
+  },
+  {
+   "target": "pH",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 146,
+   "r2": 0.4422515941860109,
+   "fm_r2": 0.2467167305263378,
+   "gb_r2_stored": 0.44023685917457056
+  },
+  {
+   "target": "pH",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2699,
+   "r2": -0.39743845446499093,
+   "fm_r2": -0.16149443024899046,
+   "gb_r2_stored": -0.7941211050639572
+  },
+  {
+   "target": "pH",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 146,
+   "r2": 0.35954216309884734,
+   "fm_r2": 0.2467167305263378,
+   "gb_r2_stored": 0.44023685917457056
+  },
+  {
+   "target": "pH",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2699,
+   "r2": -0.1722708353920377,
+   "fm_r2": -0.16149443024899046,
+   "gb_r2_stored": -0.7941211050639572
+  },
+  {
+   "target": "pH",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 146,
+   "r2": 0.6506532416986122,
+   "fm_r2": 0.6100397707277843,
+   "gb_r2_stored": 0.6506532416986122
+  },
+  {
+   "target": "pH",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2699,
+   "r2": -0.37207947833908617,
+   "fm_r2": -0.060864670492553286,
+   "gb_r2_stored": -0.37207947833908617
+  },
+  {
+   "target": "pH",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 146,
+   "r2": 0.6674213080666862,
+   "fm_r2": 0.6100397707277843,
+   "gb_r2_stored": 0.6506532416986122
+  },
+  {
+   "target": "pH",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2699,
+   "r2": -0.1862600137783037,
+   "fm_r2": -0.060864670492553286,
+   "gb_r2_stored": -0.37207947833908617
+  },
+  {
+   "target": "pH",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 146,
+   "r2": 0.663223807204911,
+   "fm_r2": 0.6100397707277843,
+   "gb_r2_stored": 0.6506532416986122
+  },
+  {
+   "target": "pH",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2699,
+   "r2": -0.10200485457643182,
+   "fm_r2": -0.060864670492553286,
+   "gb_r2_stored": -0.37207947833908617
+  },
+  {
+   "target": "pH",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 146,
+   "r2": 0.6763352919797231,
+   "fm_r2": 0.7289706115200125,
+   "gb_r2_stored": 0.6763352919797231
+  },
+  {
+   "target": "pH",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2699,
+   "r2": -0.4742909304905869,
+   "fm_r2": -0.04261474550000277,
+   "gb_r2_stored": -0.4742909304905869
+  },
+  {
+   "target": "pH",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 146,
+   "r2": 0.6774161551214504,
+   "fm_r2": 0.7289706115200125,
+   "gb_r2_stored": 0.6763352919797231
+  },
+  {
+   "target": "pH",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2699,
+   "r2": -0.18137623584737206,
+   "fm_r2": -0.04261474550000277,
+   "gb_r2_stored": -0.4742909304905869
+  },
+  {
+   "target": "pH",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 146,
+   "r2": 0.6630011853945069,
+   "fm_r2": 0.7289706115200125,
+   "gb_r2_stored": 0.6763352919797231
+  },
+  {
+   "target": "pH",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2699,
+   "r2": -0.09491489862660019,
+   "fm_r2": -0.04261474550000277,
+   "gb_r2_stored": -0.4742909304905869
+  },
+  {
+   "target": "pH",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 146,
+   "r2": 0.6751793454105762,
+   "fm_r2": 0.766964994584156,
+   "gb_r2_stored": 0.6751793454105762
+  },
+  {
+   "target": "pH",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2699,
+   "r2": -0.6188211546933116,
+   "fm_r2": -0.19950637869007526,
+   "gb_r2_stored": -0.6188207512320012
+  },
+  {
+   "target": "pH",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 146,
+   "r2": 0.6755216631366265,
+   "fm_r2": 0.766964994584156,
+   "gb_r2_stored": 0.6751793454105762
+  },
+  {
+   "target": "pH",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2699,
+   "r2": -0.2439027664043203,
+   "fm_r2": -0.19950637869007526,
+   "gb_r2_stored": -0.6188207512320012
+  },
+  {
+   "target": "pH",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 146,
+   "r2": 0.6744432385448074,
+   "fm_r2": 0.766964994584156,
+   "gb_r2_stored": 0.6751793454105762
+  },
+  {
+   "target": "pH",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2699,
+   "r2": -0.12263769107465716,
+   "fm_r2": -0.19950637869007526,
+   "gb_r2_stored": -0.6188207512320012
+  },
+  {
+   "target": "Eh",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2665,
+   "r2": -5.542197036169247,
+   "fm_r2": -6.283462024267118,
+   "gb_r2_stored": -5.542197036169247
+  },
+  {
+   "target": "Eh",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2665,
+   "r2": -4.03969136381519,
+   "fm_r2": -6.283462024267118,
+   "gb_r2_stored": -5.542197036169247
+  },
+  {
+   "target": "Eh",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2665,
+   "r2": -10.992174455121138,
+   "fm_r2": -6.283462024267118,
+   "gb_r2_stored": -5.542197036169247
+  },
+  {
+   "target": "Eh",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2665,
+   "r2": -6.206266348338423,
+   "fm_r2": -4.5625397456557755,
+   "gb_r2_stored": -6.207200311734151
+  },
+  {
+   "target": "Eh",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2665,
+   "r2": -3.593276917753669,
+   "fm_r2": -4.5625397456557755,
+   "gb_r2_stored": -6.207200311734151
+  },
+  {
+   "target": "Eh",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2665,
+   "r2": -6.398868175474943,
+   "fm_r2": -4.5625397456557755,
+   "gb_r2_stored": -6.207200311734151
+  },
+  {
+   "target": "Eh",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2665,
+   "r2": -3.150797618548646,
+   "fm_r2": -2.173728012129937,
+   "gb_r2_stored": -3.150797618548646
+  },
+  {
+   "target": "Eh",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2665,
+   "r2": -3.2691752164169703,
+   "fm_r2": -2.173728012129937,
+   "gb_r2_stored": -3.150797618548646
+  },
+  {
+   "target": "Eh",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2665,
+   "r2": -5.009296276857142,
+   "fm_r2": -2.173728012129937,
+   "gb_r2_stored": -3.150797618548646
+  },
+  {
+   "target": "Eh",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2665,
+   "r2": -3.313174773105839,
+   "fm_r2": -3.537799011176876,
+   "gb_r2_stored": -3.313174773105839
+  },
+  {
+   "target": "Eh",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2665,
+   "r2": -5.969629449759402,
+   "fm_r2": -3.537799011176876,
+   "gb_r2_stored": -3.313174773105839
+  },
+  {
+   "target": "Eh",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2665,
+   "r2": -5.519581696533091,
+   "fm_r2": -3.537799011176876,
+   "gb_r2_stored": -3.313174773105839
+  },
+  {
+   "target": "Eh",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2665,
+   "r2": -0.8770429637468276,
+   "fm_r2": -1.2859050475587241,
+   "gb_r2_stored": -0.874300425629281
+  },
+  {
+   "target": "Eh",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2665,
+   "r2": -4.184351743446297,
+   "fm_r2": -1.2859050475587241,
+   "gb_r2_stored": -0.874300425629281
+  },
+  {
+   "target": "Eh",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2665,
+   "r2": -1.6692466258479235,
+   "fm_r2": -1.2859050475587241,
+   "gb_r2_stored": -0.874300425629281
+  },
+  {
+   "target": "EC",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 196,
+   "r2": 0.4758058446536164,
+   "fm_r2": 0.3206155319373648,
+   "gb_r2_stored": 0.4758058446536164
+  },
+  {
+   "target": "EC",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2705,
+   "r2": -0.5264667387342479,
+   "fm_r2": -2.134516925466949,
+   "gb_r2_stored": -0.5264667387342479
+  },
+  {
+   "target": "EC",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 196,
+   "r2": 0.4732687588160044,
+   "fm_r2": 0.3206155319373648,
+   "gb_r2_stored": 0.4758058446536164
+  },
+  {
+   "target": "EC",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2705,
+   "r2": -0.6106833758245755,
+   "fm_r2": -2.134516925466949,
+   "gb_r2_stored": -0.5264667387342479
+  },
+  {
+   "target": "EC",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 196,
+   "r2": 0.3899574837641031,
+   "fm_r2": 0.3206155319373648,
+   "gb_r2_stored": 0.4758058446536164
+  },
+  {
+   "target": "EC",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2705,
+   "r2": -0.26309615949226717,
+   "fm_r2": -2.134516925466949,
+   "gb_r2_stored": -0.5264667387342479
+  },
+  {
+   "target": "EC",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 196,
+   "r2": 0.5148973832271578,
+   "fm_r2": 0.38198678001622455,
+   "gb_r2_stored": 0.5148973832271578
+  },
+  {
+   "target": "EC",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2705,
+   "r2": -0.48248835804717416,
+   "fm_r2": -2.2243580161578915,
+   "gb_r2_stored": -0.48248835804717416
+  },
+  {
+   "target": "EC",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 196,
+   "r2": 0.5028066220716068,
+   "fm_r2": 0.38198678001622455,
+   "gb_r2_stored": 0.5148973832271578
+  },
+  {
+   "target": "EC",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2705,
+   "r2": -0.2805139901365219,
+   "fm_r2": -2.2243580161578915,
+   "gb_r2_stored": -0.48248835804717416
+  },
+  {
+   "target": "EC",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 196,
+   "r2": 0.44054983555419547,
+   "fm_r2": 0.38198678001622455,
+   "gb_r2_stored": 0.5148973832271578
+  },
+  {
+   "target": "EC",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2705,
+   "r2": -0.26944267066822114,
+   "fm_r2": -2.2243580161578915,
+   "gb_r2_stored": -0.48248835804717416
+  },
+  {
+   "target": "EC",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 196,
+   "r2": 0.9135459012570597,
+   "fm_r2": 0.9063431438627149,
+   "gb_r2_stored": 0.9135459012570597
+  },
+  {
+   "target": "EC",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2705,
+   "r2": 0.7920444155236501,
+   "fm_r2": 0.6652430655249748,
+   "gb_r2_stored": 0.7927746362447432
+  },
+  {
+   "target": "EC",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 196,
+   "r2": 0.899908978957775,
+   "fm_r2": 0.9063431438627149,
+   "gb_r2_stored": 0.9135459012570597
+  },
+  {
+   "target": "EC",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2705,
+   "r2": 0.7515375058059874,
+   "fm_r2": 0.6652430655249748,
+   "gb_r2_stored": 0.7927746362447432
+  },
+  {
+   "target": "EC",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 196,
+   "r2": 0.9308719403103056,
+   "fm_r2": 0.9063431438627149,
+   "gb_r2_stored": 0.9135459012570597
+  },
+  {
+   "target": "EC",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2705,
+   "r2": 0.8128783313062541,
+   "fm_r2": 0.6652430655249748,
+   "gb_r2_stored": 0.7927746362447432
+  },
+  {
+   "target": "EC",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 196,
+   "r2": 0.9107151248836377,
+   "fm_r2": 0.8016979962113805,
+   "gb_r2_stored": 0.9107151248836377
+  },
+  {
+   "target": "EC",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2705,
+   "r2": 0.779579828659234,
+   "fm_r2": 0.7809521917311355,
+   "gb_r2_stored": 0.779579828659234
+  },
+  {
+   "target": "EC",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 196,
+   "r2": 0.8640420297130752,
+   "fm_r2": 0.8016979962113805,
+   "gb_r2_stored": 0.9107151248836377
+  },
+  {
+   "target": "EC",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2705,
+   "r2": 0.7180699756135493,
+   "fm_r2": 0.7809521917311355,
+   "gb_r2_stored": 0.779579828659234
+  },
+  {
+   "target": "EC",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 196,
+   "r2": 0.932836839364414,
+   "fm_r2": 0.8016979962113805,
+   "gb_r2_stored": 0.9107151248836377
+  },
+  {
+   "target": "EC",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2705,
+   "r2": 0.8134579095014397,
+   "fm_r2": 0.7809521917311355,
+   "gb_r2_stored": 0.779579828659234
+  },
+  {
+   "target": "EC",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 196,
+   "r2": 0.9110053354133427,
+   "fm_r2": 0.9233330930146133,
+   "gb_r2_stored": 0.9110053354133427
+  },
+  {
+   "target": "EC",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2705,
+   "r2": 0.7564825926464702,
+   "fm_r2": 0.8378553306750882,
+   "gb_r2_stored": 0.7564825926464703
+  },
+  {
+   "target": "EC",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 196,
+   "r2": 0.8672545927529873,
+   "fm_r2": 0.9233330930146133,
+   "gb_r2_stored": 0.9110053354133427
+  },
+  {
+   "target": "EC",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2705,
+   "r2": 0.5852622232025602,
+   "fm_r2": 0.8378553306750882,
+   "gb_r2_stored": 0.7564825926464703
+  },
+  {
+   "target": "EC",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 196,
+   "r2": 0.9382632827576322,
+   "fm_r2": 0.9233330930146133,
+   "gb_r2_stored": 0.9110053354133427
+  },
+  {
+   "target": "EC",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2705,
+   "r2": 0.8170226935343231,
+   "fm_r2": 0.8378553306750882,
+   "gb_r2_stored": 0.7564825926464703
+  },
+  {
+   "target": "TDS",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 253,
+   "r2": 0.5516262965148855,
+   "fm_r2": 0.20463738601672177,
+   "gb_r2_stored": 0.5516262965148855
+  },
+  {
+   "target": "TDS",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2706,
+   "r2": -0.37454428243593196,
+   "fm_r2": -1.4786504493228656,
+   "gb_r2_stored": -0.37454428243593196
+  },
+  {
+   "target": "TDS",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 253,
+   "r2": 0.5568052728687343,
+   "fm_r2": 0.20463738601672177,
+   "gb_r2_stored": 0.5516262965148855
+  },
+  {
+   "target": "TDS",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2706,
+   "r2": -0.12147461749647137,
+   "fm_r2": -1.4786504493228656,
+   "gb_r2_stored": -0.37454428243593196
+  },
+  {
+   "target": "TDS",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 253,
+   "r2": 0.4872642457971108,
+   "fm_r2": 0.20463738601672177,
+   "gb_r2_stored": 0.5516262965148855
+  },
+  {
+   "target": "TDS",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2706,
+   "r2": -0.028319092223012765,
+   "fm_r2": -1.4786504493228656,
+   "gb_r2_stored": -0.37454428243593196
+  },
+  {
+   "target": "TDS",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 253,
+   "r2": 0.7633709002038607,
+   "fm_r2": 0.5575979216451825,
+   "gb_r2_stored": 0.7633709002038607
+  },
+  {
+   "target": "TDS",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2706,
+   "r2": 0.8844650059961743,
+   "fm_r2": 0.7915878237509749,
+   "gb_r2_stored": 0.8844650059961743
+  },
+  {
+   "target": "TDS",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 253,
+   "r2": 0.768547552770591,
+   "fm_r2": 0.5575979216451825,
+   "gb_r2_stored": 0.7633709002038607
+  },
+  {
+   "target": "TDS",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2706,
+   "r2": 0.8644035257862647,
+   "fm_r2": 0.7915878237509749,
+   "gb_r2_stored": 0.8844650059961743
+  },
+  {
+   "target": "TDS",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 253,
+   "r2": 0.7247616558261026,
+   "fm_r2": 0.5575979216451825,
+   "gb_r2_stored": 0.7633709002038607
+  },
+  {
+   "target": "TDS",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2706,
+   "r2": 0.9089793430143821,
+   "fm_r2": 0.7915878237509749,
+   "gb_r2_stored": 0.8844650059961743
+  },
+  {
+   "target": "TDS",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 253,
+   "r2": 0.9584652577697224,
+   "fm_r2": 0.9323097012049537,
+   "gb_r2_stored": 0.9584652577697224
+  },
+  {
+   "target": "TDS",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2706,
+   "r2": 0.8149539431851518,
+   "fm_r2": 0.7561589878886255,
+   "gb_r2_stored": 0.8149539431851518
+  },
+  {
+   "target": "TDS",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 253,
+   "r2": 0.948971852012584,
+   "fm_r2": 0.9323097012049537,
+   "gb_r2_stored": 0.9584652577697224
+  },
+  {
+   "target": "TDS",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2706,
+   "r2": 0.8201913360860439,
+   "fm_r2": 0.7561589878886255,
+   "gb_r2_stored": 0.8149539431851518
+  },
+  {
+   "target": "TDS",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 253,
+   "r2": 0.9847975145089211,
+   "fm_r2": 0.9323097012049537,
+   "gb_r2_stored": 0.9584652577697224
+  },
+  {
+   "target": "TDS",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2706,
+   "r2": 0.8713578029727931,
+   "fm_r2": 0.7561589878886255,
+   "gb_r2_stored": 0.8149539431851518
+  },
+  {
+   "target": "TDS",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 253,
+   "r2": 0.9579715795093269,
+   "fm_r2": 0.9308562175833794,
+   "gb_r2_stored": 0.9579715795093269
+  },
+  {
+   "target": "TDS",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2706,
+   "r2": 0.8162159661803084,
+   "fm_r2": 0.7994375026141325,
+   "gb_r2_stored": 0.8162159661803084
+  },
+  {
+   "target": "TDS",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 253,
+   "r2": 0.9533275800355858,
+   "fm_r2": 0.9308562175833794,
+   "gb_r2_stored": 0.9579715795093269
+  },
+  {
+   "target": "TDS",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2706,
+   "r2": 0.8193355669027658,
+   "fm_r2": 0.7994375026141325,
+   "gb_r2_stored": 0.8162159661803084
+  },
+  {
+   "target": "TDS",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 253,
+   "r2": 0.9874339600777053,
+   "fm_r2": 0.9308562175833794,
+   "gb_r2_stored": 0.9579715795093269
+  },
+  {
+   "target": "TDS",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2706,
+   "r2": 0.8723144886474157,
+   "fm_r2": 0.7994375026141325,
+   "gb_r2_stored": 0.8162159661803084
+  },
+  {
+   "target": "TDS",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 253,
+   "r2": 0.962879240877908,
+   "fm_r2": 0.9421317458932927,
+   "gb_r2_stored": 0.962879240877908
+  },
+  {
+   "target": "TDS",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2706,
+   "r2": 0.8182475777454936,
+   "fm_r2": 0.813947416602014,
+   "gb_r2_stored": 0.8182436343581079
+  },
+  {
+   "target": "TDS",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 253,
+   "r2": 0.953655906265361,
+   "fm_r2": 0.9421317458932927,
+   "gb_r2_stored": 0.962879240877908
+  },
+  {
+   "target": "TDS",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2706,
+   "r2": 0.8196343279645713,
+   "fm_r2": 0.813947416602014,
+   "gb_r2_stored": 0.8182436343581079
+  },
+  {
+   "target": "TDS",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 253,
+   "r2": 0.9877812174085533,
+   "fm_r2": 0.9421317458932927,
+   "gb_r2_stored": 0.962879240877908
+  },
+  {
+   "target": "TDS",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2706,
+   "r2": 0.8742469205812989,
+   "fm_r2": 0.813947416602014,
+   "gb_r2_stored": 0.8182436343581079
+  },
+  {
+   "target": "Ca",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.42653760859122714,
+   "fm_r2": 0.15532705050923978,
+   "gb_r2_stored": 0.42653760859122714
+  },
+  {
+   "target": "Ca",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -1.015886456328703,
+   "fm_r2": -0.3212062574873722,
+   "gb_r2_stored": -1.015886456328703
+  },
+  {
+   "target": "Ca",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.45720367189568245,
+   "fm_r2": 0.15532705050923978,
+   "gb_r2_stored": 0.42653760859122714
+  },
+  {
+   "target": "Ca",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -0.154125290006202,
+   "fm_r2": -0.3212062574873722,
+   "gb_r2_stored": -1.015886456328703
+  },
+  {
+   "target": "Ca",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.3805676848622659,
+   "fm_r2": 0.15532705050923978,
+   "gb_r2_stored": 0.42653760859122714
+  },
+  {
+   "target": "Ca",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.16781821088096094,
+   "fm_r2": -0.3212062574873722,
+   "gb_r2_stored": -1.015886456328703
+  },
+  {
+   "target": "Ca",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.5934378505154962,
+   "fm_r2": 0.424688291463982,
+   "gb_r2_stored": 0.5934378505154962
+  },
+  {
+   "target": "Ca",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.011076286731478202,
+   "fm_r2": 0.15666868364304187,
+   "gb_r2_stored": 0.011076286731478202
+  },
+  {
+   "target": "Ca",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.607824869212487,
+   "fm_r2": 0.424688291463982,
+   "gb_r2_stored": 0.5934378505154962
+  },
+  {
+   "target": "Ca",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.11875923293066293,
+   "fm_r2": 0.15666868364304187,
+   "gb_r2_stored": 0.011076286731478202
+  },
+  {
+   "target": "Ca",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.5911106555835424,
+   "fm_r2": 0.424688291463982,
+   "gb_r2_stored": 0.5934378505154962
+  },
+  {
+   "target": "Ca",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.0984908063047748,
+   "fm_r2": 0.15666868364304187,
+   "gb_r2_stored": 0.011076286731478202
+  },
+  {
+   "target": "Ca",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9401214977385586,
+   "fm_r2": 0.9522204278573316,
+   "gb_r2_stored": 0.9401214977385586
+  },
+  {
+   "target": "Ca",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.3347314019384132,
+   "fm_r2": 0.41533180583722995,
+   "gb_r2_stored": 0.3347314019384132
+  },
+  {
+   "target": "Ca",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.9175719610593283,
+   "fm_r2": 0.9522204278573316,
+   "gb_r2_stored": 0.9401214977385586
+  },
+  {
+   "target": "Ca",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.31075978730810705,
+   "fm_r2": 0.41533180583722995,
+   "gb_r2_stored": 0.3347314019384132
+  },
+  {
+   "target": "Ca",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8453576009196958,
+   "fm_r2": 0.9522204278573316,
+   "gb_r2_stored": 0.9401214977385586
+  },
+  {
+   "target": "Ca",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.16827256902790966,
+   "fm_r2": 0.41533180583722995,
+   "gb_r2_stored": 0.3347314019384132
+  },
+  {
+   "target": "Ca",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9316874655522785,
+   "fm_r2": 0.9623962376712629,
+   "gb_r2_stored": 0.9316874655522785
+  },
+  {
+   "target": "Ca",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.3372602767483579,
+   "fm_r2": 0.39913061893094115,
+   "gb_r2_stored": 0.33727358133648333
+  },
+  {
+   "target": "Ca",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.9195437078710341,
+   "fm_r2": 0.9623962376712629,
+   "gb_r2_stored": 0.9316874655522785
+  },
+  {
+   "target": "Ca",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.33035277850737,
+   "fm_r2": 0.39913061893094115,
+   "gb_r2_stored": 0.33727358133648333
+  },
+  {
+   "target": "Ca",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8482536470285191,
+   "fm_r2": 0.9623962376712629,
+   "gb_r2_stored": 0.9316874655522785
+  },
+  {
+   "target": "Ca",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.08776284533934053,
+   "fm_r2": 0.39913061893094115,
+   "gb_r2_stored": 0.33727358133648333
+  },
+  {
+   "target": "Ca",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9335156247513995,
+   "fm_r2": 0.9601066922054985,
+   "gb_r2_stored": 0.9335156247513995
+  },
+  {
+   "target": "Ca",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.3525835786481738,
+   "fm_r2": 0.38384377118663093,
+   "gb_r2_stored": 0.3525835786481738
+  },
+  {
+   "target": "Ca",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.9191185432417251,
+   "fm_r2": 0.9601066922054985,
+   "gb_r2_stored": 0.9335156247513995
+  },
+  {
+   "target": "Ca",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.3271309244526802,
+   "fm_r2": 0.38384377118663093,
+   "gb_r2_stored": 0.3525835786481738
+  },
+  {
+   "target": "Ca",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.878356241957799,
+   "fm_r2": 0.9601066922054985,
+   "gb_r2_stored": 0.9335156247513995
+  },
+  {
+   "target": "Ca",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.10829359733448529,
+   "fm_r2": 0.38384377118663093,
+   "gb_r2_stored": 0.3525835786481738
+  },
+  {
+   "target": "Mg",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.37161183596695113,
+   "fm_r2": 0.18245292182582284,
+   "gb_r2_stored": 0.37161183596695113
+  },
+  {
+   "target": "Mg",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -1.0730249407150496,
+   "fm_r2": -0.840311157777643,
+   "gb_r2_stored": -1.0730249407150496
+  },
+  {
+   "target": "Mg",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.4314463909096635,
+   "fm_r2": 0.18245292182582284,
+   "gb_r2_stored": 0.37161183596695113
+  },
+  {
+   "target": "Mg",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -0.8651093655467328,
+   "fm_r2": -0.840311157777643,
+   "gb_r2_stored": -1.0730249407150496
+  },
+  {
+   "target": "Mg",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.34506225368565124,
+   "fm_r2": 0.18245292182582284,
+   "gb_r2_stored": 0.37161183596695113
+  },
+  {
+   "target": "Mg",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.7088395358317725,
+   "fm_r2": -0.840311157777643,
+   "gb_r2_stored": -1.0730249407150496
+  },
+  {
+   "target": "Mg",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.4986063033657566,
+   "fm_r2": 0.4169597486709037,
+   "gb_r2_stored": 0.4986063033657566
+  },
+  {
+   "target": "Mg",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.1793325201871918,
+   "fm_r2": 0.292791496944832,
+   "gb_r2_stored": 0.1793325201871918
+  },
+  {
+   "target": "Mg",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.4963821916248433,
+   "fm_r2": 0.4169597486709037,
+   "gb_r2_stored": 0.4986063033657566
+  },
+  {
+   "target": "Mg",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.2760774068362868,
+   "fm_r2": 0.292791496944832,
+   "gb_r2_stored": 0.1793325201871918
+  },
+  {
+   "target": "Mg",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.47448111771549817,
+   "fm_r2": 0.4169597486709037,
+   "gb_r2_stored": 0.4986063033657566
+  },
+  {
+   "target": "Mg",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.2597042704712571,
+   "fm_r2": 0.292791496944832,
+   "gb_r2_stored": 0.1793325201871918
+  },
+  {
+   "target": "Mg",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.8619340825859932,
+   "fm_r2": 0.8671424228896701,
+   "gb_r2_stored": 0.8619340825859932
+  },
+  {
+   "target": "Mg",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.2815352532270018,
+   "fm_r2": 0.4475321513075735,
+   "gb_r2_stored": 0.2815385066357319
+  },
+  {
+   "target": "Mg",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8184599289392609,
+   "fm_r2": 0.8671424228896701,
+   "gb_r2_stored": 0.8619340825859932
+  },
+  {
+   "target": "Mg",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.09187597987824092,
+   "fm_r2": 0.4475321513075735,
+   "gb_r2_stored": 0.2815385066357319
+  },
+  {
+   "target": "Mg",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8490101737159319,
+   "fm_r2": 0.8671424228896701,
+   "gb_r2_stored": 0.8619340825859932
+  },
+  {
+   "target": "Mg",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.24532925747502743,
+   "fm_r2": 0.4475321513075735,
+   "gb_r2_stored": 0.2815385066357319
+  },
+  {
+   "target": "Mg",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.8669424241751724,
+   "fm_r2": 0.8847630880251691,
+   "gb_r2_stored": 0.8669424241751724
+  },
+  {
+   "target": "Mg",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.326384123771822,
+   "fm_r2": 0.44614243028114287,
+   "gb_r2_stored": 0.326384123771822
+  },
+  {
+   "target": "Mg",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8198662959992418,
+   "fm_r2": 0.8847630880251691,
+   "gb_r2_stored": 0.8669424241751724
+  },
+  {
+   "target": "Mg",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.11906235049357261,
+   "fm_r2": 0.44614243028114287,
+   "gb_r2_stored": 0.326384123771822
+  },
+  {
+   "target": "Mg",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8513523534859146,
+   "fm_r2": 0.8847630880251691,
+   "gb_r2_stored": 0.8669424241751724
+  },
+  {
+   "target": "Mg",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.2454380433743255,
+   "fm_r2": 0.44614243028114287,
+   "gb_r2_stored": 0.326384123771822
+  },
+  {
+   "target": "Mg",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.8623818405393864,
+   "fm_r2": 0.8978458742563861,
+   "gb_r2_stored": 0.8623818405393864
+  },
+  {
+   "target": "Mg",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.31290257396394205,
+   "fm_r2": 0.45684008507200646,
+   "gb_r2_stored": 0.31290257396394205
+  },
+  {
+   "target": "Mg",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8208162429202879,
+   "fm_r2": 0.8978458742563861,
+   "gb_r2_stored": 0.8623818405393864
+  },
+  {
+   "target": "Mg",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.18161049705565524,
+   "fm_r2": 0.45684008507200646,
+   "gb_r2_stored": 0.31290257396394205
+  },
+  {
+   "target": "Mg",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8513413498386491,
+   "fm_r2": 0.8978458742563861,
+   "gb_r2_stored": 0.8623818405393864
+  },
+  {
+   "target": "Mg",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.2670361600704334,
+   "fm_r2": 0.45684008507200646,
+   "gb_r2_stored": 0.31290257396394205
+  },
+  {
+   "target": "Na",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.45544211916045063,
+   "fm_r2": 0.2694364631939643,
+   "gb_r2_stored": 0.45544211916045063
+  },
+  {
+   "target": "Na",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -0.8664153937872905,
+   "fm_r2": -2.5331126060376326,
+   "gb_r2_stored": -0.8664153937872905
+  },
+  {
+   "target": "Na",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.462712347250403,
+   "fm_r2": 0.2694364631939643,
+   "gb_r2_stored": 0.45544211916045063
+  },
+  {
+   "target": "Na",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -0.5629677402128233,
+   "fm_r2": -2.5331126060376326,
+   "gb_r2_stored": -0.8664153937872905
+  },
+  {
+   "target": "Na",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.4185888901035568,
+   "fm_r2": 0.2694364631939643,
+   "gb_r2_stored": 0.45544211916045063
+  },
+  {
+   "target": "Na",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.5529586260206221,
+   "fm_r2": -2.5331126060376326,
+   "gb_r2_stored": -0.8664153937872905
+  },
+  {
+   "target": "Na",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.6035421454214777,
+   "fm_r2": 0.4973470324486209,
+   "gb_r2_stored": 0.6035421454214777
+  },
+  {
+   "target": "Na",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.6228779009840413,
+   "fm_r2": -0.29908251341780767,
+   "gb_r2_stored": 0.6228779009840413
+  },
+  {
+   "target": "Na",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.588090347343752,
+   "fm_r2": 0.4973470324486209,
+   "gb_r2_stored": 0.6035421454214777
+  },
+  {
+   "target": "Na",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.5906218528591161,
+   "fm_r2": -0.29908251341780767,
+   "gb_r2_stored": 0.6228779009840413
+  },
+  {
+   "target": "Na",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.5877747094446877,
+   "fm_r2": 0.4973470324486209,
+   "gb_r2_stored": 0.6035421454214777
+  },
+  {
+   "target": "Na",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.6602635195913117,
+   "fm_r2": -0.29908251341780767,
+   "gb_r2_stored": 0.6228779009840413
+  },
+  {
+   "target": "Na",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9217306156647066,
+   "fm_r2": 0.9338693243240752,
+   "gb_r2_stored": 0.9217306156647066
+  },
+  {
+   "target": "Na",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.7595595867198675,
+   "fm_r2": 0.47291266162673207,
+   "gb_r2_stored": 0.7595595867198675
+  },
+  {
+   "target": "Na",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.898653468512293,
+   "fm_r2": 0.9338693243240752,
+   "gb_r2_stored": 0.9217306156647066
+  },
+  {
+   "target": "Na",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.7698248752880504,
+   "fm_r2": 0.47291266162673207,
+   "gb_r2_stored": 0.7595595867198675
+  },
+  {
+   "target": "Na",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.9214197829941745,
+   "fm_r2": 0.9338693243240752,
+   "gb_r2_stored": 0.9217306156647066
+  },
+  {
+   "target": "Na",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.7644588007435473,
+   "fm_r2": 0.47291266162673207,
+   "gb_r2_stored": 0.7595595867198675
+  },
+  {
+   "target": "Na",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9193515754974516,
+   "fm_r2": 0.9448743215949367,
+   "gb_r2_stored": 0.9193515754974516
+  },
+  {
+   "target": "Na",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.7769856922023235,
+   "fm_r2": 0.6115558972319286,
+   "gb_r2_stored": 0.7769856922023235
+  },
+  {
+   "target": "Na",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8804137609174846,
+   "fm_r2": 0.9448743215949367,
+   "gb_r2_stored": 0.9193515754974516
+  },
+  {
+   "target": "Na",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.778337102991994,
+   "fm_r2": 0.6115558972319286,
+   "gb_r2_stored": 0.7769856922023235
+  },
+  {
+   "target": "Na",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.9195778274389094,
+   "fm_r2": 0.9448743215949367,
+   "gb_r2_stored": 0.9193515754974516
+  },
+  {
+   "target": "Na",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.7724928703392057,
+   "fm_r2": 0.6115558972319286,
+   "gb_r2_stored": 0.7769856922023235
+  },
+  {
+   "target": "Na",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9203041879518497,
+   "fm_r2": 0.9533840956958582,
+   "gb_r2_stored": 0.9203041879518497
+  },
+  {
+   "target": "Na",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.773683805130094,
+   "fm_r2": 0.7519603579996843,
+   "gb_r2_stored": 0.773683805130094
+  },
+  {
+   "target": "Na",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8796497542416316,
+   "fm_r2": 0.9533840956958582,
+   "gb_r2_stored": 0.9203041879518497
+  },
+  {
+   "target": "Na",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.7762850252059414,
+   "fm_r2": 0.7519603579996843,
+   "gb_r2_stored": 0.773683805130094
+  },
+  {
+   "target": "Na",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.9219094847713287,
+   "fm_r2": 0.9533840956958582,
+   "gb_r2_stored": 0.9203041879518497
+  },
+  {
+   "target": "Na",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.7655883925878055,
+   "fm_r2": 0.7519603579996843,
+   "gb_r2_stored": 0.773683805130094
+  },
+  {
+   "target": "K",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 322,
+   "r2": 0.31503927962657297,
+   "fm_r2": 0.12833606747390147,
+   "gb_r2_stored": 0.31503927962657297
+  },
+  {
+   "target": "K",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -1.0225203403955927,
+   "fm_r2": -1.0668555035748013,
+   "gb_r2_stored": -1.0225203403955927
+  },
+  {
+   "target": "K",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 322,
+   "r2": 0.32179275289311404,
+   "fm_r2": 0.12833606747390147,
+   "gb_r2_stored": 0.31503927962657297
+  },
+  {
+   "target": "K",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -0.720492690298077,
+   "fm_r2": -1.0668555035748013,
+   "gb_r2_stored": -1.0225203403955927
+  },
+  {
+   "target": "K",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 322,
+   "r2": 0.2508609915762401,
+   "fm_r2": 0.12833606747390147,
+   "gb_r2_stored": 0.31503927962657297
+  },
+  {
+   "target": "K",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -1.0571833548558414,
+   "fm_r2": -1.0668555035748013,
+   "gb_r2_stored": -1.0225203403955927
+  },
+  {
+   "target": "K",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 322,
+   "r2": 0.415057677448765,
+   "fm_r2": 0.2755820942381014,
+   "gb_r2_stored": 0.415057677448765
+  },
+  {
+   "target": "K",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -0.22078972296174548,
+   "fm_r2": 0.040354487206294865,
+   "gb_r2_stored": -0.22078972296174548
+  },
+  {
+   "target": "K",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 322,
+   "r2": 0.3861757335188447,
+   "fm_r2": 0.2755820942381014,
+   "gb_r2_stored": 0.415057677448765
+  },
+  {
+   "target": "K",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -0.24361272340823947,
+   "fm_r2": 0.040354487206294865,
+   "gb_r2_stored": -0.22078972296174548
+  },
+  {
+   "target": "K",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 322,
+   "r2": 0.3495740721621001,
+   "fm_r2": 0.2755820942381014,
+   "gb_r2_stored": 0.415057677448765
+  },
+  {
+   "target": "K",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.0980300102586108,
+   "fm_r2": 0.040354487206294865,
+   "gb_r2_stored": -0.22078972296174548
+  },
+  {
+   "target": "K",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 322,
+   "r2": 0.6430342643519728,
+   "fm_r2": 0.7346248763336082,
+   "gb_r2_stored": 0.6430342643519728
+  },
+  {
+   "target": "K",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.10770423427819142,
+   "fm_r2": 0.0829502960706412,
+   "gb_r2_stored": 0.10770423427819142
+  },
+  {
+   "target": "K",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 322,
+   "r2": 0.6184504820575325,
+   "fm_r2": 0.7346248763336082,
+   "gb_r2_stored": 0.6430342643519728
+  },
+  {
+   "target": "K",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.12106570864195632,
+   "fm_r2": 0.0829502960706412,
+   "gb_r2_stored": 0.10770423427819142
+  },
+  {
+   "target": "K",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 322,
+   "r2": 0.6180034423005161,
+   "fm_r2": 0.7346248763336082,
+   "gb_r2_stored": 0.6430342643519728
+  },
+  {
+   "target": "K",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.11153225653805132,
+   "fm_r2": 0.0829502960706412,
+   "gb_r2_stored": 0.10770423427819142
+  },
+  {
+   "target": "K",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 322,
+   "r2": 0.6218511228905511,
+   "fm_r2": 0.7629974929668895,
+   "gb_r2_stored": 0.6218511228905511
+  },
+  {
+   "target": "K",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.08480073714409575,
+   "fm_r2": -0.06839773395990423,
+   "gb_r2_stored": 0.08480073714409575
+  },
+  {
+   "target": "K",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 322,
+   "r2": 0.6158549536711073,
+   "fm_r2": 0.7629974929668895,
+   "gb_r2_stored": 0.6218511228905511
+  },
+  {
+   "target": "K",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.11371077127196405,
+   "fm_r2": -0.06839773395990423,
+   "gb_r2_stored": 0.08480073714409575
+  },
+  {
+   "target": "K",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 322,
+   "r2": 0.6044234064731788,
+   "fm_r2": 0.7629974929668895,
+   "gb_r2_stored": 0.6218511228905511
+  },
+  {
+   "target": "K",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.14174504204405947,
+   "fm_r2": -0.06839773395990423,
+   "gb_r2_stored": 0.08480073714409575
+  },
+  {
+   "target": "K",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 322,
+   "r2": 0.6130692473309046,
+   "fm_r2": 0.7657399412312125,
+   "gb_r2_stored": 0.6130692473309046
+  },
+  {
+   "target": "K",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.06742190004858839,
+   "fm_r2": 0.19324454279569714,
+   "gb_r2_stored": 0.06742190004858839
+  },
+  {
+   "target": "K",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 322,
+   "r2": 0.6179303625974388,
+   "fm_r2": 0.7657399412312125,
+   "gb_r2_stored": 0.6130692473309046
+  },
+  {
+   "target": "K",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.1263545853387258,
+   "fm_r2": 0.19324454279569714,
+   "gb_r2_stored": 0.06742190004858839
+  },
+  {
+   "target": "K",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 322,
+   "r2": 0.6072133894280581,
+   "fm_r2": 0.7657399412312125,
+   "gb_r2_stored": 0.6130692473309046
+  },
+  {
+   "target": "K",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.16692100228523032,
+   "fm_r2": 0.19324454279569714,
+   "gb_r2_stored": 0.06742190004858839
+  },
+  {
+   "target": "Cl",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.3607756705088868,
+   "fm_r2": 0.19310732606113656,
+   "gb_r2_stored": 0.3607756705088868
+  },
+  {
+   "target": "Cl",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -1.1835008969970753,
+   "fm_r2": -3.082720331175744,
+   "gb_r2_stored": -1.1835008969970753
+  },
+  {
+   "target": "Cl",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.35699828619443563,
+   "fm_r2": 0.19310732606113656,
+   "gb_r2_stored": 0.3607756705088868
+  },
+  {
+   "target": "Cl",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -1.330888354028843,
+   "fm_r2": -3.082720331175744,
+   "gb_r2_stored": -1.1835008969970753
+  },
+  {
+   "target": "Cl",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.3234198540915232,
+   "fm_r2": 0.19310732606113656,
+   "gb_r2_stored": 0.3607756705088868
+  },
+  {
+   "target": "Cl",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -1.6416722090885907,
+   "fm_r2": -3.082720331175744,
+   "gb_r2_stored": -1.1835008969970753
+  },
+  {
+   "target": "Cl",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.5571029820878377,
+   "fm_r2": 0.415452046622776,
+   "gb_r2_stored": 0.5571029820878377
+  },
+  {
+   "target": "Cl",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.5157330917945168,
+   "fm_r2": -0.17745315281000762,
+   "gb_r2_stored": 0.5157330917945168
+  },
+  {
+   "target": "Cl",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.4950507462413998,
+   "fm_r2": 0.415452046622776,
+   "gb_r2_stored": 0.5571029820878377
+  },
+  {
+   "target": "Cl",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.5783207490939166,
+   "fm_r2": -0.17745315281000762,
+   "gb_r2_stored": 0.5157330917945168
+  },
+  {
+   "target": "Cl",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.47582039923107766,
+   "fm_r2": 0.415452046622776,
+   "gb_r2_stored": 0.5571029820878377
+  },
+  {
+   "target": "Cl",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.6329754358634282,
+   "fm_r2": -0.17745315281000762,
+   "gb_r2_stored": 0.5157330917945168
+  },
+  {
+   "target": "Cl",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.8504184803525189,
+   "fm_r2": 0.8972323930299253,
+   "gb_r2_stored": 0.8504184803525189
+  },
+  {
+   "target": "Cl",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.700605433515028,
+   "fm_r2": 0.5186213878919259,
+   "gb_r2_stored": 0.700570438717302
+  },
+  {
+   "target": "Cl",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8028011719252934,
+   "fm_r2": 0.8972323930299253,
+   "gb_r2_stored": 0.8504184803525189
+  },
+  {
+   "target": "Cl",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.7028972165277698,
+   "fm_r2": 0.5186213878919259,
+   "gb_r2_stored": 0.700570438717302
+  },
+  {
+   "target": "Cl",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8521548622710141,
+   "fm_r2": 0.8972323930299253,
+   "gb_r2_stored": 0.8504184803525189
+  },
+  {
+   "target": "Cl",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.7509129088290825,
+   "fm_r2": 0.5186213878919259,
+   "gb_r2_stored": 0.700570438717302
+  },
+  {
+   "target": "Cl",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.8477460474149152,
+   "fm_r2": 0.9037320702411374,
+   "gb_r2_stored": 0.8477460474149152
+  },
+  {
+   "target": "Cl",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.7391542996179665,
+   "fm_r2": 0.6091773843437309,
+   "gb_r2_stored": 0.7391542996179665
+  },
+  {
+   "target": "Cl",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8025922465379103,
+   "fm_r2": 0.9037320702411374,
+   "gb_r2_stored": 0.8477460474149152
+  },
+  {
+   "target": "Cl",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.728218536739626,
+   "fm_r2": 0.6091773843437309,
+   "gb_r2_stored": 0.7391542996179665
+  },
+  {
+   "target": "Cl",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8372336500533308,
+   "fm_r2": 0.9037320702411374,
+   "gb_r2_stored": 0.8477460474149152
+  },
+  {
+   "target": "Cl",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.7794232719434023,
+   "fm_r2": 0.6091773843437309,
+   "gb_r2_stored": 0.7391542996179665
+  },
+  {
+   "target": "Cl",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.8459263732415356,
+   "fm_r2": 0.9053003653918401,
+   "gb_r2_stored": 0.8459263732415356
+  },
+  {
+   "target": "Cl",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.7097656174486893,
+   "fm_r2": 0.6899056909888261,
+   "gb_r2_stored": 0.7097656174486893
+  },
+  {
+   "target": "Cl",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.7934728000873978,
+   "fm_r2": 0.9053003653918401,
+   "gb_r2_stored": 0.8459263732415356
+  },
+  {
+   "target": "Cl",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.714833809858225,
+   "fm_r2": 0.6899056909888261,
+   "gb_r2_stored": 0.7097656174486893
+  },
+  {
+   "target": "Cl",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.8272533918603375,
+   "fm_r2": 0.9053003653918401,
+   "gb_r2_stored": 0.8459263732415356
+  },
+  {
+   "target": "Cl",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.7782736445752343,
+   "fm_r2": 0.6899056909888261,
+   "gb_r2_stored": 0.7097656174486893
+  },
+  {
+   "target": "HCO3",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.49785693227318417,
+   "fm_r2": -0.08111701965192797,
+   "gb_r2_stored": 0.49785693227318417
+  },
+  {
+   "target": "HCO3",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -1.3976290451289253,
+   "fm_r2": -0.9737968611784287,
+   "gb_r2_stored": -1.3976290451289253
+  },
+  {
+   "target": "HCO3",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.5177640165145476,
+   "fm_r2": -0.08111701965192797,
+   "gb_r2_stored": 0.49785693227318417
+  },
+  {
+   "target": "HCO3",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -2.012520856839977,
+   "fm_r2": -0.9737968611784287,
+   "gb_r2_stored": -1.3976290451289253
+  },
+  {
+   "target": "HCO3",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.4591618304640984,
+   "fm_r2": -0.08111701965192797,
+   "gb_r2_stored": 0.49785693227318417
+  },
+  {
+   "target": "HCO3",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.3600748804308922,
+   "fm_r2": -0.9737968611784287,
+   "gb_r2_stored": -1.3976290451289253
+  },
+  {
+   "target": "HCO3",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.7397216971244923,
+   "fm_r2": 0.4140080986188842,
+   "gb_r2_stored": 0.7397216971244923
+  },
+  {
+   "target": "HCO3",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -0.2371357637712388,
+   "fm_r2": 0.054818634716253256,
+   "gb_r2_stored": -0.2371357637712388
+  },
+  {
+   "target": "HCO3",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.7407906261056245,
+   "fm_r2": 0.4140080986188842,
+   "gb_r2_stored": 0.7397216971244923
+  },
+  {
+   "target": "HCO3",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.12275869757236124,
+   "fm_r2": 0.054818634716253256,
+   "gb_r2_stored": -0.2371357637712388
+  },
+  {
+   "target": "HCO3",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.675637944975172,
+   "fm_r2": 0.4140080986188842,
+   "gb_r2_stored": 0.7397216971244923
+  },
+  {
+   "target": "HCO3",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": 0.0543893918481384,
+   "fm_r2": 0.054818634716253256,
+   "gb_r2_stored": -0.2371357637712388
+  },
+  {
+   "target": "HCO3",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9088450083654128,
+   "fm_r2": 0.9240059653095785,
+   "gb_r2_stored": 0.9088450083654128
+  },
+  {
+   "target": "HCO3",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.3284921275263576,
+   "fm_r2": 0.20764172938452052,
+   "gb_r2_stored": 0.3284921275263576
+  },
+  {
+   "target": "HCO3",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8845951540014508,
+   "fm_r2": 0.9240059653095785,
+   "gb_r2_stored": 0.9088450083654128
+  },
+  {
+   "target": "HCO3",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.3391031329942239,
+   "fm_r2": 0.20764172938452052,
+   "gb_r2_stored": 0.3284921275263576
+  },
+  {
+   "target": "HCO3",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.7461408174473398,
+   "fm_r2": 0.9240059653095785,
+   "gb_r2_stored": 0.9088450083654128
+  },
+  {
+   "target": "HCO3",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.1049927295444637,
+   "fm_r2": 0.20764172938452052,
+   "gb_r2_stored": 0.3284921275263576
+  },
+  {
+   "target": "HCO3",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.9106878131495266,
+   "fm_r2": 0.9382092919021335,
+   "gb_r2_stored": 0.9106878131495266
+  },
+  {
+   "target": "HCO3",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.19001947297929733,
+   "fm_r2": -0.23512496456618526,
+   "gb_r2_stored": 0.19001493361677957
+  },
+  {
+   "target": "HCO3",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8899300637840885,
+   "fm_r2": 0.9382092919021335,
+   "gb_r2_stored": 0.9106878131495266
+  },
+  {
+   "target": "HCO3",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.37374111461029413,
+   "fm_r2": -0.23512496456618526,
+   "gb_r2_stored": 0.19001493361677957
+  },
+  {
+   "target": "HCO3",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.6876863940557791,
+   "fm_r2": 0.9382092919021335,
+   "gb_r2_stored": 0.9106878131495266
+  },
+  {
+   "target": "HCO3",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.11353590052725271,
+   "fm_r2": -0.23512496456618526,
+   "gb_r2_stored": 0.19001493361677957
+  },
+  {
+   "target": "HCO3",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.919544919178897,
+   "fm_r2": 0.9479491715731772,
+   "gb_r2_stored": 0.919544919178897
+  },
+  {
+   "target": "HCO3",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": 0.06905261464083123,
+   "fm_r2": 0.14700302900891815,
+   "gb_r2_stored": 0.06905261464083123
+  },
+  {
+   "target": "HCO3",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.8899957518823485,
+   "fm_r2": 0.9479491715731772,
+   "gb_r2_stored": 0.919544919178897
+  },
+  {
+   "target": "HCO3",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": 0.3599287035594799,
+   "fm_r2": 0.14700302900891815,
+   "gb_r2_stored": 0.06905261464083123
+  },
+  {
+   "target": "HCO3",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.7109363280044683,
+   "fm_r2": 0.9479491715731772,
+   "gb_r2_stored": 0.919544919178897
+  },
+  {
+   "target": "HCO3",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.06460431758462071,
+   "fm_r2": 0.14700302900891815,
+   "gb_r2_stored": 0.06905261464083123
+  },
+  {
+   "target": "SO4",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.5150962356822024,
+   "fm_r2": 0.2871911937305953,
+   "gb_r2_stored": 0.5150962356822023
+  },
+  {
+   "target": "SO4",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -0.1278872323561271,
+   "fm_r2": -0.05011794206175191,
+   "gb_r2_stored": -0.1278872323561271
+  },
+  {
+   "target": "SO4",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.5331977669705021,
+   "fm_r2": 0.2871911937305953,
+   "gb_r2_stored": 0.5150962356822023
+  },
+  {
+   "target": "SO4",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -0.13526914606580798,
+   "fm_r2": -0.05011794206175191,
+   "gb_r2_stored": -0.1278872323561271
+  },
+  {
+   "target": "SO4",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.4216854555317018,
+   "fm_r2": 0.2871911937305953,
+   "gb_r2_stored": 0.5150962356822023
+  },
+  {
+   "target": "SO4",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -0.0515912890945891,
+   "fm_r2": -0.05011794206175191,
+   "gb_r2_stored": -0.1278872323561271
+  },
+  {
+   "target": "SO4",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.5990727469310084,
+   "fm_r2": 0.5122399771677897,
+   "gb_r2_stored": 0.5990727469310084
+  },
+  {
+   "target": "SO4",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -0.7347795003183277,
+   "fm_r2": -0.780291303724616,
+   "gb_r2_stored": -0.7347795003183277
+  },
+  {
+   "target": "SO4",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.6090591382805636,
+   "fm_r2": 0.5122399771677897,
+   "gb_r2_stored": 0.5990727469310084
+  },
+  {
+   "target": "SO4",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -1.6390065494941428,
+   "fm_r2": -0.780291303724616,
+   "gb_r2_stored": -0.7347795003183277
+  },
+  {
+   "target": "SO4",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.5483079777433653,
+   "fm_r2": 0.5122399771677897,
+   "gb_r2_stored": 0.5990727469310084
+  },
+  {
+   "target": "SO4",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -1.7281983980896727,
+   "fm_r2": -0.780291303724616,
+   "gb_r2_stored": -0.7347795003183277
+  },
+  {
+   "target": "SO4",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.7839001879814864,
+   "fm_r2": 0.8301957352949332,
+   "gb_r2_stored": 0.7839001879814864
+  },
+  {
+   "target": "SO4",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -1.1722290726153983,
+   "fm_r2": -0.5753553088785885,
+   "gb_r2_stored": -1.1722290726153983
+  },
+  {
+   "target": "SO4",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.7438209151629127,
+   "fm_r2": 0.8301957352949332,
+   "gb_r2_stored": 0.7839001879814864
+  },
+  {
+   "target": "SO4",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -1.7274432585473867,
+   "fm_r2": -0.5753553088785885,
+   "gb_r2_stored": -1.1722290726153983
+  },
+  {
+   "target": "SO4",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.740401611754577,
+   "fm_r2": 0.8301957352949332,
+   "gb_r2_stored": 0.7839001879814864
+  },
+  {
+   "target": "SO4",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -1.7350000660259712,
+   "fm_r2": -0.5753553088785885,
+   "gb_r2_stored": -1.1722290726153983
+  },
+  {
+   "target": "SO4",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.7945058595035028,
+   "fm_r2": 0.8580870316258549,
+   "gb_r2_stored": 0.7945058595035028
+  },
+  {
+   "target": "SO4",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -0.8445858542725968,
+   "fm_r2": -0.9361846156586271,
+   "gb_r2_stored": -0.8445858542725968
+  },
+  {
+   "target": "SO4",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.7446432863831246,
+   "fm_r2": 0.8580870316258549,
+   "gb_r2_stored": 0.7945058595035028
+  },
+  {
+   "target": "SO4",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -1.7659061140270018,
+   "fm_r2": -0.9361846156586271,
+   "gb_r2_stored": -0.8445858542725968
+  },
+  {
+   "target": "SO4",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.7365863213916618,
+   "fm_r2": 0.8580870316258549,
+   "gb_r2_stored": 0.7945058595035028
+  },
+  {
+   "target": "SO4",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -1.7776991795504018,
+   "fm_r2": -0.9361846156586271,
+   "gb_r2_stored": -0.8445858542725968
+  },
+  {
+   "target": "SO4",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 333,
+   "r2": 0.7930179481636976,
+   "fm_r2": 0.8557115764517489,
+   "gb_r2_stored": 0.7930179481636976
+  },
+  {
+   "target": "SO4",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 2710,
+   "r2": -1.0714081396088333,
+   "fm_r2": -1.0990168628445565,
+   "gb_r2_stored": -1.0714081396088333
+  },
+  {
+   "target": "SO4",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 333,
+   "r2": 0.7457612516799137,
+   "fm_r2": 0.8557115764517489,
+   "gb_r2_stored": 0.7930179481636976
+  },
+  {
+   "target": "SO4",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 2710,
+   "r2": -1.697528943917348,
+   "fm_r2": -1.0990168628445565,
+   "gb_r2_stored": -1.0714081396088333
+  },
+  {
+   "target": "SO4",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 333,
+   "r2": 0.7487984369878802,
+   "fm_r2": 0.8557115764517489,
+   "gb_r2_stored": 0.7930179481636976
+  },
+  {
+   "target": "SO4",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 2710,
+   "r2": -1.5215879890834505,
+   "fm_r2": -1.0990168628445565,
+   "gb_r2_stored": -1.0714081396088333
+  },
+  {
+   "target": "SiO2",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 269,
+   "r2": 0.6004520839342102,
+   "fm_r2": 0.21120760386068604,
+   "gb_r2_stored": 0.6004520839342102
+  },
+  {
+   "target": "SiO2",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 419,
+   "r2": -0.5754204541976577,
+   "fm_r2": -4.172462663288526,
+   "gb_r2_stored": -0.5754204541976577
+  },
+  {
+   "target": "SiO2",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 269,
+   "r2": 0.6535860678765446,
+   "fm_r2": 0.21120760386068604,
+   "gb_r2_stored": 0.6004520839342102
+  },
+  {
+   "target": "SiO2",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 419,
+   "r2": -0.5411629571935075,
+   "fm_r2": -4.172462663288526,
+   "gb_r2_stored": -0.5754204541976577
+  },
+  {
+   "target": "SiO2",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 269,
+   "r2": 0.5951703098492983,
+   "fm_r2": 0.21120760386068604,
+   "gb_r2_stored": 0.6004520839342102
+  },
+  {
+   "target": "SiO2",
+   "level": "L0",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 419,
+   "r2": -0.07641241534420629,
+   "fm_r2": -4.172462663288526,
+   "gb_r2_stored": -0.5754204541976577
+  },
+  {
+   "target": "SiO2",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 269,
+   "r2": 0.6315212899656533,
+   "fm_r2": 0.2423462583844146,
+   "gb_r2_stored": 0.6315212899656533
+  },
+  {
+   "target": "SiO2",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 419,
+   "r2": -0.749625352469627,
+   "fm_r2": -2.951393129437775,
+   "gb_r2_stored": -0.749625352469627
+  },
+  {
+   "target": "SiO2",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 269,
+   "r2": 0.673193051374597,
+   "fm_r2": 0.2423462583844146,
+   "gb_r2_stored": 0.6315212899656533
+  },
+  {
+   "target": "SiO2",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 419,
+   "r2": -0.2753926888234093,
+   "fm_r2": -2.951393129437775,
+   "gb_r2_stored": -0.749625352469627
+  },
+  {
+   "target": "SiO2",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 269,
+   "r2": 0.6131949295914019,
+   "fm_r2": 0.2423462583844146,
+   "gb_r2_stored": 0.6315212899656533
+  },
+  {
+   "target": "SiO2",
+   "level": "L1",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 419,
+   "r2": -0.27390265661874613,
+   "fm_r2": -2.951393129437775,
+   "gb_r2_stored": -0.749625352469627
+  },
+  {
+   "target": "SiO2",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 269,
+   "r2": 0.6980848905252346,
+   "fm_r2": 0.7346471358317113,
+   "gb_r2_stored": 0.6980848905252346
+  },
+  {
+   "target": "SiO2",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 419,
+   "r2": -0.6497515918828223,
+   "fm_r2": -2.0052361383956536,
+   "gb_r2_stored": -0.6497515918828223
+  },
+  {
+   "target": "SiO2",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 269,
+   "r2": 0.7023714211144273,
+   "fm_r2": 0.7346471358317113,
+   "gb_r2_stored": 0.6980848905252346
+  },
+  {
+   "target": "SiO2",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 419,
+   "r2": -0.22769725479060998,
+   "fm_r2": -2.0052361383956536,
+   "gb_r2_stored": -0.6497515918828223
+  },
+  {
+   "target": "SiO2",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 269,
+   "r2": 0.7053929408268309,
+   "fm_r2": 0.7346471358317113,
+   "gb_r2_stored": 0.6980848905252346
+  },
+  {
+   "target": "SiO2",
+   "level": "L2",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 419,
+   "r2": -0.20492699216750787,
+   "fm_r2": -2.0052361383956536,
+   "gb_r2_stored": -0.6497515918828223
+  },
+  {
+   "target": "SiO2",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 269,
+   "r2": 0.7255524854384559,
+   "fm_r2": 0.7860732823861603,
+   "gb_r2_stored": 0.7255524854384559
+  },
+  {
+   "target": "SiO2",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 419,
+   "r2": -0.40726955792352615,
+   "fm_r2": -1.3240331049996437,
+   "gb_r2_stored": -0.40726955792352615
+  },
+  {
+   "target": "SiO2",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 269,
+   "r2": 0.7244806190325045,
+   "fm_r2": 0.7860732823861603,
+   "gb_r2_stored": 0.7255524854384559
+  },
+  {
+   "target": "SiO2",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 419,
+   "r2": -0.19812113972164336,
+   "fm_r2": -1.3240331049996437,
+   "gb_r2_stored": -0.40726955792352615
+  },
+  {
+   "target": "SiO2",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 269,
+   "r2": 0.7176952428271014,
+   "fm_r2": 0.7860732823861603,
+   "gb_r2_stored": 0.7255524854384559
+  },
+  {
+   "target": "SiO2",
+   "level": "L3",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 419,
+   "r2": -0.30208450314092383,
+   "fm_r2": -1.3240331049996437,
+   "gb_r2_stored": -0.40726955792352615
+  },
+  {
+   "target": "SiO2",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 269,
+   "r2": 0.7328895978513956,
+   "fm_r2": 0.7957296451121062,
+   "gb_r2_stored": 0.7328895978513956
+  },
+  {
+   "target": "SiO2",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "gb",
+   "n": 419,
+   "r2": -0.5592507765049235,
+   "fm_r2": -0.23689391159506967,
+   "gb_r2_stored": -0.5592507765049235
+  },
+  {
+   "target": "SiO2",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 269,
+   "r2": 0.7053857119380458,
+   "fm_r2": 0.7957296451121062,
+   "gb_r2_stored": 0.7328895978513956
+  },
+  {
+   "target": "SiO2",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "rf",
+   "n": 419,
+   "r2": -0.1851999271828022,
+   "fm_r2": -0.23689391159506967,
+   "gb_r2_stored": -0.5592507765049235
+  },
+  {
+   "target": "SiO2",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 269,
+   "r2": 0.723711075362846,
+   "fm_r2": 0.7957296451121062,
+   "gb_r2_stored": 0.7328895978513956
+  },
+  {
+   "target": "SiO2",
+   "level": "L4",
+   "test": "bangladesh",
+   "method": "tabpfn",
+   "n": 419,
+   "r2": -0.33627897613213764,
+   "fm_r2": -0.23689391159506967,
+   "gb_r2_stored": -0.5592507765049235
+  },
+  {
+   "target": "DOC",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 173,
+   "r2": 0.11848523387113741,
+   "fm_r2": -1.190300778086646,
+   "gb_r2_stored": 0.11848523387113741
+  },
+  {
+   "target": "DOC",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 173,
+   "r2": 0.11596003721767267,
+   "fm_r2": -1.190300778086646,
+   "gb_r2_stored": 0.11848523387113741
+  },
+  {
+   "target": "DOC",
+   "level": "L0",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 173,
+   "r2": 0.07129437880353029,
+   "fm_r2": -1.190300778086646,
+   "gb_r2_stored": 0.11848523387113741
+  },
+  {
+   "target": "DOC",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 173,
+   "r2": 0.24904194738458496,
+   "fm_r2": -0.7219326753475395,
+   "gb_r2_stored": 0.24904194738458496
+  },
+  {
+   "target": "DOC",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 173,
+   "r2": 0.21128046240369747,
+   "fm_r2": -0.7219326753475395,
+   "gb_r2_stored": 0.24904194738458496
+  },
+  {
+   "target": "DOC",
+   "level": "L1",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 173,
+   "r2": 0.12132729038167855,
+   "fm_r2": -0.7219326753475395,
+   "gb_r2_stored": 0.24904194738458496
+  },
+  {
+   "target": "DOC",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 173,
+   "r2": 0.28027714936626524,
+   "fm_r2": 0.15633788882830113,
+   "gb_r2_stored": 0.28027714936626524
+  },
+  {
+   "target": "DOC",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 173,
+   "r2": 0.38720006081659597,
+   "fm_r2": 0.15633788882830113,
+   "gb_r2_stored": 0.28027714936626524
+  },
+  {
+   "target": "DOC",
+   "level": "L2",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 173,
+   "r2": 0.20876794694957113,
+   "fm_r2": 0.15633788882830113,
+   "gb_r2_stored": 0.28027714936626524
+  },
+  {
+   "target": "DOC",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 173,
+   "r2": 0.36762129783387043,
+   "fm_r2": 0.29223375407292373,
+   "gb_r2_stored": 0.36762129783387043
+  },
+  {
+   "target": "DOC",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 173,
+   "r2": 0.38125735262199634,
+   "fm_r2": 0.29223375407292373,
+   "gb_r2_stored": 0.36762129783387043
+  },
+  {
+   "target": "DOC",
+   "level": "L3",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 173,
+   "r2": 0.2113840496800269,
+   "fm_r2": 0.29223375407292373,
+   "gb_r2_stored": 0.36762129783387043
+  },
+  {
+   "target": "DOC",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "gb",
+   "n": 173,
+   "r2": 0.4283044259664972,
+   "fm_r2": 0.39437564664824554,
+   "gb_r2_stored": 0.4283044259664972
+  },
+  {
+   "target": "DOC",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "rf",
+   "n": 173,
+   "r2": 0.37248181111772904,
+   "fm_r2": 0.39437564664824554,
+   "gb_r2_stored": 0.4283044259664972
+  },
+  {
+   "target": "DOC",
+   "level": "L4",
+   "test": "site_disjoint",
+   "method": "tabpfn",
+   "n": 173,
+   "r2": 0.2901077246753372,
+   "fm_r2": 0.39437564664824554,
+   "gb_r2_stored": 0.4283044259664972
+  }
+ ]
+}

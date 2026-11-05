@@ -1,0 +1,16 @@
+# Environment that produced the evaluation results, figures and tables (Apple M1, Python 3.11.15).
+# The fine-tuned Transformer and TabPFN predictions ran on a CUDA GPU pod.
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.8.0
+xgboost==2.1.3
+torch==2.5.1
+pyarrow==23.0.1
+matplotlib==3.10.9
+tabpfn==2.2.1
+# Figure 1 only, with Natural Earth 1:50m land, ocean and countries in data/gis/ne_50m/
+geopandas==1.1.2
+shapely==2.1.2
+pyproj==3.7.0
+colorcet==3.2.1
